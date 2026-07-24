@@ -1,0 +1,2001 @@
+customer_id,customer_name,gender,age,city,state,country,signup_date,customer_segment,income_group
+1,Customer_1,M,28,Sydney,NSW,Australia,2022-04-08,Corporate,Low
+2,Customer_2,F,21,Vancouver,BC,Canada,2023-08-04,Corporate,Medium
+3,Customer_3,M,20,New York,NY,USA,2024-05-15,Premium,Medium
+4,Customer_4,M,46,Munich,Bavaria,Germany,2022-12-08,Regular,Low
+5,Customer_5,F,61,Vancouver,BC,Canada,2023-04-23,Premium,Low
+6,Customer_6,M,62,Vancouver,BC,Canada,2023-04-02,Premium,Low
+7,Customer_7,F,30,Munich,Bavaria,Germany,2023-11-06,Regular,Medium
+8,Customer_8,M,26,Sydney,NSW,Australia,2023-05-11,Regular,Medium
+9,Customer_9,F,61,Vancouver,BC,Canada,2024-05-22,Corporate,Medium
+10,Customer_10,M,42,Munich,Bavaria,Germany,2023-10-27,Corporate,High
+11,Customer_11,M,23,Munich,Bavaria,Germany,2022-06-05,Premium,Low
+12,Customer_12,M,50,Sydney,NSW,Australia,2023-10-20,Premium,High
+13,Customer_13,F,46,Austin,TX,USA,2022-08-12,Corporate,Medium
+14,Customer_14,M,68,Sydney,NSW,Australia,2022-05-01,Corporate,High
+15,Customer_15,M,53,Los Angeles,CA,USA,2022-05-23,Corporate,High
+16,Customer_16,F,47,London,England,UK,2022-03-23,Premium,High
+17,Customer_17,M,54,London,England,UK,2024-03-15,Corporate,Medium
+18,Customer_18,F,47,Sydney,NSW,Australia,2022-04-06,Regular,Medium
+19,Customer_19,F,37,San Diego,CA,USA,2024-02-04,Corporate,High
+20,Customer_20,F,35,Munich,Bavaria,Germany,2024-06-18,Corporate,High
+21,Customer_21,M,70,Toronto,ON,Canada,2022-12-22,Premium,Low
+22,Customer_22,F,57,Dallas,TX,USA,2023-02-04,Regular,Medium
+23,Customer_23,M,38,Munich,Bavaria,Germany,2023-02-28,Premium,High
+24,Customer_24,M,50,London,England,UK,2022-06-24,Regular,High
+25,Customer_25,F,37,San Diego,CA,USA,2023-04-26,Premium,Low
+26,Customer_26,F,43,Manchester,England,UK,2023-12-19,Premium,Medium
+27,Customer_27,M,45,Sydney,NSW,Australia,2022-05-06,Premium,Medium
+28,Customer_28,M,65,Munich,Bavaria,Germany,2024-05-04,Premium,Medium
+29,Customer_29,M,27,Munich,Bavaria,Germany,2023-04-26,Regular,Low
+30,Customer_30,M,41,Vancouver,BC,Canada,2022-03-31,Regular,Low
+31,Customer_31,F,30,Munich,Bavaria,Germany,2022-05-18,Corporate,Medium
+32,Customer_32,F,21,Sydney,NSW,Australia,2023-12-26,Regular,Medium
+33,Customer_33,M,30,Sydney,NSW,Australia,2024-02-10,Corporate,High
+34,Customer_34,M,46,Munich,Bavaria,Germany,2022-09-07,Corporate,Medium
+35,Customer_35,M,53,Toronto,ON,Canada,2024-05-02,Premium,Low
+36,Customer_36,M,27,Sydney,NSW,Australia,2023-03-09,Corporate,Low
+37,Customer_37,F,67,Toronto,ON,Canada,2023-08-09,Regular,High
+38,Customer_38,F,34,Manchester,England,UK,2022-11-04,Corporate,Medium
+39,Customer_39,F,62,Toronto,ON,Canada,2022-03-31,Premium,Medium
+40,Customer_40,M,46,Sydney,NSW,Australia,2024-01-02,Premium,Medium
+41,Customer_41,M,68,London,England,UK,2024-03-25,Regular,High
+42,Customer_42,M,36,Vancouver,BC,Canada,2022-11-19,Regular,Medium
+43,Customer_43,M,30,Munich,Bavaria,Germany,2022-02-21,Regular,Low
+44,Customer_44,F,43,New York,NY,USA,2022-04-07,Premium,High
+45,Customer_45,M,60,Toronto,ON,Canada,2022-08-05,Premium,Medium
+46,Customer_46,M,66,New York,NY,USA,2023-02-01,Regular,High
+47,Customer_47,M,59,Vancouver,BC,Canada,2024-01-12,Corporate,Low
+48,Customer_48,M,20,Munich,Bavaria,Germany,2022-12-27,Premium,High
+49,Customer_49,M,45,Sydney,NSW,Australia,2024-05-09,Corporate,Low
+50,Customer_50,F,43,Sydney,NSW,Australia,2024-04-29,Premium,Low
+51,Customer_51,F,21,Sydney,NSW,Australia,2022-02-15,Regular,Low
+52,Customer_52,M,45,Munich,Bavaria,Germany,2024-05-06,Regular,High
+53,Customer_53,F,36,Munich,Bavaria,Germany,2022-07-27,Premium,Medium
+54,Customer_54,F,68,Sydney,NSW,Australia,2023-04-02,Corporate,High
+55,Customer_55,F,57,Vancouver,BC,Canada,2023-04-18,Premium,Low
+56,Customer_56,M,35,Toronto,ON,Canada,2023-10-14,Premium,Low
+57,Customer_57,F,70,Sydney,NSW,Australia,2022-02-10,Corporate,Low
+58,Customer_58,M,56,Munich,Bavaria,Germany,2022-10-18,Premium,Low
+59,Customer_59,M,61,Munich,Bavaria,Germany,2023-05-18,Premium,Low
+60,Customer_60,F,69,Los Angeles,CA,USA,2022-03-14,Regular,Medium
+61,Customer_61,M,42,Toronto,ON,Canada,2023-05-14,Corporate,High
+62,Customer_62,F,62,Sydney,NSW,Australia,2023-09-10,Corporate,Medium
+63,Customer_63,F,66,Vancouver,BC,Canada,2023-04-24,Corporate,Low
+64,Customer_64,M,40,Vancouver,BC,Canada,2022-03-24,Corporate,High
+65,Customer_65,F,19,London,England,UK,2022-07-15,Regular,Medium
+66,Customer_66,F,44,Munich,Bavaria,Germany,2024-04-27,Regular,Low
+67,Customer_67,F,24,Vancouver,BC,Canada,2023-09-30,Regular,High
+68,Customer_68,M,40,New York,NY,USA,2022-08-16,Corporate,High
+69,Customer_69,F,32,Dallas,TX,USA,2022-09-05,Corporate,Medium
+70,Customer_70,F,18,Sydney,NSW,Australia,2022-07-07,Regular,Low
+71,Customer_71,F,21,Vancouver,BC,Canada,2023-12-30,Premium,Low
+72,Customer_72,M,24,Vancouver,BC,Canada,2023-10-31,Premium,High
+73,Customer_73,F,35,Austin,TX,USA,2022-10-20,Regular,Low
+74,Customer_74,F,68,Sydney,NSW,Australia,2022-12-26,Premium,Medium
+75,Customer_75,F,59,Toronto,ON,Canada,2022-11-01,Regular,Medium
+76,Customer_76,F,36,Vancouver,BC,Canada,2023-07-10,Regular,High
+77,Customer_77,M,53,Sydney,NSW,Australia,2023-11-27,Regular,High
+78,Customer_78,F,69,Sydney,NSW,Australia,2022-06-07,Regular,High
+79,Customer_79,F,27,Vancouver,BC,Canada,2023-09-05,Regular,High
+80,Customer_80,F,29,Sydney,NSW,Australia,2022-04-28,Premium,Low
+81,Customer_81,F,37,Dallas,TX,USA,2023-12-04,Corporate,Medium
+82,Customer_82,F,24,Sydney,NSW,Australia,2022-03-02,Corporate,Low
+83,Customer_83,M,18,Toronto,ON,Canada,2022-07-08,Premium,Medium
+84,Customer_84,F,54,Sydney,NSW,Australia,2024-04-13,Corporate,Medium
+85,Customer_85,F,41,New York,NY,USA,2022-08-19,Regular,High
+86,Customer_86,F,68,Munich,Bavaria,Germany,2024-01-05,Regular,High
+87,Customer_87,F,28,Sydney,NSW,Australia,2024-05-24,Corporate,High
+88,Customer_88,M,60,Munich,Bavaria,Germany,2023-10-13,Regular,Low
+89,Customer_89,F,30,Sydney,NSW,Australia,2022-11-28,Corporate,Medium
+90,Customer_90,M,68,Sydney,NSW,Australia,2022-05-29,Corporate,Low
+91,Customer_91,F,57,Manchester,England,UK,2023-12-09,Regular,High
+92,Customer_92,F,23,Dallas,TX,USA,2022-10-09,Premium,Low
+93,Customer_93,F,66,London,England,UK,2024-04-05,Premium,Medium
+94,Customer_94,M,47,London,England,UK,2023-08-19,Regular,Low
+95,Customer_95,F,31,Austin,TX,USA,2023-12-01,Regular,Medium
+96,Customer_96,M,47,Munich,Bavaria,Germany,2022-05-04,Corporate,Medium
+97,Customer_97,M,50,Manchester,England,UK,2023-11-06,Regular,High
+98,Customer_98,F,26,Sydney,NSW,Australia,2024-06-13,Regular,Medium
+99,Customer_99,F,44,Sydney,NSW,Australia,2023-03-12,Corporate,High
+100,Customer_100,F,63,Sydney,NSW,Australia,2023-06-01,Premium,Low
+101,Customer_101,F,47,Dallas,TX,USA,2023-01-22,Premium,Medium
+102,Customer_102,F,49,Munich,Bavaria,Germany,2022-11-28,Premium,Medium
+103,Customer_103,F,68,Manchester,England,UK,2022-04-17,Premium,Low
+104,Customer_104,M,20,Toronto,ON,Canada,2023-01-02,Premium,Low
+105,Customer_105,M,44,Manchester,England,UK,2024-04-28,Regular,Low
+106,Customer_106,M,62,Los Angeles,CA,USA,2022-02-08,Corporate,High
+107,Customer_107,M,21,Munich,Bavaria,Germany,2023-01-16,Corporate,Low
+108,Customer_108,M,21,San Diego,CA,USA,2023-04-03,Premium,Medium
+109,Customer_109,M,68,Toronto,ON,Canada,2024-03-01,Corporate,High
+110,Customer_110,F,27,Sydney,NSW,Australia,2023-10-22,Regular,Medium
+111,Customer_111,F,36,Austin,TX,USA,2022-06-19,Premium,Medium
+112,Customer_112,M,31,Munich,Bavaria,Germany,2022-04-16,Corporate,Low
+113,Customer_113,M,20,Munich,Bavaria,Germany,2022-10-07,Corporate,High
+114,Customer_114,M,41,Sydney,NSW,Australia,2023-11-05,Regular,High
+115,Customer_115,M,22,Munich,Bavaria,Germany,2022-05-27,Corporate,Low
+116,Customer_116,F,67,Los Angeles,CA,USA,2022-09-09,Premium,Low
+117,Customer_117,F,38,Vancouver,BC,Canada,2023-06-03,Premium,Medium
+118,Customer_118,M,28,Toronto,ON,Canada,2022-03-06,Corporate,Low
+119,Customer_119,M,23,Dallas,TX,USA,2023-07-09,Corporate,Medium
+120,Customer_120,M,44,Sydney,NSW,Australia,2023-01-17,Corporate,Low
+121,Customer_121,M,59,Munich,Bavaria,Germany,2022-08-15,Premium,Low
+122,Customer_122,M,37,San Diego,CA,USA,2023-05-22,Regular,High
+123,Customer_123,F,30,Munich,Bavaria,Germany,2022-05-26,Premium,Low
+124,Customer_124,M,48,Vancouver,BC,Canada,2023-01-29,Corporate,Medium
+125,Customer_125,M,25,Toronto,ON,Canada,2023-05-10,Premium,Medium
+126,Customer_126,M,24,Vancouver,BC,Canada,2023-08-27,Premium,Medium
+127,Customer_127,M,25,London,England,UK,2024-04-17,Corporate,Medium
+128,Customer_128,F,51,Sydney,NSW,Australia,2022-08-19,Premium,Low
+129,Customer_129,F,60,Munich,Bavaria,Germany,2024-03-06,Premium,High
+130,Customer_130,M,25,Sydney,NSW,Australia,2022-01-16,Premium,Medium
+131,Customer_131,M,54,Vancouver,BC,Canada,2022-11-09,Corporate,High
+132,Customer_132,F,47,Toronto,ON,Canada,2022-06-06,Regular,High
+133,Customer_133,F,48,Sydney,NSW,Australia,2024-03-01,Corporate,Medium
+134,Customer_134,F,47,Munich,Bavaria,Germany,2022-06-25,Premium,Low
+135,Customer_135,M,66,Vancouver,BC,Canada,2023-07-23,Corporate,Medium
+136,Customer_136,M,30,Sydney,NSW,Australia,2024-03-08,Regular,Medium
+137,Customer_137,F,33,Munich,Bavaria,Germany,2023-05-25,Regular,Low
+138,Customer_138,M,57,Vancouver,BC,Canada,2022-05-30,Premium,Medium
+139,Customer_139,F,22,Dallas,TX,USA,2022-08-13,Regular,High
+140,Customer_140,M,32,Vancouver,BC,Canada,2023-12-18,Regular,Medium
+141,Customer_141,F,38,Sydney,NSW,Australia,2023-10-07,Regular,Medium
+142,Customer_142,M,22,San Diego,CA,USA,2022-03-09,Regular,Low
+143,Customer_143,F,65,Munich,Bavaria,Germany,2022-01-07,Corporate,High
+144,Customer_144,M,70,Los Angeles,CA,USA,2024-04-16,Premium,Low
+145,Customer_145,M,53,Sydney,NSW,Australia,2022-11-07,Corporate,High
+146,Customer_146,M,24,London,England,UK,2023-06-08,Premium,Medium
+147,Customer_147,M,25,Manchester,England,UK,2022-09-04,Regular,High
+148,Customer_148,F,29,Vancouver,BC,Canada,2023-12-10,Regular,High
+149,Customer_149,F,66,Munich,Bavaria,Germany,2022-09-19,Regular,Medium
+150,Customer_150,F,70,San Diego,CA,USA,2022-07-20,Regular,High
+151,Customer_151,M,29,Sydney,NSW,Australia,2022-09-11,Premium,High
+152,Customer_152,M,53,Manchester,England,UK,2023-09-10,Regular,Low
+153,Customer_153,M,41,Munich,Bavaria,Germany,2022-11-23,Premium,Medium
+154,Customer_154,F,35,Manchester,England,UK,2023-10-04,Premium,Low
+155,Customer_155,M,27,London,England,UK,2023-07-05,Premium,Medium
+156,Customer_156,M,32,Sydney,NSW,Australia,2024-01-07,Regular,Low
+157,Customer_157,F,37,New York,NY,USA,2022-11-13,Premium,High
+158,Customer_158,F,47,Manchester,England,UK,2023-07-08,Corporate,High
+159,Customer_159,M,41,Sydney,NSW,Australia,2022-10-22,Premium,Low
+160,Customer_160,M,20,Toronto,ON,Canada,2024-01-15,Premium,High
+161,Customer_161,M,59,Sydney,NSW,Australia,2024-04-05,Regular,Medium
+162,Customer_162,F,66,Munich,Bavaria,Germany,2022-12-12,Premium,Low
+163,Customer_163,M,65,London,England,UK,2023-10-19,Premium,High
+164,Customer_164,M,53,Toronto,ON,Canada,2024-06-07,Premium,Medium
+165,Customer_165,F,62,San Diego,CA,USA,2024-05-12,Corporate,Medium
+166,Customer_166,F,40,San Diego,CA,USA,2024-01-27,Premium,Low
+167,Customer_167,M,61,Munich,Bavaria,Germany,2023-11-22,Premium,Medium
+168,Customer_168,M,60,Toronto,ON,Canada,2023-10-21,Regular,High
+169,Customer_169,M,56,Toronto,ON,Canada,2023-07-10,Corporate,High
+170,Customer_170,F,59,Austin,TX,USA,2023-05-15,Corporate,High
+171,Customer_171,M,28,Munich,Bavaria,Germany,2023-08-21,Corporate,High
+172,Customer_172,M,69,Toronto,ON,Canada,2023-09-22,Corporate,High
+173,Customer_173,M,39,Munich,Bavaria,Germany,2022-09-20,Regular,Medium
+174,Customer_174,M,49,New York,NY,USA,2023-10-22,Regular,Low
+175,Customer_175,M,58,Manchester,England,UK,2024-02-29,Premium,Medium
+176,Customer_176,F,39,Sydney,NSW,Australia,2023-03-11,Regular,Medium
+177,Customer_177,F,36,Vancouver,BC,Canada,2022-09-18,Premium,Low
+178,Customer_178,M,62,Toronto,ON,Canada,2022-11-12,Corporate,Low
+179,Customer_179,F,44,Vancouver,BC,Canada,2022-10-28,Corporate,Medium
+180,Customer_180,F,28,Manchester,England,UK,2024-02-16,Premium,High
+181,Customer_181,M,51,Munich,Bavaria,Germany,2023-09-26,Corporate,Medium
+182,Customer_182,F,56,Austin,TX,USA,2022-10-22,Corporate,Low
+183,Customer_183,F,57,Manchester,England,UK,2022-08-20,Premium,Medium
+184,Customer_184,M,42,Sydney,NSW,Australia,2024-03-25,Regular,Low
+185,Customer_185,F,63,London,England,UK,2023-10-21,Corporate,Low
+186,Customer_186,M,25,Toronto,ON,Canada,2022-10-03,Corporate,Low
+187,Customer_187,M,55,Vancouver,BC,Canada,2024-06-11,Regular,High
+188,Customer_188,F,31,Dallas,TX,USA,2024-01-10,Corporate,Low
+189,Customer_189,M,19,Toronto,ON,Canada,2022-09-20,Premium,High
+190,Customer_190,M,20,Munich,Bavaria,Germany,2022-09-16,Corporate,High
+191,Customer_191,F,65,Munich,Bavaria,Germany,2023-07-14,Corporate,High
+192,Customer_192,M,55,Munich,Bavaria,Germany,2023-04-04,Corporate,Low
+193,Customer_193,F,63,San Diego,CA,USA,2023-01-17,Regular,High
+194,Customer_194,M,66,London,England,UK,2023-12-16,Corporate,Medium
+195,Customer_195,F,54,London,England,UK,2024-04-11,Premium,Low
+196,Customer_196,M,38,Toronto,ON,Canada,2023-05-21,Corporate,High
+197,Customer_197,M,28,Toronto,ON,Canada,2022-05-28,Premium,Low
+198,Customer_198,F,57,Vancouver,BC,Canada,2023-01-07,Premium,High
+199,Customer_199,F,38,Dallas,TX,USA,2023-09-22,Regular,Medium
+200,Customer_200,M,67,Toronto,ON,Canada,2024-03-26,Corporate,High
+201,Customer_201,F,18,London,England,UK,2022-09-27,Premium,High
+202,Customer_202,M,55,London,England,UK,2023-03-23,Premium,Low
+203,Customer_203,F,34,Manchester,England,UK,2023-09-03,Premium,Medium
+204,Customer_204,M,66,Manchester,England,UK,2023-02-27,Regular,High
+205,Customer_205,F,18,Toronto,ON,Canada,2022-06-20,Corporate,High
+206,Customer_206,F,23,Sydney,NSW,Australia,2022-05-25,Premium,High
+207,Customer_207,M,41,Sydney,NSW,Australia,2022-01-18,Corporate,Medium
+208,Customer_208,M,24,Vancouver,BC,Canada,2024-01-15,Regular,Low
+209,Customer_209,M,18,London,England,UK,2022-05-28,Regular,Low
+210,Customer_210,F,24,Toronto,ON,Canada,2022-10-13,Corporate,Low
+211,Customer_211,M,66,New York,NY,USA,2022-04-22,Premium,Low
+212,Customer_212,M,26,San Diego,CA,USA,2024-06-07,Premium,Medium
+213,Customer_213,M,47,Munich,Bavaria,Germany,2022-08-10,Corporate,Low
+214,Customer_214,M,50,London,England,UK,2023-09-01,Corporate,Medium
+215,Customer_215,F,57,Munich,Bavaria,Germany,2022-04-04,Corporate,High
+216,Customer_216,F,55,Sydney,NSW,Australia,2022-04-09,Corporate,Low
+217,Customer_217,M,60,Munich,Bavaria,Germany,2024-06-10,Premium,High
+218,Customer_218,F,55,Manchester,England,UK,2023-07-28,Regular,High
+219,Customer_219,F,56,Manchester,England,UK,2022-02-26,Corporate,High
+220,Customer_220,F,29,Vancouver,BC,Canada,2023-02-20,Corporate,Low
+221,Customer_221,M,50,Dallas,TX,USA,2022-04-24,Regular,High
+222,Customer_222,F,22,Munich,Bavaria,Germany,2022-07-23,Premium,Medium
+223,Customer_223,F,64,Munich,Bavaria,Germany,2024-05-27,Premium,High
+224,Customer_224,F,45,New York,NY,USA,2023-05-26,Premium,Medium
+225,Customer_225,F,24,London,England,UK,2024-03-15,Premium,Low
+226,Customer_226,F,35,London,England,UK,2022-01-16,Regular,High
+227,Customer_227,M,51,Sydney,NSW,Australia,2024-02-12,Corporate,Medium
+228,Customer_228,M,58,Munich,Bavaria,Germany,2024-06-05,Premium,Low
+229,Customer_229,M,23,Dallas,TX,USA,2024-06-14,Regular,Low
+230,Customer_230,F,41,Vancouver,BC,Canada,2022-05-05,Regular,Low
+231,Customer_231,F,31,Munich,Bavaria,Germany,2022-02-20,Premium,High
+232,Customer_232,F,60,Sydney,NSW,Australia,2023-03-17,Regular,Low
+233,Customer_233,M,64,Toronto,ON,Canada,2023-11-11,Corporate,Low
+234,Customer_234,F,58,Sydney,NSW,Australia,2022-06-08,Regular,Medium
+235,Customer_235,M,37,New York,NY,USA,2023-10-11,Regular,Low
+236,Customer_236,M,46,Manchester,England,UK,2023-04-11,Premium,Medium
+237,Customer_237,F,55,London,England,UK,2022-10-17,Regular,Low
+238,Customer_238,M,30,Vancouver,BC,Canada,2023-06-01,Regular,High
+239,Customer_239,F,56,Munich,Bavaria,Germany,2023-01-23,Premium,Medium
+240,Customer_240,F,42,Los Angeles,CA,USA,2023-09-25,Premium,Medium
+241,Customer_241,M,64,Vancouver,BC,Canada,2022-01-03,Premium,Medium
+242,Customer_242,F,39,Toronto,ON,Canada,2024-02-04,Corporate,Medium
+243,Customer_243,M,18,New York,NY,USA,2022-11-04,Corporate,High
+244,Customer_244,M,42,New York,NY,USA,2022-04-15,Regular,Low
+245,Customer_245,F,36,Munich,Bavaria,Germany,2024-01-18,Regular,High
+246,Customer_246,F,66,Vancouver,BC,Canada,2022-12-20,Corporate,Medium
+247,Customer_247,F,38,New York,NY,USA,2023-05-25,Premium,Low
+248,Customer_248,F,55,Manchester,England,UK,2022-10-18,Corporate,Low
+249,Customer_249,M,55,New York,NY,USA,2022-04-28,Premium,Medium
+250,Customer_250,F,59,Austin,TX,USA,2022-05-30,Premium,High
+251,Customer_251,F,60,Sydney,NSW,Australia,2023-08-11,Premium,Medium
+252,Customer_252,M,47,Sydney,NSW,Australia,2023-04-16,Premium,Medium
+253,Customer_253,M,33,Munich,Bavaria,Germany,2022-12-11,Corporate,Medium
+254,Customer_254,M,37,Toronto,ON,Canada,2023-06-15,Corporate,Medium
+255,Customer_255,F,22,Munich,Bavaria,Germany,2024-06-15,Premium,High
+256,Customer_256,F,68,Munich,Bavaria,Germany,2022-06-05,Premium,High
+257,Customer_257,M,38,Vancouver,BC,Canada,2022-09-30,Corporate,High
+258,Customer_258,F,37,Munich,Bavaria,Germany,2023-02-15,Premium,Low
+259,Customer_259,M,59,Munich,Bavaria,Germany,2022-06-03,Premium,Medium
+260,Customer_260,M,55,New York,NY,USA,2022-08-29,Premium,High
+261,Customer_261,F,57,Sydney,NSW,Australia,2022-08-31,Regular,Medium
+262,Customer_262,F,29,Toronto,ON,Canada,2022-09-04,Regular,High
+263,Customer_263,M,57,Dallas,TX,USA,2023-09-03,Regular,High
+264,Customer_264,M,58,Sydney,NSW,Australia,2023-10-08,Regular,Low
+265,Customer_265,F,56,London,England,UK,2023-08-22,Corporate,Medium
+266,Customer_266,F,50,Los Angeles,CA,USA,2024-05-03,Premium,Low
+267,Customer_267,M,70,Munich,Bavaria,Germany,2022-06-28,Corporate,Medium
+268,Customer_268,M,38,Munich,Bavaria,Germany,2023-12-10,Regular,Medium
+269,Customer_269,F,22,Manchester,England,UK,2022-11-01,Premium,High
+270,Customer_270,M,46,Munich,Bavaria,Germany,2023-08-18,Premium,Medium
+271,Customer_271,M,36,Vancouver,BC,Canada,2022-12-21,Regular,Medium
+272,Customer_272,F,56,London,England,UK,2023-10-04,Regular,Low
+273,Customer_273,F,66,Manchester,England,UK,2024-04-06,Premium,Medium
+274,Customer_274,M,58,Dallas,TX,USA,2022-01-31,Corporate,High
+275,Customer_275,F,59,London,England,UK,2024-01-12,Regular,High
+276,Customer_276,F,60,Los Angeles,CA,USA,2022-07-01,Corporate,Low
+277,Customer_277,F,32,San Diego,CA,USA,2024-04-10,Corporate,Medium
+278,Customer_278,F,18,Munich,Bavaria,Germany,2024-04-25,Corporate,Low
+279,Customer_279,F,33,Vancouver,BC,Canada,2024-06-07,Corporate,Low
+280,Customer_280,M,61,New York,NY,USA,2023-06-02,Regular,High
+281,Customer_281,M,46,Sydney,NSW,Australia,2023-04-28,Corporate,Medium
+282,Customer_282,F,23,Munich,Bavaria,Germany,2023-02-26,Corporate,Low
+283,Customer_283,M,54,New York,NY,USA,2024-03-15,Corporate,Low
+284,Customer_284,M,20,Munich,Bavaria,Germany,2022-03-13,Regular,High
+285,Customer_285,F,56,Dallas,TX,USA,2022-09-25,Corporate,Medium
+286,Customer_286,F,49,Munich,Bavaria,Germany,2022-06-02,Corporate,High
+287,Customer_287,F,59,Austin,TX,USA,2023-05-18,Premium,Medium
+288,Customer_288,M,40,New York,NY,USA,2024-05-12,Premium,Medium
+289,Customer_289,M,62,Dallas,TX,USA,2023-12-15,Premium,High
+290,Customer_290,M,69,Dallas,TX,USA,2023-02-28,Premium,Medium
+291,Customer_291,F,27,Vancouver,BC,Canada,2022-10-25,Corporate,Medium
+292,Customer_292,M,54,London,England,UK,2023-03-28,Premium,High
+293,Customer_293,M,59,Munich,Bavaria,Germany,2022-08-21,Premium,Low
+294,Customer_294,F,68,Munich,Bavaria,Germany,2024-06-14,Corporate,Low
+295,Customer_295,M,61,New York,NY,USA,2023-09-24,Regular,Medium
+296,Customer_296,M,29,New York,NY,USA,2023-08-13,Corporate,Low
+297,Customer_297,F,18,Munich,Bavaria,Germany,2022-07-02,Corporate,Medium
+298,Customer_298,F,28,Manchester,England,UK,2022-06-22,Corporate,Medium
+299,Customer_299,M,67,Vancouver,BC,Canada,2024-04-01,Regular,Low
+300,Customer_300,F,59,Munich,Bavaria,Germany,2023-08-14,Regular,Medium
+301,Customer_301,M,34,Munich,Bavaria,Germany,2022-05-27,Premium,High
+302,Customer_302,F,33,Munich,Bavaria,Germany,2023-05-17,Regular,High
+303,Customer_303,M,57,Sydney,NSW,Australia,2023-07-07,Premium,High
+304,Customer_304,M,25,Vancouver,BC,Canada,2022-07-19,Corporate,Low
+305,Customer_305,F,60,Los Angeles,CA,USA,2022-11-02,Premium,High
+306,Customer_306,M,59,Toronto,ON,Canada,2023-04-27,Regular,Low
+307,Customer_307,F,58,Munich,Bavaria,Germany,2023-04-26,Premium,High
+308,Customer_308,M,58,Sydney,NSW,Australia,2023-11-23,Corporate,Medium
+309,Customer_309,F,70,Austin,TX,USA,2024-01-22,Regular,Medium
+310,Customer_310,F,61,Toronto,ON,Canada,2022-12-12,Regular,Medium
+311,Customer_311,F,54,Vancouver,BC,Canada,2023-01-09,Premium,Low
+312,Customer_312,M,55,Sydney,NSW,Australia,2024-03-02,Regular,Medium
+313,Customer_313,M,49,Vancouver,BC,Canada,2023-11-23,Premium,Low
+314,Customer_314,M,37,New York,NY,USA,2023-07-03,Premium,High
+315,Customer_315,M,43,Manchester,England,UK,2022-12-24,Premium,Low
+316,Customer_316,M,39,Vancouver,BC,Canada,2024-03-30,Premium,High
+317,Customer_317,M,20,Los Angeles,CA,USA,2022-07-07,Premium,Low
+318,Customer_318,M,50,London,England,UK,2022-01-23,Premium,Medium
+319,Customer_319,M,67,Vancouver,BC,Canada,2023-04-17,Premium,Low
+320,Customer_320,M,33,Munich,Bavaria,Germany,2024-02-27,Regular,Medium
+321,Customer_321,M,25,Sydney,NSW,Australia,2023-03-13,Corporate,High
+322,Customer_322,M,70,New York,NY,USA,2022-07-01,Corporate,Medium
+323,Customer_323,F,49,Toronto,ON,Canada,2022-09-14,Premium,Medium
+324,Customer_324,F,24,Los Angeles,CA,USA,2023-08-10,Premium,Low
+325,Customer_325,F,37,Manchester,England,UK,2023-07-21,Regular,High
+326,Customer_326,F,39,Toronto,ON,Canada,2022-07-26,Premium,Medium
+327,Customer_327,F,19,London,England,UK,2024-03-14,Corporate,Medium
+328,Customer_328,M,41,London,England,UK,2022-05-04,Corporate,Low
+329,Customer_329,M,33,Munich,Bavaria,Germany,2022-11-24,Regular,Low
+330,Customer_330,M,23,London,England,UK,2023-04-01,Premium,Low
+331,Customer_331,M,66,Manchester,England,UK,2023-04-15,Regular,High
+332,Customer_332,F,44,Sydney,NSW,Australia,2022-06-09,Regular,Low
+333,Customer_333,F,31,Sydney,NSW,Australia,2022-10-21,Premium,High
+334,Customer_334,F,39,Austin,TX,USA,2024-02-23,Premium,Medium
+335,Customer_335,M,41,Manchester,England,UK,2022-01-19,Corporate,Medium
+336,Customer_336,F,25,Toronto,ON,Canada,2023-08-28,Premium,Low
+337,Customer_337,F,60,Munich,Bavaria,Germany,2022-07-10,Corporate,High
+338,Customer_338,F,55,Vancouver,BC,Canada,2022-07-13,Regular,Low
+339,Customer_339,F,42,Sydney,NSW,Australia,2024-01-10,Corporate,Medium
+340,Customer_340,M,68,Manchester,England,UK,2023-05-30,Premium,Medium
+341,Customer_341,F,55,Sydney,NSW,Australia,2022-08-12,Regular,Medium
+342,Customer_342,M,52,New York,NY,USA,2023-05-21,Corporate,Low
+343,Customer_343,M,59,Munich,Bavaria,Germany,2023-11-07,Corporate,High
+344,Customer_344,M,64,London,England,UK,2022-12-25,Regular,Medium
+345,Customer_345,F,26,Toronto,ON,Canada,2022-08-31,Corporate,High
+346,Customer_346,F,67,Dallas,TX,USA,2022-07-08,Corporate,Low
+347,Customer_347,F,18,Munich,Bavaria,Germany,2022-07-26,Regular,Medium
+348,Customer_348,M,57,Sydney,NSW,Australia,2022-12-01,Corporate,Low
+349,Customer_349,M,54,London,England,UK,2024-02-19,Regular,Low
+350,Customer_350,F,61,Vancouver,BC,Canada,2023-09-13,Regular,Medium
+351,Customer_351,F,60,San Diego,CA,USA,2022-10-22,Corporate,Medium
+352,Customer_352,M,50,Toronto,ON,Canada,2024-06-13,Premium,Low
+353,Customer_353,F,27,New York,NY,USA,2022-03-04,Corporate,Low
+354,Customer_354,F,26,Vancouver,BC,Canada,2024-03-07,Regular,Medium
+355,Customer_355,M,51,New York,NY,USA,2022-07-13,Premium,High
+356,Customer_356,F,21,Vancouver,BC,Canada,2024-05-11,Regular,Medium
+357,Customer_357,F,24,Manchester,England,UK,2024-03-08,Regular,Low
+358,Customer_358,F,28,London,England,UK,2024-04-30,Regular,Medium
+359,Customer_359,M,19,New York,NY,USA,2023-06-19,Corporate,Low
+360,Customer_360,M,31,Sydney,NSW,Australia,2023-12-30,Regular,High
+361,Customer_361,F,66,Munich,Bavaria,Germany,2022-12-13,Corporate,High
+362,Customer_362,M,67,Munich,Bavaria,Germany,2024-05-31,Regular,Low
+363,Customer_363,F,29,Munich,Bavaria,Germany,2022-06-07,Corporate,Medium
+364,Customer_364,M,23,San Diego,CA,USA,2023-08-24,Regular,Low
+365,Customer_365,F,24,Toronto,ON,Canada,2023-04-20,Regular,Medium
+366,Customer_366,F,43,Sydney,NSW,Australia,2022-10-04,Premium,Medium
+367,Customer_367,M,42,Vancouver,BC,Canada,2024-02-11,Premium,Low
+368,Customer_368,F,46,Munich,Bavaria,Germany,2024-03-09,Regular,Low
+369,Customer_369,M,41,Manchester,England,UK,2022-11-27,Regular,Low
+370,Customer_370,M,38,Manchester,England,UK,2024-01-07,Regular,Low
+371,Customer_371,F,69,Sydney,NSW,Australia,2022-02-12,Corporate,High
+372,Customer_372,F,38,Munich,Bavaria,Germany,2022-11-19,Premium,High
+373,Customer_373,M,24,Manchester,England,UK,2022-08-18,Premium,High
+374,Customer_374,M,29,Toronto,ON,Canada,2023-04-27,Corporate,Medium
+375,Customer_375,M,28,Munich,Bavaria,Germany,2022-04-23,Regular,High
+376,Customer_376,F,67,Vancouver,BC,Canada,2022-03-26,Regular,High
+377,Customer_377,F,53,Munich,Bavaria,Germany,2022-09-10,Corporate,Low
+378,Customer_378,M,64,New York,NY,USA,2023-02-26,Corporate,Medium
+379,Customer_379,M,35,Munich,Bavaria,Germany,2022-08-07,Regular,High
+380,Customer_380,M,62,New York,NY,USA,2023-12-08,Regular,Low
+381,Customer_381,F,45,Toronto,ON,Canada,2022-08-12,Premium,Low
+382,Customer_382,F,55,Sydney,NSW,Australia,2023-08-28,Regular,Low
+383,Customer_383,F,59,Munich,Bavaria,Germany,2022-07-13,Premium,High
+384,Customer_384,F,34,Vancouver,BC,Canada,2023-09-24,Premium,Medium
+385,Customer_385,M,39,Manchester,England,UK,2023-05-15,Regular,High
+386,Customer_386,M,61,Munich,Bavaria,Germany,2022-05-29,Corporate,High
+387,Customer_387,M,28,Toronto,ON,Canada,2023-03-31,Corporate,High
+388,Customer_388,M,62,London,England,UK,2024-01-28,Premium,High
+389,Customer_389,F,43,San Diego,CA,USA,2022-04-11,Corporate,Medium
+390,Customer_390,F,26,Manchester,England,UK,2023-03-04,Premium,High
+391,Customer_391,F,60,Dallas,TX,USA,2024-06-06,Premium,Low
+392,Customer_392,M,45,Sydney,NSW,Australia,2024-05-06,Regular,Low
+393,Customer_393,M,37,Toronto,ON,Canada,2024-02-12,Corporate,Low
+394,Customer_394,F,66,Toronto,ON,Canada,2022-02-03,Corporate,Low
+395,Customer_395,M,44,London,England,UK,2023-03-26,Premium,High
+396,Customer_396,M,64,Munich,Bavaria,Germany,2022-05-05,Corporate,High
+397,Customer_397,F,39,Manchester,England,UK,2022-05-15,Corporate,Low
+398,Customer_398,F,45,Austin,TX,USA,2022-05-27,Premium,Low
+399,Customer_399,M,65,New York,NY,USA,2022-03-18,Premium,High
+400,Customer_400,M,53,New York,NY,USA,2022-08-10,Premium,High
+401,Customer_401,F,25,Sydney,NSW,Australia,2022-09-21,Regular,High
+402,Customer_402,F,57,New York,NY,USA,2022-08-28,Corporate,High
+403,Customer_403,M,40,Manchester,England,UK,2022-07-16,Corporate,Low
+404,Customer_404,F,18,Sydney,NSW,Australia,2023-02-26,Regular,High
+405,Customer_405,F,67,New York,NY,USA,2022-09-27,Regular,Low
+406,Customer_406,F,70,Munich,Bavaria,Germany,2023-04-19,Regular,Low
+407,Customer_407,M,33,London,England,UK,2024-01-25,Corporate,Low
+408,Customer_408,M,68,New York,NY,USA,2022-05-17,Regular,Low
+409,Customer_409,M,48,Manchester,England,UK,2023-06-23,Corporate,Low
+410,Customer_410,F,21,Munich,Bavaria,Germany,2024-05-21,Regular,Medium
+411,Customer_411,F,70,New York,NY,USA,2022-11-18,Regular,Medium
+412,Customer_412,M,30,Munich,Bavaria,Germany,2022-03-06,Corporate,Low
+413,Customer_413,M,30,Munich,Bavaria,Germany,2022-02-03,Premium,Medium
+414,Customer_414,F,66,London,England,UK,2024-02-02,Regular,Medium
+415,Customer_415,M,69,Los Angeles,CA,USA,2023-05-21,Corporate,Medium
+416,Customer_416,F,40,London,England,UK,2022-04-15,Corporate,High
+417,Customer_417,M,54,Los Angeles,CA,USA,2022-02-06,Regular,Low
+418,Customer_418,M,52,Toronto,ON,Canada,2022-11-29,Corporate,Medium
+419,Customer_419,F,21,Munich,Bavaria,Germany,2024-01-26,Premium,Low
+420,Customer_420,F,58,Toronto,ON,Canada,2023-03-07,Regular,High
+421,Customer_421,F,19,Munich,Bavaria,Germany,2023-06-12,Corporate,High
+422,Customer_422,F,20,Munich,Bavaria,Germany,2022-09-30,Regular,Low
+423,Customer_423,F,65,Sydney,NSW,Australia,2022-06-26,Premium,High
+424,Customer_424,F,59,Vancouver,BC,Canada,2023-02-15,Regular,Medium
+425,Customer_425,F,64,Toronto,ON,Canada,2022-02-17,Premium,High
+426,Customer_426,F,31,Sydney,NSW,Australia,2024-04-11,Corporate,High
+427,Customer_427,F,53,Vancouver,BC,Canada,2022-03-17,Regular,Medium
+428,Customer_428,F,69,Dallas,TX,USA,2022-04-01,Regular,Low
+429,Customer_429,F,29,London,England,UK,2023-07-07,Corporate,Medium
+430,Customer_430,F,25,Toronto,ON,Canada,2022-08-11,Corporate,High
+431,Customer_431,M,61,New York,NY,USA,2022-04-21,Regular,High
+432,Customer_432,M,28,Sydney,NSW,Australia,2022-11-14,Regular,Low
+433,Customer_433,M,38,Munich,Bavaria,Germany,2022-08-22,Premium,Medium
+434,Customer_434,M,44,Toronto,ON,Canada,2022-12-22,Corporate,High
+435,Customer_435,F,57,Vancouver,BC,Canada,2022-06-11,Corporate,High
+436,Customer_436,M,27,Manchester,England,UK,2022-11-28,Premium,Low
+437,Customer_437,M,68,Vancouver,BC,Canada,2024-02-17,Regular,High
+438,Customer_438,F,64,Munich,Bavaria,Germany,2022-09-19,Corporate,Low
+439,Customer_439,F,52,Vancouver,BC,Canada,2023-01-27,Regular,Low
+440,Customer_440,M,19,Toronto,ON,Canada,2023-05-02,Regular,Medium
+441,Customer_441,F,24,Toronto,ON,Canada,2023-04-06,Regular,High
+442,Customer_442,M,35,London,England,UK,2024-01-06,Corporate,Low
+443,Customer_443,F,45,Sydney,NSW,Australia,2022-01-10,Regular,High
+444,Customer_444,F,28,Manchester,England,UK,2023-09-12,Premium,High
+445,Customer_445,M,56,Manchester,England,UK,2023-11-22,Premium,High
+446,Customer_446,M,60,Sydney,NSW,Australia,2022-08-27,Regular,Low
+447,Customer_447,F,23,Sydney,NSW,Australia,2023-01-26,Premium,Low
+448,Customer_448,F,56,Sydney,NSW,Australia,2022-04-12,Premium,Medium
+449,Customer_449,F,45,Sydney,NSW,Australia,2022-09-15,Corporate,High
+450,Customer_450,F,67,Munich,Bavaria,Germany,2023-06-24,Regular,High
+451,Customer_451,F,63,Munich,Bavaria,Germany,2022-11-09,Corporate,High
+452,Customer_452,M,26,London,England,UK,2022-08-02,Regular,Low
+453,Customer_453,F,28,Los Angeles,CA,USA,2022-01-26,Corporate,Medium
+454,Customer_454,F,31,Dallas,TX,USA,2022-09-14,Premium,Medium
+455,Customer_455,M,43,Toronto,ON,Canada,2023-01-24,Corporate,Low
+456,Customer_456,F,64,Dallas,TX,USA,2022-04-25,Corporate,High
+457,Customer_457,F,68,Munich,Bavaria,Germany,2023-04-19,Corporate,Low
+458,Customer_458,M,57,Manchester,England,UK,2022-07-04,Premium,High
+459,Customer_459,F,46,New York,NY,USA,2023-11-08,Premium,High
+460,Customer_460,F,23,Manchester,England,UK,2022-06-20,Premium,High
+461,Customer_461,F,22,Toronto,ON,Canada,2022-01-25,Corporate,Medium
+462,Customer_462,F,24,Sydney,NSW,Australia,2023-09-24,Premium,Medium
+463,Customer_463,M,45,New York,NY,USA,2022-06-15,Corporate,Medium
+464,Customer_464,M,61,Sydney,NSW,Australia,2023-10-17,Premium,Medium
+465,Customer_465,M,56,Austin,TX,USA,2022-07-23,Premium,High
+466,Customer_466,M,21,Sydney,NSW,Australia,2022-12-30,Regular,Low
+467,Customer_467,F,41,Munich,Bavaria,Germany,2023-09-28,Regular,High
+468,Customer_468,F,20,Manchester,England,UK,2022-06-18,Premium,High
+469,Customer_469,F,70,Austin,TX,USA,2023-06-02,Regular,High
+470,Customer_470,M,62,London,England,UK,2023-01-29,Corporate,Low
+471,Customer_471,F,21,Sydney,NSW,Australia,2022-11-09,Premium,Low
+472,Customer_472,F,59,Toronto,ON,Canada,2024-03-08,Corporate,High
+473,Customer_473,M,33,Munich,Bavaria,Germany,2022-03-22,Corporate,Medium
+474,Customer_474,M,48,Munich,Bavaria,Germany,2022-04-05,Regular,Low
+475,Customer_475,M,58,Austin,TX,USA,2022-12-17,Regular,High
+476,Customer_476,F,58,Munich,Bavaria,Germany,2023-06-18,Regular,Low
+477,Customer_477,M,46,Vancouver,BC,Canada,2023-01-23,Regular,Medium
+478,Customer_478,F,41,Manchester,England,UK,2023-10-11,Premium,High
+479,Customer_479,F,25,Sydney,NSW,Australia,2023-08-22,Regular,High
+480,Customer_480,M,63,Sydney,NSW,Australia,2022-01-23,Corporate,Medium
+481,Customer_481,F,38,Munich,Bavaria,Germany,2022-09-20,Premium,High
+482,Customer_482,F,43,Toronto,ON,Canada,2022-08-23,Regular,Low
+483,Customer_483,M,25,Austin,TX,USA,2024-06-05,Corporate,Low
+484,Customer_484,M,47,Munich,Bavaria,Germany,2023-02-16,Corporate,High
+485,Customer_485,F,49,London,England,UK,2024-01-16,Corporate,Low
+486,Customer_486,M,25,Sydney,NSW,Australia,2022-01-22,Corporate,High
+487,Customer_487,F,63,San Diego,CA,USA,2023-03-03,Regular,High
+488,Customer_488,M,57,London,England,UK,2023-05-15,Regular,Low
+489,Customer_489,M,36,Munich,Bavaria,Germany,2024-04-25,Regular,Medium
+490,Customer_490,M,25,New York,NY,USA,2022-04-06,Corporate,Medium
+491,Customer_491,F,59,Vancouver,BC,Canada,2023-10-12,Corporate,Low
+492,Customer_492,M,66,Manchester,England,UK,2023-08-23,Regular,Medium
+493,Customer_493,F,32,Sydney,NSW,Australia,2023-06-24,Premium,Medium
+494,Customer_494,M,28,Munich,Bavaria,Germany,2023-09-19,Regular,Low
+495,Customer_495,F,22,Sydney,NSW,Australia,2022-09-07,Corporate,Low
+496,Customer_496,M,45,Sydney,NSW,Australia,2022-09-28,Corporate,Low
+497,Customer_497,M,61,Munich,Bavaria,Germany,2024-06-10,Regular,Low
+498,Customer_498,F,62,Munich,Bavaria,Germany,2022-01-01,Regular,Medium
+499,Customer_499,M,61,London,England,UK,2023-01-30,Regular,High
+500,Customer_500,F,45,Austin,TX,USA,2024-02-28,Premium,High
+501,Customer_501,M,67,Toronto,ON,Canada,2022-10-24,Regular,Low
+502,Customer_502,M,31,Vancouver,BC,Canada,2023-12-29,Corporate,High
+503,Customer_503,F,29,New York,NY,USA,2022-07-08,Corporate,High
+504,Customer_504,M,20,Sydney,NSW,Australia,2022-10-27,Premium,Low
+505,Customer_505,F,34,New York,NY,USA,2022-09-24,Regular,Low
+506,Customer_506,F,68,Austin,TX,USA,2022-11-02,Regular,Medium
+507,Customer_507,F,35,New York,NY,USA,2023-09-11,Regular,Medium
+508,Customer_508,F,27,Sydney,NSW,Australia,2023-11-14,Premium,Medium
+509,Customer_509,M,32,Manchester,England,UK,2022-11-11,Corporate,Medium
+510,Customer_510,M,66,Vancouver,BC,Canada,2023-12-04,Corporate,Medium
+511,Customer_511,F,52,Sydney,NSW,Australia,2023-02-20,Regular,Medium
+512,Customer_512,M,32,Munich,Bavaria,Germany,2022-08-18,Premium,Low
+513,Customer_513,M,51,Munich,Bavaria,Germany,2022-08-01,Premium,Medium
+514,Customer_514,M,53,Vancouver,BC,Canada,2023-06-10,Regular,High
+515,Customer_515,F,28,Toronto,ON,Canada,2022-09-03,Premium,High
+516,Customer_516,F,24,Munich,Bavaria,Germany,2023-12-05,Regular,High
+517,Customer_517,M,20,Munich,Bavaria,Germany,2024-03-03,Corporate,High
+518,Customer_518,M,21,Sydney,NSW,Australia,2023-03-31,Regular,Medium
+519,Customer_519,F,59,Vancouver,BC,Canada,2022-10-03,Regular,High
+520,Customer_520,F,65,London,England,UK,2024-03-17,Premium,Medium
+521,Customer_521,F,28,Munich,Bavaria,Germany,2023-03-19,Premium,Medium
+522,Customer_522,F,26,Vancouver,BC,Canada,2022-03-25,Corporate,Medium
+523,Customer_523,M,69,Toronto,ON,Canada,2024-02-12,Regular,Medium
+524,Customer_524,F,29,Sydney,NSW,Australia,2023-05-09,Regular,Low
+525,Customer_525,F,62,Dallas,TX,USA,2022-06-22,Regular,Low
+526,Customer_526,F,47,London,England,UK,2023-07-15,Corporate,Medium
+527,Customer_527,M,21,Munich,Bavaria,Germany,2023-07-24,Premium,Medium
+528,Customer_528,M,37,Austin,TX,USA,2023-10-04,Regular,Low
+529,Customer_529,M,45,London,England,UK,2024-03-30,Regular,Low
+530,Customer_530,M,58,Toronto,ON,Canada,2023-02-06,Corporate,Low
+531,Customer_531,M,53,Munich,Bavaria,Germany,2023-01-10,Premium,Medium
+532,Customer_532,M,43,London,England,UK,2022-07-14,Regular,Medium
+533,Customer_533,M,22,Munich,Bavaria,Germany,2023-11-28,Premium,High
+534,Customer_534,M,37,Los Angeles,CA,USA,2023-05-13,Premium,High
+535,Customer_535,F,52,Sydney,NSW,Australia,2022-12-23,Premium,Medium
+536,Customer_536,F,50,Toronto,ON,Canada,2024-01-13,Premium,Low
+537,Customer_537,F,38,Sydney,NSW,Australia,2023-11-19,Premium,Low
+538,Customer_538,F,65,Los Angeles,CA,USA,2023-06-17,Regular,Medium
+539,Customer_539,F,24,Sydney,NSW,Australia,2023-05-26,Corporate,Low
+540,Customer_540,M,41,Austin,TX,USA,2022-11-11,Regular,Medium
+541,Customer_541,M,63,Sydney,NSW,Australia,2022-07-28,Regular,High
+542,Customer_542,M,61,London,England,UK,2022-08-04,Corporate,Medium
+543,Customer_543,F,68,Sydney,NSW,Australia,2024-04-10,Premium,High
+544,Customer_544,F,55,Vancouver,BC,Canada,2022-10-30,Premium,High
+545,Customer_545,M,30,Munich,Bavaria,Germany,2022-10-01,Regular,Low
+546,Customer_546,M,19,Munich,Bavaria,Germany,2022-12-14,Corporate,Medium
+547,Customer_547,M,33,Los Angeles,CA,USA,2023-09-01,Premium,High
+548,Customer_548,M,27,Austin,TX,USA,2023-04-14,Corporate,High
+549,Customer_549,M,40,Dallas,TX,USA,2024-05-17,Regular,Medium
+550,Customer_550,F,52,Munich,Bavaria,Germany,2024-05-16,Regular,High
+551,Customer_551,M,28,Vancouver,BC,Canada,2023-01-27,Regular,Medium
+552,Customer_552,M,51,Toronto,ON,Canada,2022-01-06,Corporate,High
+553,Customer_553,F,45,Munich,Bavaria,Germany,2023-09-06,Regular,Low
+554,Customer_554,M,18,Toronto,ON,Canada,2024-03-02,Corporate,Low
+555,Customer_555,F,52,Los Angeles,CA,USA,2022-01-20,Premium,Low
+556,Customer_556,M,30,Toronto,ON,Canada,2022-06-16,Premium,Medium
+557,Customer_557,F,55,Los Angeles,CA,USA,2023-07-13,Corporate,High
+558,Customer_558,F,59,Los Angeles,CA,USA,2023-11-01,Regular,Medium
+559,Customer_559,M,64,Vancouver,BC,Canada,2023-03-05,Corporate,Low
+560,Customer_560,M,70,London,England,UK,2022-06-29,Corporate,High
+561,Customer_561,M,65,London,England,UK,2022-01-19,Regular,Medium
+562,Customer_562,M,59,Toronto,ON,Canada,2022-07-27,Regular,Medium
+563,Customer_563,M,22,Sydney,NSW,Australia,2023-08-26,Regular,High
+564,Customer_564,F,57,Sydney,NSW,Australia,2023-07-29,Corporate,Low
+565,Customer_565,F,20,Munich,Bavaria,Germany,2023-09-26,Premium,High
+566,Customer_566,F,70,London,England,UK,2022-01-12,Premium,Medium
+567,Customer_567,F,40,New York,NY,USA,2022-12-03,Premium,High
+568,Customer_568,M,57,New York,NY,USA,2022-12-19,Regular,Low
+569,Customer_569,M,58,San Diego,CA,USA,2024-01-16,Regular,High
+570,Customer_570,F,65,Sydney,NSW,Australia,2023-03-21,Premium,High
+571,Customer_571,F,68,Munich,Bavaria,Germany,2023-07-14,Corporate,Low
+572,Customer_572,M,35,Vancouver,BC,Canada,2022-07-24,Premium,Low
+573,Customer_573,F,57,Munich,Bavaria,Germany,2022-08-26,Premium,Medium
+574,Customer_574,M,32,Munich,Bavaria,Germany,2024-05-28,Regular,Medium
+575,Customer_575,M,69,Munich,Bavaria,Germany,2022-10-11,Premium,Medium
+576,Customer_576,F,31,Manchester,England,UK,2023-02-25,Corporate,Medium
+577,Customer_577,F,66,Munich,Bavaria,Germany,2022-06-15,Premium,Medium
+578,Customer_578,F,22,Sydney,NSW,Australia,2023-07-15,Premium,Medium
+579,Customer_579,M,36,Manchester,England,UK,2023-07-29,Premium,Medium
+580,Customer_580,M,60,Toronto,ON,Canada,2024-03-15,Regular,High
+581,Customer_581,F,40,Munich,Bavaria,Germany,2024-01-22,Premium,Medium
+582,Customer_582,M,38,Austin,TX,USA,2022-10-30,Regular,High
+583,Customer_583,M,70,Vancouver,BC,Canada,2022-03-23,Corporate,High
+584,Customer_584,M,43,Toronto,ON,Canada,2022-01-11,Regular,Medium
+585,Customer_585,M,39,Toronto,ON,Canada,2023-09-11,Premium,High
+586,Customer_586,M,45,Dallas,TX,USA,2024-01-18,Regular,Medium
+587,Customer_587,M,57,Sydney,NSW,Australia,2023-09-23,Premium,High
+588,Customer_588,F,27,Sydney,NSW,Australia,2022-02-03,Corporate,Medium
+589,Customer_589,F,41,New York,NY,USA,2023-09-30,Corporate,High
+590,Customer_590,M,52,Toronto,ON,Canada,2024-02-07,Premium,Medium
+591,Customer_591,M,34,Manchester,England,UK,2022-09-22,Regular,Low
+592,Customer_592,F,32,Sydney,NSW,Australia,2023-04-07,Premium,High
+593,Customer_593,F,47,Dallas,TX,USA,2023-01-14,Premium,High
+594,Customer_594,M,70,Vancouver,BC,Canada,2023-04-09,Corporate,Medium
+595,Customer_595,F,56,Sydney,NSW,Australia,2022-10-19,Regular,Medium
+596,Customer_596,M,44,Munich,Bavaria,Germany,2022-03-10,Premium,Medium
+597,Customer_597,F,20,New York,NY,USA,2022-10-08,Premium,Low
+598,Customer_598,M,55,Los Angeles,CA,USA,2023-03-29,Premium,Medium
+599,Customer_599,F,52,Toronto,ON,Canada,2023-12-12,Regular,High
+600,Customer_600,M,22,Sydney,NSW,Australia,2022-10-04,Regular,Medium
+601,Customer_601,M,28,London,England,UK,2022-12-08,Premium,Low
+602,Customer_602,F,23,Sydney,NSW,Australia,2023-04-30,Regular,High
+603,Customer_603,M,52,Dallas,TX,USA,2023-07-20,Premium,High
+604,Customer_604,M,67,London,England,UK,2022-06-06,Corporate,Low
+605,Customer_605,F,29,Sydney,NSW,Australia,2022-10-07,Regular,Medium
+606,Customer_606,M,44,London,England,UK,2022-07-29,Premium,Low
+607,Customer_607,F,65,Toronto,ON,Canada,2023-07-09,Corporate,Low
+608,Customer_608,M,43,Munich,Bavaria,Germany,2023-05-24,Corporate,High
+609,Customer_609,M,51,Manchester,England,UK,2023-11-18,Corporate,Medium
+610,Customer_610,F,18,Vancouver,BC,Canada,2023-09-11,Regular,Low
+611,Customer_611,M,52,Munich,Bavaria,Germany,2022-04-13,Corporate,Medium
+612,Customer_612,F,62,Austin,TX,USA,2023-07-06,Corporate,Low
+613,Customer_613,F,36,Munich,Bavaria,Germany,2022-05-09,Corporate,Low
+614,Customer_614,M,38,Sydney,NSW,Australia,2022-04-06,Regular,Low
+615,Customer_615,M,67,Los Angeles,CA,USA,2024-02-21,Corporate,Medium
+616,Customer_616,F,38,Munich,Bavaria,Germany,2023-03-29,Regular,High
+617,Customer_617,M,28,Munich,Bavaria,Germany,2023-03-12,Premium,High
+618,Customer_618,M,37,New York,NY,USA,2024-02-04,Regular,High
+619,Customer_619,M,20,Sydney,NSW,Australia,2022-02-25,Premium,High
+620,Customer_620,F,46,Munich,Bavaria,Germany,2022-03-09,Regular,High
+621,Customer_621,M,26,Toronto,ON,Canada,2023-06-23,Corporate,Medium
+622,Customer_622,M,43,New York,NY,USA,2023-01-05,Regular,Medium
+623,Customer_623,F,18,Sydney,NSW,Australia,2022-03-24,Premium,Low
+624,Customer_624,F,28,Sydney,NSW,Australia,2024-02-26,Regular,Low
+625,Customer_625,F,44,Munich,Bavaria,Germany,2024-05-29,Corporate,Medium
+626,Customer_626,M,70,Toronto,ON,Canada,2023-08-15,Regular,Medium
+627,Customer_627,M,57,New York,NY,USA,2024-02-07,Regular,High
+628,Customer_628,F,19,Vancouver,BC,Canada,2024-05-12,Premium,High
+629,Customer_629,F,59,London,England,UK,2022-05-29,Corporate,High
+630,Customer_630,M,57,Sydney,NSW,Australia,2023-09-11,Premium,Low
+631,Customer_631,M,66,New York,NY,USA,2023-03-21,Premium,Medium
+632,Customer_632,F,43,Austin,TX,USA,2022-12-22,Premium,Medium
+633,Customer_633,F,43,Toronto,ON,Canada,2023-10-02,Premium,Low
+634,Customer_634,M,44,Dallas,TX,USA,2024-06-14,Regular,High
+635,Customer_635,F,33,Vancouver,BC,Canada,2024-01-31,Regular,Medium
+636,Customer_636,F,51,Toronto,ON,Canada,2022-02-12,Premium,Medium
+637,Customer_637,F,51,Dallas,TX,USA,2023-01-26,Premium,Medium
+638,Customer_638,M,28,Vancouver,BC,Canada,2022-04-03,Corporate,Medium
+639,Customer_639,F,27,Toronto,ON,Canada,2024-05-05,Corporate,Medium
+640,Customer_640,F,44,Sydney,NSW,Australia,2023-01-28,Regular,Medium
+641,Customer_641,F,66,Toronto,ON,Canada,2023-07-14,Corporate,High
+642,Customer_642,F,35,New York,NY,USA,2023-12-08,Corporate,High
+643,Customer_643,M,41,London,England,UK,2024-03-29,Regular,Low
+644,Customer_644,F,40,New York,NY,USA,2022-05-27,Regular,High
+645,Customer_645,F,30,Munich,Bavaria,Germany,2022-11-18,Premium,High
+646,Customer_646,F,45,Munich,Bavaria,Germany,2024-05-10,Corporate,High
+647,Customer_647,M,40,Toronto,ON,Canada,2022-02-10,Regular,Medium
+648,Customer_648,F,27,Manchester,England,UK,2022-04-01,Regular,Medium
+649,Customer_649,F,60,New York,NY,USA,2023-10-31,Premium,Low
+650,Customer_650,F,59,Manchester,England,UK,2022-12-03,Regular,Medium
+651,Customer_651,M,63,Munich,Bavaria,Germany,2022-08-21,Premium,Medium
+652,Customer_652,F,42,London,England,UK,2022-10-02,Premium,Low
+653,Customer_653,F,36,London,England,UK,2023-06-22,Corporate,Medium
+654,Customer_654,F,57,Manchester,England,UK,2023-05-18,Premium,Medium
+655,Customer_655,F,47,New York,NY,USA,2023-11-09,Corporate,Medium
+656,Customer_656,M,56,Vancouver,BC,Canada,2023-09-04,Corporate,Low
+657,Customer_657,M,36,Munich,Bavaria,Germany,2023-01-09,Regular,High
+658,Customer_658,M,20,Vancouver,BC,Canada,2024-03-26,Regular,Low
+659,Customer_659,M,55,Sydney,NSW,Australia,2024-05-08,Regular,Medium
+660,Customer_660,F,24,Sydney,NSW,Australia,2024-04-13,Corporate,Low
+661,Customer_661,M,59,Toronto,ON,Canada,2023-05-03,Corporate,Low
+662,Customer_662,M,41,New York,NY,USA,2023-03-25,Corporate,Medium
+663,Customer_663,F,20,Manchester,England,UK,2023-11-23,Corporate,Low
+664,Customer_664,F,29,Sydney,NSW,Australia,2022-01-12,Corporate,Low
+665,Customer_665,F,47,Vancouver,BC,Canada,2023-05-04,Premium,High
+666,Customer_666,F,56,Sydney,NSW,Australia,2023-04-15,Regular,Medium
+667,Customer_667,F,49,Austin,TX,USA,2022-06-07,Regular,Low
+668,Customer_668,F,25,Austin,TX,USA,2023-01-18,Corporate,High
+669,Customer_669,F,22,Munich,Bavaria,Germany,2022-07-05,Regular,Medium
+670,Customer_670,M,31,New York,NY,USA,2023-10-16,Premium,Medium
+671,Customer_671,M,58,Munich,Bavaria,Germany,2022-07-09,Corporate,High
+672,Customer_672,F,23,Toronto,ON,Canada,2022-07-21,Corporate,Low
+673,Customer_673,M,25,Vancouver,BC,Canada,2022-01-23,Corporate,High
+674,Customer_674,F,40,Dallas,TX,USA,2022-06-01,Regular,High
+675,Customer_675,F,62,Sydney,NSW,Australia,2024-05-26,Premium,High
+676,Customer_676,F,43,Dallas,TX,USA,2023-03-29,Regular,High
+677,Customer_677,F,46,Manchester,England,UK,2023-12-15,Premium,Low
+678,Customer_678,M,35,Toronto,ON,Canada,2023-08-07,Premium,Low
+679,Customer_679,F,56,Sydney,NSW,Australia,2023-02-05,Regular,Medium
+680,Customer_680,M,18,Austin,TX,USA,2022-02-06,Corporate,Low
+681,Customer_681,M,60,Sydney,NSW,Australia,2024-06-05,Corporate,Medium
+682,Customer_682,F,30,Manchester,England,UK,2022-04-25,Premium,Low
+683,Customer_683,F,42,Los Angeles,CA,USA,2024-04-25,Corporate,Low
+684,Customer_684,F,65,Manchester,England,UK,2023-11-25,Premium,Medium
+685,Customer_685,F,24,Munich,Bavaria,Germany,2023-01-27,Regular,Medium
+686,Customer_686,F,53,Manchester,England,UK,2024-01-28,Corporate,High
+687,Customer_687,F,43,Sydney,NSW,Australia,2023-02-17,Regular,High
+688,Customer_688,M,36,Munich,Bavaria,Germany,2022-05-29,Regular,Medium
+689,Customer_689,M,47,Manchester,England,UK,2022-04-11,Premium,High
+690,Customer_690,M,54,San Diego,CA,USA,2024-01-18,Corporate,High
+691,Customer_691,M,31,Munich,Bavaria,Germany,2022-11-13,Regular,Medium
+692,Customer_692,F,48,Austin,TX,USA,2022-11-24,Regular,Medium
+693,Customer_693,F,61,Sydney,NSW,Australia,2023-10-17,Corporate,Low
+694,Customer_694,M,25,London,England,UK,2024-05-02,Regular,Medium
+695,Customer_695,M,43,Manchester,England,UK,2024-02-03,Regular,Medium
+696,Customer_696,M,42,Sydney,NSW,Australia,2024-02-25,Corporate,Low
+697,Customer_697,M,61,San Diego,CA,USA,2024-06-11,Premium,Low
+698,Customer_698,F,44,Munich,Bavaria,Germany,2023-06-26,Regular,Low
+699,Customer_699,M,33,New York,NY,USA,2023-11-23,Corporate,Medium
+700,Customer_700,F,44,Austin,TX,USA,2022-04-28,Premium,Low
+701,Customer_701,F,41,San Diego,CA,USA,2023-07-04,Regular,High
+702,Customer_702,F,44,Munich,Bavaria,Germany,2022-02-20,Premium,High
+703,Customer_703,M,62,Toronto,ON,Canada,2022-07-01,Regular,Low
+704,Customer_704,F,35,Sydney,NSW,Australia,2023-08-25,Premium,Low
+705,Customer_705,F,49,Munich,Bavaria,Germany,2024-05-31,Regular,High
+706,Customer_706,F,59,Munich,Bavaria,Germany,2022-03-19,Premium,Medium
+707,Customer_707,M,48,London,England,UK,2023-06-12,Premium,Low
+708,Customer_708,M,64,Manchester,England,UK,2023-08-17,Premium,High
+709,Customer_709,F,25,London,England,UK,2022-05-21,Premium,High
+710,Customer_710,F,19,Munich,Bavaria,Germany,2022-07-17,Corporate,Medium
+711,Customer_711,F,26,Munich,Bavaria,Germany,2023-09-28,Corporate,Low
+712,Customer_712,F,49,London,England,UK,2023-02-06,Premium,High
+713,Customer_713,F,58,Munich,Bavaria,Germany,2024-03-01,Premium,Low
+714,Customer_714,M,27,Manchester,England,UK,2022-04-18,Premium,Low
+715,Customer_715,F,26,Toronto,ON,Canada,2024-06-03,Corporate,Medium
+716,Customer_716,M,25,Munich,Bavaria,Germany,2024-02-21,Regular,Low
+717,Customer_717,M,22,Los Angeles,CA,USA,2023-11-03,Premium,Medium
+718,Customer_718,M,26,San Diego,CA,USA,2023-04-17,Premium,Medium
+719,Customer_719,F,34,Manchester,England,UK,2023-03-06,Premium,Low
+720,Customer_720,M,48,Sydney,NSW,Australia,2023-05-15,Corporate,Medium
+721,Customer_721,F,70,Munich,Bavaria,Germany,2023-07-16,Premium,High
+722,Customer_722,F,58,Toronto,ON,Canada,2023-06-26,Premium,Medium
+723,Customer_723,M,55,Sydney,NSW,Australia,2023-12-26,Corporate,Medium
+724,Customer_724,F,24,Sydney,NSW,Australia,2023-07-04,Regular,High
+725,Customer_725,M,54,Manchester,England,UK,2022-09-20,Regular,Low
+726,Customer_726,M,68,Munich,Bavaria,Germany,2022-06-08,Corporate,Low
+727,Customer_727,M,22,Munich,Bavaria,Germany,2023-02-09,Corporate,Medium
+728,Customer_728,F,62,Munich,Bavaria,Germany,2022-04-01,Corporate,High
+729,Customer_729,F,61,Dallas,TX,USA,2022-04-09,Regular,Low
+730,Customer_730,M,65,Manchester,England,UK,2023-12-20,Regular,Low
+731,Customer_731,F,24,Toronto,ON,Canada,2023-05-19,Regular,High
+732,Customer_732,M,30,Munich,Bavaria,Germany,2023-10-25,Premium,High
+733,Customer_733,M,36,Vancouver,BC,Canada,2023-08-16,Regular,Low
+734,Customer_734,M,31,Toronto,ON,Canada,2023-05-23,Corporate,Medium
+735,Customer_735,M,49,Manchester,England,UK,2024-02-25,Premium,Medium
+736,Customer_736,M,18,Sydney,NSW,Australia,2022-11-22,Premium,High
+737,Customer_737,M,29,London,England,UK,2023-12-03,Premium,Medium
+738,Customer_738,F,18,Sydney,NSW,Australia,2024-04-22,Corporate,Low
+739,Customer_739,M,65,Toronto,ON,Canada,2022-12-20,Corporate,Low
+740,Customer_740,F,65,London,England,UK,2024-04-18,Regular,Medium
+741,Customer_741,F,43,Austin,TX,USA,2022-11-16,Corporate,High
+742,Customer_742,M,34,Toronto,ON,Canada,2022-05-11,Premium,High
+743,Customer_743,M,41,Vancouver,BC,Canada,2022-12-19,Premium,Low
+744,Customer_744,F,60,London,England,UK,2022-11-01,Corporate,High
+745,Customer_745,M,26,Munich,Bavaria,Germany,2023-08-13,Regular,Medium
+746,Customer_746,M,43,Sydney,NSW,Australia,2023-05-13,Regular,Low
+747,Customer_747,M,43,Munich,Bavaria,Germany,2023-06-14,Regular,Medium
+748,Customer_748,M,68,Los Angeles,CA,USA,2023-07-28,Premium,Medium
+749,Customer_749,F,59,New York,NY,USA,2023-11-11,Premium,Medium
+750,Customer_750,M,30,Sydney,NSW,Australia,2023-11-05,Premium,High
+751,Customer_751,M,43,Vancouver,BC,Canada,2023-01-03,Regular,Medium
+752,Customer_752,F,27,Manchester,England,UK,2024-03-29,Regular,Medium
+753,Customer_753,M,45,Manchester,England,UK,2023-10-30,Premium,Medium
+754,Customer_754,F,65,Sydney,NSW,Australia,2023-04-24,Corporate,Medium
+755,Customer_755,M,22,Sydney,NSW,Australia,2022-05-04,Corporate,Low
+756,Customer_756,M,50,Toronto,ON,Canada,2023-12-24,Premium,High
+757,Customer_757,F,49,Sydney,NSW,Australia,2024-03-08,Regular,Low
+758,Customer_758,F,63,New York,NY,USA,2022-07-25,Regular,Medium
+759,Customer_759,F,50,Manchester,England,UK,2023-09-11,Regular,Medium
+760,Customer_760,M,45,Sydney,NSW,Australia,2024-03-26,Premium,High
+761,Customer_761,F,51,New York,NY,USA,2023-12-25,Regular,High
+762,Customer_762,F,25,Vancouver,BC,Canada,2022-09-19,Corporate,High
+763,Customer_763,M,37,Munich,Bavaria,Germany,2023-10-19,Corporate,Low
+764,Customer_764,F,33,Toronto,ON,Canada,2023-11-09,Corporate,High
+765,Customer_765,M,40,Vancouver,BC,Canada,2022-07-16,Premium,Low
+766,Customer_766,M,31,Munich,Bavaria,Germany,2023-11-25,Premium,High
+767,Customer_767,M,18,Munich,Bavaria,Germany,2022-01-08,Regular,Low
+768,Customer_768,M,48,London,England,UK,2023-10-09,Premium,Medium
+769,Customer_769,F,47,Austin,TX,USA,2022-06-27,Corporate,Low
+770,Customer_770,M,23,Sydney,NSW,Australia,2024-04-21,Regular,High
+771,Customer_771,F,20,Vancouver,BC,Canada,2022-01-27,Premium,Low
+772,Customer_772,M,39,Sydney,NSW,Australia,2023-09-11,Corporate,High
+773,Customer_773,M,36,Munich,Bavaria,Germany,2022-11-19,Premium,High
+774,Customer_774,M,50,Austin,TX,USA,2023-03-13,Regular,High
+775,Customer_775,M,42,Sydney,NSW,Australia,2022-08-21,Corporate,Low
+776,Customer_776,M,49,Austin,TX,USA,2024-06-13,Corporate,Medium
+777,Customer_777,F,29,Munich,Bavaria,Germany,2022-12-08,Premium,High
+778,Customer_778,F,42,Munich,Bavaria,Germany,2022-02-19,Premium,Medium
+779,Customer_779,M,46,Munich,Bavaria,Germany,2024-05-27,Premium,High
+780,Customer_780,F,70,Toronto,ON,Canada,2024-02-05,Premium,Low
+781,Customer_781,M,39,London,England,UK,2024-06-10,Regular,Medium
+782,Customer_782,F,54,Munich,Bavaria,Germany,2022-12-26,Premium,Low
+783,Customer_783,M,59,Manchester,England,UK,2024-01-27,Regular,Medium
+784,Customer_784,M,24,Los Angeles,CA,USA,2022-01-03,Regular,Low
+785,Customer_785,M,69,Dallas,TX,USA,2023-02-03,Regular,High
+786,Customer_786,F,68,Toronto,ON,Canada,2022-02-28,Premium,Low
+787,Customer_787,M,60,Manchester,England,UK,2022-11-07,Corporate,Medium
+788,Customer_788,M,47,New York,NY,USA,2022-05-18,Corporate,Medium
+789,Customer_789,F,18,Dallas,TX,USA,2022-05-18,Corporate,Medium
+790,Customer_790,M,30,Sydney,NSW,Australia,2023-03-30,Premium,High
+791,Customer_791,F,58,New York,NY,USA,2022-07-17,Corporate,Low
+792,Customer_792,F,56,Los Angeles,CA,USA,2024-01-14,Premium,Medium
+793,Customer_793,F,53,Vancouver,BC,Canada,2022-06-15,Regular,Medium
+794,Customer_794,M,49,Sydney,NSW,Australia,2022-01-16,Premium,Low
+795,Customer_795,F,28,Vancouver,BC,Canada,2024-02-05,Regular,Low
+796,Customer_796,F,40,Sydney,NSW,Australia,2023-05-26,Corporate,Low
+797,Customer_797,F,56,Sydney,NSW,Australia,2022-07-30,Premium,High
+798,Customer_798,M,33,Austin,TX,USA,2023-10-29,Corporate,Low
+799,Customer_799,F,19,Vancouver,BC,Canada,2022-09-27,Regular,High
+800,Customer_800,M,63,New York,NY,USA,2023-10-09,Corporate,Medium
+801,Customer_801,M,39,Sydney,NSW,Australia,2022-07-21,Regular,Low
+802,Customer_802,F,32,Manchester,England,UK,2023-11-27,Regular,Medium
+803,Customer_803,F,27,New York,NY,USA,2022-01-25,Corporate,High
+804,Customer_804,F,66,Vancouver,BC,Canada,2024-02-01,Corporate,Low
+805,Customer_805,M,44,Dallas,TX,USA,2022-10-07,Regular,High
+806,Customer_806,F,60,Vancouver,BC,Canada,2023-07-04,Corporate,High
+807,Customer_807,M,29,London,England,UK,2023-01-26,Premium,High
+808,Customer_808,F,20,Munich,Bavaria,Germany,2023-12-21,Regular,Medium
+809,Customer_809,F,32,Munich,Bavaria,Germany,2022-11-23,Premium,High
+810,Customer_810,F,26,Munich,Bavaria,Germany,2023-09-10,Corporate,Medium
+811,Customer_811,F,25,Sydney,NSW,Australia,2023-06-02,Premium,Low
+812,Customer_812,M,61,Munich,Bavaria,Germany,2023-08-14,Premium,Medium
+813,Customer_813,F,52,London,England,UK,2023-08-19,Premium,Medium
+814,Customer_814,F,42,Munich,Bavaria,Germany,2022-08-01,Regular,Medium
+815,Customer_815,M,66,Toronto,ON,Canada,2022-06-27,Regular,High
+816,Customer_816,M,70,Toronto,ON,Canada,2024-03-27,Regular,High
+817,Customer_817,M,49,London,England,UK,2022-03-27,Regular,High
+818,Customer_818,F,42,Austin,TX,USA,2022-05-30,Regular,High
+819,Customer_819,F,19,London,England,UK,2022-09-05,Premium,Low
+820,Customer_820,F,52,New York,NY,USA,2022-02-17,Premium,Low
+821,Customer_821,M,52,Munich,Bavaria,Germany,2024-05-30,Regular,Low
+822,Customer_822,F,49,Munich,Bavaria,Germany,2023-11-07,Regular,Low
+823,Customer_823,F,63,London,England,UK,2022-05-01,Regular,High
+824,Customer_824,F,59,Munich,Bavaria,Germany,2023-12-10,Regular,Low
+825,Customer_825,M,26,Dallas,TX,USA,2024-05-09,Regular,High
+826,Customer_826,F,52,Munich,Bavaria,Germany,2023-05-11,Premium,Low
+827,Customer_827,M,33,Austin,TX,USA,2022-02-17,Corporate,High
+828,Customer_828,F,30,Munich,Bavaria,Germany,2022-08-28,Regular,High
+829,Customer_829,F,32,Vancouver,BC,Canada,2022-12-25,Regular,Low
+830,Customer_830,M,47,New York,NY,USA,2024-03-07,Regular,Low
+831,Customer_831,F,53,Vancouver,BC,Canada,2022-04-15,Premium,Medium
+832,Customer_832,M,52,Dallas,TX,USA,2023-05-10,Regular,Low
+833,Customer_833,M,34,New York,NY,USA,2022-04-09,Premium,Medium
+834,Customer_834,F,51,Munich,Bavaria,Germany,2024-05-18,Regular,Low
+835,Customer_835,M,28,Sydney,NSW,Australia,2024-05-31,Regular,High
+836,Customer_836,F,55,New York,NY,USA,2022-04-21,Regular,Medium
+837,Customer_837,F,46,Austin,TX,USA,2024-04-26,Premium,Medium
+838,Customer_838,F,67,San Diego,CA,USA,2022-11-20,Corporate,Medium
+839,Customer_839,F,39,Munich,Bavaria,Germany,2022-01-07,Premium,Low
+840,Customer_840,M,54,London,England,UK,2023-08-21,Premium,Medium
+841,Customer_841,F,47,Toronto,ON,Canada,2022-12-16,Corporate,Medium
+842,Customer_842,M,65,Munich,Bavaria,Germany,2023-10-01,Premium,Medium
+843,Customer_843,M,60,Vancouver,BC,Canada,2023-06-15,Corporate,Medium
+844,Customer_844,F,69,Manchester,England,UK,2023-08-28,Corporate,Medium
+845,Customer_845,M,20,New York,NY,USA,2023-09-09,Regular,Low
+846,Customer_846,F,49,Los Angeles,CA,USA,2024-04-01,Premium,High
+847,Customer_847,F,70,Toronto,ON,Canada,2023-08-22,Regular,High
+848,Customer_848,F,54,Munich,Bavaria,Germany,2022-11-13,Corporate,High
+849,Customer_849,F,38,Toronto,ON,Canada,2022-02-06,Corporate,High
+850,Customer_850,M,67,Sydney,NSW,Australia,2023-10-22,Regular,Medium
+851,Customer_851,F,50,Vancouver,BC,Canada,2022-12-17,Premium,High
+852,Customer_852,M,31,Manchester,England,UK,2023-02-11,Corporate,Low
+853,Customer_853,M,36,Sydney,NSW,Australia,2022-07-26,Premium,Medium
+854,Customer_854,M,66,San Diego,CA,USA,2022-06-20,Premium,High
+855,Customer_855,F,69,Sydney,NSW,Australia,2024-02-04,Corporate,Medium
+856,Customer_856,F,59,Dallas,TX,USA,2023-06-11,Corporate,Low
+857,Customer_857,M,67,Sydney,NSW,Australia,2023-06-06,Corporate,Medium
+858,Customer_858,M,36,Los Angeles,CA,USA,2022-01-30,Premium,Low
+859,Customer_859,M,57,Dallas,TX,USA,2023-08-14,Corporate,High
+860,Customer_860,M,56,Vancouver,BC,Canada,2023-09-22,Corporate,High
+861,Customer_861,F,26,San Diego,CA,USA,2023-09-15,Regular,High
+862,Customer_862,F,56,Munich,Bavaria,Germany,2024-01-04,Premium,Low
+863,Customer_863,F,66,London,England,UK,2024-06-04,Regular,Medium
+864,Customer_864,F,30,Toronto,ON,Canada,2023-03-19,Corporate,Low
+865,Customer_865,M,27,Vancouver,BC,Canada,2022-10-10,Corporate,High
+866,Customer_866,F,67,Sydney,NSW,Australia,2023-04-01,Corporate,High
+867,Customer_867,M,68,Munich,Bavaria,Germany,2022-06-20,Premium,Medium
+868,Customer_868,F,68,Munich,Bavaria,Germany,2022-09-21,Corporate,Medium
+869,Customer_869,M,65,San Diego,CA,USA,2024-01-14,Premium,Low
+870,Customer_870,F,60,Manchester,England,UK,2023-01-04,Corporate,Low
+871,Customer_871,F,53,New York,NY,USA,2022-01-11,Corporate,Medium
+872,Customer_872,F,69,Sydney,NSW,Australia,2024-02-01,Regular,Low
+873,Customer_873,M,57,New York,NY,USA,2024-03-05,Premium,Medium
+874,Customer_874,M,50,Sydney,NSW,Australia,2022-06-30,Regular,High
+875,Customer_875,F,54,Vancouver,BC,Canada,2022-03-26,Regular,Medium
+876,Customer_876,M,45,Austin,TX,USA,2023-06-06,Premium,High
+877,Customer_877,F,45,New York,NY,USA,2023-12-30,Corporate,Medium
+878,Customer_878,F,60,Sydney,NSW,Australia,2022-11-22,Regular,Medium
+879,Customer_879,M,19,Munich,Bavaria,Germany,2023-03-16,Regular,Medium
+880,Customer_880,M,28,Los Angeles,CA,USA,2022-04-22,Premium,Low
+881,Customer_881,F,32,Sydney,NSW,Australia,2022-09-30,Regular,High
+882,Customer_882,F,36,Sydney,NSW,Australia,2022-10-28,Regular,Medium
+883,Customer_883,M,41,Munich,Bavaria,Germany,2024-03-24,Corporate,Medium
+884,Customer_884,M,46,Los Angeles,CA,USA,2022-11-09,Regular,Medium
+885,Customer_885,F,67,Sydney,NSW,Australia,2023-09-20,Corporate,Medium
+886,Customer_886,M,36,Manchester,England,UK,2022-04-08,Regular,Low
+887,Customer_887,F,53,Austin,TX,USA,2023-05-30,Premium,High
+888,Customer_888,M,32,San Diego,CA,USA,2023-11-13,Regular,Medium
+889,Customer_889,F,26,Munich,Bavaria,Germany,2022-07-27,Premium,Low
+890,Customer_890,F,33,Dallas,TX,USA,2022-06-13,Corporate,Medium
+891,Customer_891,M,35,Austin,TX,USA,2024-01-22,Regular,Low
+892,Customer_892,F,40,Toronto,ON,Canada,2022-07-02,Regular,Low
+893,Customer_893,M,48,Sydney,NSW,Australia,2022-08-20,Premium,Medium
+894,Customer_894,F,57,London,England,UK,2022-12-19,Premium,Low
+895,Customer_895,F,42,Sydney,NSW,Australia,2023-05-20,Corporate,High
+896,Customer_896,M,60,London,England,UK,2023-01-28,Premium,Low
+897,Customer_897,M,70,Manchester,England,UK,2023-06-20,Corporate,Medium
+898,Customer_898,F,19,Vancouver,BC,Canada,2024-02-20,Regular,Low
+899,Customer_899,M,40,New York,NY,USA,2023-08-08,Corporate,High
+900,Customer_900,M,68,Vancouver,BC,Canada,2023-04-02,Regular,High
+901,Customer_901,F,59,Los Angeles,CA,USA,2023-02-28,Corporate,High
+902,Customer_902,M,49,Munich,Bavaria,Germany,2022-06-18,Corporate,Medium
+903,Customer_903,F,57,New York,NY,USA,2023-10-21,Premium,High
+904,Customer_904,M,20,Toronto,ON,Canada,2023-12-08,Regular,Medium
+905,Customer_905,F,28,London,England,UK,2023-07-01,Corporate,Medium
+906,Customer_906,M,22,Toronto,ON,Canada,2023-02-17,Regular,High
+907,Customer_907,F,63,Toronto,ON,Canada,2022-07-17,Premium,Low
+908,Customer_908,F,49,Sydney,NSW,Australia,2022-01-21,Corporate,Low
+909,Customer_909,M,62,Munich,Bavaria,Germany,2022-11-10,Corporate,High
+910,Customer_910,F,68,Sydney,NSW,Australia,2023-09-20,Corporate,Medium
+911,Customer_911,F,52,Toronto,ON,Canada,2022-10-09,Premium,Medium
+912,Customer_912,F,59,Sydney,NSW,Australia,2022-02-17,Premium,Medium
+913,Customer_913,F,41,Manchester,England,UK,2023-03-19,Regular,Low
+914,Customer_914,F,51,Munich,Bavaria,Germany,2023-04-16,Regular,Low
+915,Customer_915,F,63,Manchester,England,UK,2022-07-02,Premium,Low
+916,Customer_916,F,28,London,England,UK,2022-02-27,Regular,Low
+917,Customer_917,M,58,Dallas,TX,USA,2023-11-13,Corporate,Low
+918,Customer_918,M,20,New York,NY,USA,2023-03-08,Premium,Medium
+919,Customer_919,M,48,Munich,Bavaria,Germany,2022-01-31,Premium,High
+920,Customer_920,M,19,Manchester,England,UK,2024-04-15,Premium,Low
+921,Customer_921,M,23,Manchester,England,UK,2023-04-23,Corporate,Medium
+922,Customer_922,M,18,Toronto,ON,Canada,2023-09-14,Regular,Medium
+923,Customer_923,M,49,Munich,Bavaria,Germany,2023-02-02,Premium,Low
+924,Customer_924,M,54,Sydney,NSW,Australia,2022-02-08,Regular,Low
+925,Customer_925,M,32,Dallas,TX,USA,2024-04-10,Premium,Medium
+926,Customer_926,F,24,Manchester,England,UK,2023-12-06,Regular,High
+927,Customer_927,F,18,Munich,Bavaria,Germany,2024-05-01,Premium,Medium
+928,Customer_928,F,52,Austin,TX,USA,2024-01-29,Corporate,Medium
+929,Customer_929,F,33,Toronto,ON,Canada,2022-05-13,Regular,Low
+930,Customer_930,F,67,Munich,Bavaria,Germany,2023-02-07,Corporate,Low
+931,Customer_931,F,48,Dallas,TX,USA,2024-04-05,Premium,Low
+932,Customer_932,M,50,Manchester,England,UK,2023-10-30,Premium,Low
+933,Customer_933,F,57,Munich,Bavaria,Germany,2022-11-30,Premium,Low
+934,Customer_934,F,43,London,England,UK,2022-01-24,Premium,Medium
+935,Customer_935,M,64,Toronto,ON,Canada,2022-05-21,Corporate,Medium
+936,Customer_936,F,45,London,England,UK,2022-11-16,Regular,Low
+937,Customer_937,F,56,Munich,Bavaria,Germany,2022-06-27,Premium,High
+938,Customer_938,M,23,New York,NY,USA,2022-11-03,Premium,Medium
+939,Customer_939,F,20,San Diego,CA,USA,2024-06-17,Regular,Medium
+940,Customer_940,F,22,New York,NY,USA,2022-06-12,Corporate,High
+941,Customer_941,F,22,Vancouver,BC,Canada,2022-07-06,Corporate,Low
+942,Customer_942,M,28,Sydney,NSW,Australia,2023-09-10,Regular,High
+943,Customer_943,M,26,Dallas,TX,USA,2023-11-03,Premium,Medium
+944,Customer_944,M,59,London,England,UK,2023-02-14,Premium,Low
+945,Customer_945,M,39,Munich,Bavaria,Germany,2023-12-08,Regular,Low
+946,Customer_946,M,63,Toronto,ON,Canada,2023-07-30,Corporate,Medium
+947,Customer_947,M,42,Austin,TX,USA,2022-10-10,Regular,Medium
+948,Customer_948,M,61,Munich,Bavaria,Germany,2024-06-06,Corporate,Low
+949,Customer_949,M,56,Munich,Bavaria,Germany,2022-01-19,Premium,Low
+950,Customer_950,F,63,London,England,UK,2023-02-11,Premium,High
+951,Customer_951,F,35,New York,NY,USA,2024-06-15,Regular,Medium
+952,Customer_952,M,33,Sydney,NSW,Australia,2024-05-10,Regular,High
+953,Customer_953,M,24,Sydney,NSW,Australia,2023-05-22,Regular,Medium
+954,Customer_954,M,23,Austin,TX,USA,2023-12-30,Regular,High
+955,Customer_955,M,42,Vancouver,BC,Canada,2024-02-05,Regular,High
+956,Customer_956,M,46,Los Angeles,CA,USA,2022-05-19,Regular,Low
+957,Customer_957,F,58,London,England,UK,2024-01-20,Corporate,High
+958,Customer_958,M,35,Munich,Bavaria,Germany,2023-08-31,Regular,High
+959,Customer_959,M,46,Sydney,NSW,Australia,2024-05-07,Regular,High
+960,Customer_960,F,52,Munich,Bavaria,Germany,2023-08-08,Regular,Medium
+961,Customer_961,M,50,Munich,Bavaria,Germany,2023-07-30,Corporate,Medium
+962,Customer_962,M,41,New York,NY,USA,2022-11-23,Premium,Medium
+963,Customer_963,F,49,Munich,Bavaria,Germany,2023-08-29,Premium,Medium
+964,Customer_964,M,70,Vancouver,BC,Canada,2022-08-30,Corporate,Medium
+965,Customer_965,F,49,Sydney,NSW,Australia,2024-02-07,Regular,High
+966,Customer_966,M,24,Munich,Bavaria,Germany,2023-03-29,Premium,Low
+967,Customer_967,M,33,New York,NY,USA,2022-04-23,Regular,High
+968,Customer_968,M,20,Los Angeles,CA,USA,2022-07-13,Premium,High
+969,Customer_969,F,22,Manchester,England,UK,2022-06-29,Corporate,Medium
+970,Customer_970,F,54,New York,NY,USA,2022-04-12,Corporate,Medium
+971,Customer_971,F,52,Austin,TX,USA,2024-01-07,Regular,Medium
+972,Customer_972,F,63,London,England,UK,2024-04-07,Regular,Medium
+973,Customer_973,F,33,Munich,Bavaria,Germany,2023-05-18,Regular,Medium
+974,Customer_974,M,49,Manchester,England,UK,2022-08-28,Regular,High
+975,Customer_975,M,70,Toronto,ON,Canada,2023-12-11,Premium,Low
+976,Customer_976,M,62,Sydney,NSW,Australia,2024-03-20,Premium,Low
+977,Customer_977,F,37,Munich,Bavaria,Germany,2023-06-10,Corporate,Medium
+978,Customer_978,F,26,Sydney,NSW,Australia,2023-02-09,Regular,Medium
+979,Customer_979,F,19,Sydney,NSW,Australia,2022-01-23,Regular,High
+980,Customer_980,M,70,San Diego,CA,USA,2022-03-20,Premium,High
+981,Customer_981,M,48,Manchester,England,UK,2023-02-09,Premium,High
+982,Customer_982,F,66,Munich,Bavaria,Germany,2022-12-09,Premium,High
+983,Customer_983,M,19,Munich,Bavaria,Germany,2024-01-28,Premium,Low
+984,Customer_984,M,57,Sydney,NSW,Australia,2023-10-08,Corporate,Low
+985,Customer_985,M,30,London,England,UK,2022-06-24,Regular,Low
+986,Customer_986,M,65,Sydney,NSW,Australia,2024-03-11,Regular,Low
+987,Customer_987,M,24,Los Angeles,CA,USA,2023-12-28,Regular,Low
+988,Customer_988,M,35,Munich,Bavaria,Germany,2022-01-20,Premium,Low
+989,Customer_989,F,45,Munich,Bavaria,Germany,2023-10-05,Premium,Medium
+990,Customer_990,M,55,New York,NY,USA,2022-07-13,Premium,Medium
+991,Customer_991,F,46,Toronto,ON,Canada,2023-08-14,Premium,High
+992,Customer_992,M,41,New York,NY,USA,2022-05-06,Premium,High
+993,Customer_993,F,61,Munich,Bavaria,Germany,2023-01-03,Corporate,Low
+994,Customer_994,F,22,Austin,TX,USA,2022-04-03,Regular,Medium
+995,Customer_995,F,57,Munich,Bavaria,Germany,2023-01-14,Premium,High
+996,Customer_996,M,24,Sydney,NSW,Australia,2022-06-03,Corporate,High
+997,Customer_997,M,70,Sydney,NSW,Australia,2022-07-20,Regular,High
+998,Customer_998,M,39,Manchester,England,UK,2022-12-08,Premium,Low
+999,Customer_999,F,32,Vancouver,BC,Canada,2023-07-02,Corporate,Low
+1000,Customer_1000,M,18,Sydney,NSW,Australia,2023-08-30,Regular,Medium
+1001,Customer_1001,M,37,Vancouver,BC,Canada,2023-06-08,Corporate,Medium
+1002,Customer_1002,F,64,Manchester,England,UK,2023-01-24,Regular,Medium
+1003,Customer_1003,F,65,Sydney,NSW,Australia,2024-04-02,Regular,High
+1004,Customer_1004,F,42,London,England,UK,2022-08-02,Regular,High
+1005,Customer_1005,M,48,Vancouver,BC,Canada,2023-10-04,Corporate,High
+1006,Customer_1006,F,27,London,England,UK,2023-03-23,Regular,Low
+1007,Customer_1007,F,55,Toronto,ON,Canada,2022-04-29,Corporate,Low
+1008,Customer_1008,F,33,San Diego,CA,USA,2022-05-21,Corporate,Low
+1009,Customer_1009,F,48,Manchester,England,UK,2023-08-12,Premium,Medium
+1010,Customer_1010,M,20,Sydney,NSW,Australia,2022-08-30,Corporate,Medium
+1011,Customer_1011,F,53,London,England,UK,2024-05-29,Regular,Low
+1012,Customer_1012,F,54,Munich,Bavaria,Germany,2023-11-09,Corporate,Medium
+1013,Customer_1013,F,21,Austin,TX,USA,2024-03-27,Premium,High
+1014,Customer_1014,M,60,New York,NY,USA,2024-01-31,Regular,Medium
+1015,Customer_1015,F,57,Toronto,ON,Canada,2023-03-17,Corporate,Low
+1016,Customer_1016,M,69,Manchester,England,UK,2022-03-31,Regular,Medium
+1017,Customer_1017,M,28,Vancouver,BC,Canada,2023-01-22,Premium,Low
+1018,Customer_1018,M,59,Sydney,NSW,Australia,2023-04-30,Corporate,Low
+1019,Customer_1019,F,29,London,England,UK,2023-08-21,Premium,Medium
+1020,Customer_1020,M,60,Toronto,ON,Canada,2024-01-03,Premium,High
+1021,Customer_1021,F,51,London,England,UK,2022-12-11,Regular,Medium
+1022,Customer_1022,F,49,Sydney,NSW,Australia,2022-10-10,Premium,High
+1023,Customer_1023,M,49,Sydney,NSW,Australia,2023-01-06,Regular,Medium
+1024,Customer_1024,M,37,Munich,Bavaria,Germany,2023-11-27,Regular,High
+1025,Customer_1025,F,66,Munich,Bavaria,Germany,2022-02-10,Corporate,Low
+1026,Customer_1026,F,22,Austin,TX,USA,2023-12-01,Corporate,Medium
+1027,Customer_1027,F,27,Dallas,TX,USA,2023-02-03,Corporate,Medium
+1028,Customer_1028,M,18,San Diego,CA,USA,2022-12-21,Regular,Medium
+1029,Customer_1029,M,48,Sydney,NSW,Australia,2022-03-26,Premium,Medium
+1030,Customer_1030,F,31,London,England,UK,2022-12-23,Premium,Low
+1031,Customer_1031,F,30,Munich,Bavaria,Germany,2024-06-05,Corporate,Low
+1032,Customer_1032,F,55,New York,NY,USA,2022-01-15,Premium,High
+1033,Customer_1033,M,56,Los Angeles,CA,USA,2023-12-28,Corporate,Medium
+1034,Customer_1034,M,54,Munich,Bavaria,Germany,2022-11-11,Premium,High
+1035,Customer_1035,M,36,Munich,Bavaria,Germany,2022-09-12,Premium,Low
+1036,Customer_1036,F,69,Manchester,England,UK,2023-04-01,Premium,Medium
+1037,Customer_1037,M,23,Dallas,TX,USA,2023-11-25,Premium,Medium
+1038,Customer_1038,F,29,Sydney,NSW,Australia,2022-10-29,Regular,Low
+1039,Customer_1039,F,22,Manchester,England,UK,2023-04-03,Premium,Low
+1040,Customer_1040,F,50,Munich,Bavaria,Germany,2022-11-10,Corporate,Low
+1041,Customer_1041,F,35,London,England,UK,2024-01-29,Premium,Medium
+1042,Customer_1042,M,32,New York,NY,USA,2023-03-08,Premium,Medium
+1043,Customer_1043,M,36,Austin,TX,USA,2023-07-08,Regular,Medium
+1044,Customer_1044,F,42,Sydney,NSW,Australia,2022-06-24,Regular,Medium
+1045,Customer_1045,F,24,Vancouver,BC,Canada,2022-10-24,Corporate,Low
+1046,Customer_1046,F,28,Munich,Bavaria,Germany,2023-02-06,Regular,High
+1047,Customer_1047,F,44,Austin,TX,USA,2023-12-24,Corporate,Low
+1048,Customer_1048,M,69,Sydney,NSW,Australia,2022-02-08,Premium,High
+1049,Customer_1049,M,25,Vancouver,BC,Canada,2022-08-21,Regular,High
+1050,Customer_1050,M,35,Manchester,England,UK,2023-01-19,Regular,High
+1051,Customer_1051,F,29,Sydney,NSW,Australia,2024-04-05,Premium,Medium
+1052,Customer_1052,M,43,Vancouver,BC,Canada,2023-04-18,Corporate,Low
+1053,Customer_1053,M,54,Vancouver,BC,Canada,2022-11-10,Regular,High
+1054,Customer_1054,M,59,Vancouver,BC,Canada,2023-06-16,Corporate,High
+1055,Customer_1055,F,49,Manchester,England,UK,2023-01-21,Regular,Medium
+1056,Customer_1056,M,54,Dallas,TX,USA,2024-03-24,Corporate,Medium
+1057,Customer_1057,F,18,Toronto,ON,Canada,2023-05-02,Regular,High
+1058,Customer_1058,M,47,Munich,Bavaria,Germany,2023-08-05,Regular,Low
+1059,Customer_1059,F,50,Dallas,TX,USA,2022-08-15,Regular,High
+1060,Customer_1060,F,54,Manchester,England,UK,2023-12-28,Premium,High
+1061,Customer_1061,M,41,Sydney,NSW,Australia,2022-04-29,Corporate,Medium
+1062,Customer_1062,M,65,Toronto,ON,Canada,2023-09-01,Corporate,Low
+1063,Customer_1063,M,49,Munich,Bavaria,Germany,2024-02-01,Premium,Medium
+1064,Customer_1064,F,37,Manchester,England,UK,2024-02-16,Corporate,Low
+1065,Customer_1065,F,42,Dallas,TX,USA,2022-10-12,Premium,Low
+1066,Customer_1066,M,31,Los Angeles,CA,USA,2023-02-25,Corporate,Low
+1067,Customer_1067,M,36,Vancouver,BC,Canada,2023-03-21,Premium,Medium
+1068,Customer_1068,M,22,Sydney,NSW,Australia,2023-06-03,Corporate,High
+1069,Customer_1069,M,47,Sydney,NSW,Australia,2023-03-07,Corporate,Medium
+1070,Customer_1070,F,21,Munich,Bavaria,Germany,2024-03-13,Regular,High
+1071,Customer_1071,M,43,Sydney,NSW,Australia,2023-11-30,Regular,High
+1072,Customer_1072,M,34,Manchester,England,UK,2023-02-15,Regular,Medium
+1073,Customer_1073,F,33,Sydney,NSW,Australia,2024-01-23,Premium,Low
+1074,Customer_1074,M,45,London,England,UK,2023-03-26,Premium,Medium
+1075,Customer_1075,M,65,Munich,Bavaria,Germany,2022-08-15,Premium,Low
+1076,Customer_1076,F,55,Austin,TX,USA,2023-09-24,Corporate,Low
+1077,Customer_1077,M,22,Sydney,NSW,Australia,2022-11-04,Corporate,Low
+1078,Customer_1078,F,54,San Diego,CA,USA,2023-04-13,Premium,High
+1079,Customer_1079,F,32,Manchester,England,UK,2022-10-26,Corporate,Low
+1080,Customer_1080,F,69,Toronto,ON,Canada,2024-03-22,Premium,High
+1081,Customer_1081,M,26,Manchester,England,UK,2022-07-08,Regular,Low
+1082,Customer_1082,F,45,Toronto,ON,Canada,2023-10-06,Corporate,High
+1083,Customer_1083,M,60,Manchester,England,UK,2022-10-03,Corporate,Medium
+1084,Customer_1084,M,20,Munich,Bavaria,Germany,2024-06-19,Premium,Low
+1085,Customer_1085,M,29,Sydney,NSW,Australia,2023-09-01,Premium,High
+1086,Customer_1086,F,32,London,England,UK,2022-01-30,Corporate,Medium
+1087,Customer_1087,F,42,London,England,UK,2023-07-19,Premium,High
+1088,Customer_1088,M,24,Sydney,NSW,Australia,2023-04-03,Corporate,Medium
+1089,Customer_1089,F,45,London,England,UK,2022-05-01,Premium,Medium
+1090,Customer_1090,F,35,Vancouver,BC,Canada,2023-06-23,Premium,Medium
+1091,Customer_1091,M,50,Sydney,NSW,Australia,2022-02-26,Corporate,High
+1092,Customer_1092,M,46,Austin,TX,USA,2022-07-19,Premium,High
+1093,Customer_1093,F,67,Manchester,England,UK,2024-01-03,Corporate,High
+1094,Customer_1094,F,41,Manchester,England,UK,2023-10-14,Regular,High
+1095,Customer_1095,M,26,Dallas,TX,USA,2024-02-13,Regular,High
+1096,Customer_1096,F,53,Sydney,NSW,Australia,2022-07-09,Corporate,Medium
+1097,Customer_1097,F,39,Austin,TX,USA,2023-08-30,Premium,Low
+1098,Customer_1098,F,43,Munich,Bavaria,Germany,2022-07-24,Regular,Low
+1099,Customer_1099,M,66,Los Angeles,CA,USA,2023-03-06,Corporate,Medium
+1100,Customer_1100,F,55,Vancouver,BC,Canada,2024-05-08,Regular,Medium
+1101,Customer_1101,F,30,Munich,Bavaria,Germany,2024-03-28,Premium,Low
+1102,Customer_1102,F,62,Munich,Bavaria,Germany,2024-04-04,Corporate,Low
+1103,Customer_1103,M,66,Toronto,ON,Canada,2024-03-18,Premium,Medium
+1104,Customer_1104,F,47,Sydney,NSW,Australia,2022-02-11,Premium,High
+1105,Customer_1105,M,39,Sydney,NSW,Australia,2022-02-21,Premium,Low
+1106,Customer_1106,F,63,New York,NY,USA,2023-09-23,Corporate,High
+1107,Customer_1107,F,70,New York,NY,USA,2024-04-28,Corporate,Medium
+1108,Customer_1108,M,37,London,England,UK,2024-01-07,Regular,Low
+1109,Customer_1109,F,48,Sydney,NSW,Australia,2022-08-02,Regular,Medium
+1110,Customer_1110,F,40,Sydney,NSW,Australia,2024-01-21,Corporate,High
+1111,Customer_1111,M,28,Sydney,NSW,Australia,2022-02-08,Regular,Low
+1112,Customer_1112,M,70,San Diego,CA,USA,2023-02-11,Premium,High
+1113,Customer_1113,F,26,Sydney,NSW,Australia,2024-03-17,Regular,High
+1114,Customer_1114,M,36,Dallas,TX,USA,2022-05-30,Premium,High
+1115,Customer_1115,F,21,San Diego,CA,USA,2024-04-27,Premium,High
+1116,Customer_1116,M,53,London,England,UK,2022-07-15,Regular,Low
+1117,Customer_1117,M,42,Munich,Bavaria,Germany,2023-01-28,Regular,Low
+1118,Customer_1118,F,18,Munich,Bavaria,Germany,2022-05-23,Regular,Medium
+1119,Customer_1119,F,25,Toronto,ON,Canada,2022-12-09,Regular,Medium
+1120,Customer_1120,M,22,Dallas,TX,USA,2024-02-02,Regular,High
+1121,Customer_1121,M,33,Sydney,NSW,Australia,2023-12-19,Corporate,High
+1122,Customer_1122,M,28,London,England,UK,2023-02-20,Premium,Medium
+1123,Customer_1123,F,40,New York,NY,USA,2023-12-05,Regular,Medium
+1124,Customer_1124,F,66,Toronto,ON,Canada,2024-03-29,Regular,Low
+1125,Customer_1125,F,42,Toronto,ON,Canada,2022-02-06,Regular,Low
+1126,Customer_1126,M,52,Vancouver,BC,Canada,2024-01-07,Regular,High
+1127,Customer_1127,F,63,London,England,UK,2024-02-11,Premium,Low
+1128,Customer_1128,M,28,Toronto,ON,Canada,2024-01-18,Corporate,Medium
+1129,Customer_1129,F,28,Sydney,NSW,Australia,2022-04-17,Regular,High
+1130,Customer_1130,F,44,Vancouver,BC,Canada,2023-09-01,Regular,Medium
+1131,Customer_1131,F,57,Manchester,England,UK,2023-04-18,Corporate,Low
+1132,Customer_1132,M,33,Munich,Bavaria,Germany,2022-10-06,Corporate,High
+1133,Customer_1133,M,67,Manchester,England,UK,2023-06-02,Premium,Medium
+1134,Customer_1134,M,26,Toronto,ON,Canada,2023-04-26,Regular,Low
+1135,Customer_1135,F,22,Munich,Bavaria,Germany,2023-07-08,Regular,Medium
+1136,Customer_1136,F,61,Toronto,ON,Canada,2023-03-17,Regular,Low
+1137,Customer_1137,F,62,New York,NY,USA,2022-01-29,Corporate,Low
+1138,Customer_1138,M,58,Los Angeles,CA,USA,2024-06-04,Corporate,Medium
+1139,Customer_1139,M,21,Sydney,NSW,Australia,2024-06-11,Premium,High
+1140,Customer_1140,F,33,Sydney,NSW,Australia,2022-02-17,Corporate,Low
+1141,Customer_1141,F,61,Munich,Bavaria,Germany,2022-11-18,Corporate,High
+1142,Customer_1142,F,32,Munich,Bavaria,Germany,2023-09-08,Regular,High
+1143,Customer_1143,M,19,Sydney,NSW,Australia,2024-06-02,Premium,Low
+1144,Customer_1144,F,52,London,England,UK,2023-06-05,Regular,Medium
+1145,Customer_1145,M,39,Toronto,ON,Canada,2023-11-01,Corporate,Medium
+1146,Customer_1146,M,70,Vancouver,BC,Canada,2023-01-26,Corporate,High
+1147,Customer_1147,M,27,Toronto,ON,Canada,2023-03-18,Corporate,Medium
+1148,Customer_1148,M,35,Munich,Bavaria,Germany,2022-05-17,Premium,Low
+1149,Customer_1149,M,62,Munich,Bavaria,Germany,2022-10-30,Regular,High
+1150,Customer_1150,M,47,Munich,Bavaria,Germany,2023-02-14,Regular,Low
+1151,Customer_1151,M,23,New York,NY,USA,2023-12-24,Premium,Low
+1152,Customer_1152,M,65,Los Angeles,CA,USA,2022-09-20,Regular,Low
+1153,Customer_1153,M,41,Toronto,ON,Canada,2024-05-28,Premium,Medium
+1154,Customer_1154,F,57,Toronto,ON,Canada,2023-12-12,Regular,Low
+1155,Customer_1155,M,68,Dallas,TX,USA,2024-05-12,Premium,Low
+1156,Customer_1156,M,37,Toronto,ON,Canada,2023-01-05,Premium,Low
+1157,Customer_1157,F,33,Toronto,ON,Canada,2023-05-17,Corporate,Medium
+1158,Customer_1158,F,60,Manchester,England,UK,2023-02-20,Corporate,High
+1159,Customer_1159,F,48,Vancouver,BC,Canada,2022-07-29,Corporate,Low
+1160,Customer_1160,F,59,Los Angeles,CA,USA,2022-09-03,Premium,High
+1161,Customer_1161,M,40,Munich,Bavaria,Germany,2022-08-31,Premium,High
+1162,Customer_1162,M,59,Toronto,ON,Canada,2022-10-24,Corporate,Medium
+1163,Customer_1163,F,36,Vancouver,BC,Canada,2022-09-15,Corporate,High
+1164,Customer_1164,F,45,Sydney,NSW,Australia,2023-11-23,Corporate,Low
+1165,Customer_1165,F,69,Manchester,England,UK,2023-04-25,Corporate,High
+1166,Customer_1166,M,65,Manchester,England,UK,2023-01-20,Premium,High
+1167,Customer_1167,M,61,Munich,Bavaria,Germany,2022-07-05,Premium,Medium
+1168,Customer_1168,F,41,London,England,UK,2022-12-29,Corporate,Low
+1169,Customer_1169,M,38,New York,NY,USA,2024-06-09,Regular,Low
+1170,Customer_1170,F,64,New York,NY,USA,2022-09-27,Regular,Medium
+1171,Customer_1171,F,20,Toronto,ON,Canada,2022-02-28,Corporate,High
+1172,Customer_1172,F,47,New York,NY,USA,2022-07-04,Premium,Low
+1173,Customer_1173,F,44,Dallas,TX,USA,2023-06-02,Corporate,Medium
+1174,Customer_1174,M,64,Los Angeles,CA,USA,2023-06-23,Corporate,Medium
+1175,Customer_1175,M,44,Manchester,England,UK,2022-12-20,Premium,High
+1176,Customer_1176,F,44,Dallas,TX,USA,2024-02-25,Regular,High
+1177,Customer_1177,M,56,Sydney,NSW,Australia,2023-05-09,Regular,Medium
+1178,Customer_1178,F,21,Los Angeles,CA,USA,2023-07-09,Corporate,Low
+1179,Customer_1179,M,22,Toronto,ON,Canada,2023-09-02,Premium,Low
+1180,Customer_1180,F,61,Dallas,TX,USA,2023-04-20,Corporate,Low
+1181,Customer_1181,F,24,Munich,Bavaria,Germany,2024-01-19,Regular,High
+1182,Customer_1182,F,53,London,England,UK,2022-10-14,Corporate,Medium
+1183,Customer_1183,F,46,Manchester,England,UK,2024-01-05,Corporate,Medium
+1184,Customer_1184,M,32,Toronto,ON,Canada,2024-03-14,Premium,Medium
+1185,Customer_1185,M,44,Manchester,England,UK,2022-02-08,Corporate,Low
+1186,Customer_1186,F,54,Manchester,England,UK,2024-02-18,Regular,Low
+1187,Customer_1187,M,20,New York,NY,USA,2022-10-11,Premium,Medium
+1188,Customer_1188,F,55,Austin,TX,USA,2022-07-22,Corporate,Low
+1189,Customer_1189,M,25,Los Angeles,CA,USA,2022-04-01,Regular,High
+1190,Customer_1190,F,68,Sydney,NSW,Australia,2023-01-19,Corporate,Low
+1191,Customer_1191,M,55,Toronto,ON,Canada,2022-10-09,Regular,Low
+1192,Customer_1192,M,36,Manchester,England,UK,2022-08-02,Premium,High
+1193,Customer_1193,F,60,Munich,Bavaria,Germany,2022-05-19,Premium,Low
+1194,Customer_1194,M,58,Vancouver,BC,Canada,2024-02-14,Premium,Medium
+1195,Customer_1195,F,68,Toronto,ON,Canada,2022-08-24,Corporate,Medium
+1196,Customer_1196,F,52,Sydney,NSW,Australia,2024-04-08,Corporate,Low
+1197,Customer_1197,F,46,Sydney,NSW,Australia,2023-12-03,Premium,High
+1198,Customer_1198,F,64,London,England,UK,2024-01-11,Regular,Low
+1199,Customer_1199,F,67,London,England,UK,2023-12-10,Premium,Medium
+1200,Customer_1200,F,35,Munich,Bavaria,Germany,2022-03-15,Premium,Medium
+1201,Customer_1201,M,35,Sydney,NSW,Australia,2022-01-11,Premium,Medium
+1202,Customer_1202,M,52,New York,NY,USA,2023-08-25,Premium,High
+1203,Customer_1203,F,33,Munich,Bavaria,Germany,2022-05-13,Corporate,Low
+1204,Customer_1204,M,21,Vancouver,BC,Canada,2022-10-03,Premium,Medium
+1205,Customer_1205,M,35,London,England,UK,2022-10-26,Corporate,Low
+1206,Customer_1206,M,69,Austin,TX,USA,2022-10-17,Corporate,High
+1207,Customer_1207,F,66,Austin,TX,USA,2022-08-24,Premium,Medium
+1208,Customer_1208,F,39,Munich,Bavaria,Germany,2022-11-20,Regular,High
+1209,Customer_1209,F,21,Toronto,ON,Canada,2022-11-17,Corporate,Low
+1210,Customer_1210,M,57,Munich,Bavaria,Germany,2022-11-29,Premium,Medium
+1211,Customer_1211,F,28,Toronto,ON,Canada,2023-01-30,Premium,High
+1212,Customer_1212,M,19,Sydney,NSW,Australia,2022-02-17,Corporate,High
+1213,Customer_1213,F,70,Munich,Bavaria,Germany,2023-06-19,Premium,Medium
+1214,Customer_1214,F,41,Munich,Bavaria,Germany,2023-04-23,Corporate,High
+1215,Customer_1215,M,35,Sydney,NSW,Australia,2023-08-20,Regular,Medium
+1216,Customer_1216,M,41,Manchester,England,UK,2022-01-05,Corporate,High
+1217,Customer_1217,M,36,Austin,TX,USA,2023-12-13,Regular,High
+1218,Customer_1218,M,42,Los Angeles,CA,USA,2022-05-05,Corporate,High
+1219,Customer_1219,M,30,Sydney,NSW,Australia,2022-06-27,Premium,Medium
+1220,Customer_1220,F,28,Manchester,England,UK,2023-03-05,Corporate,High
+1221,Customer_1221,M,23,New York,NY,USA,2023-05-23,Corporate,Medium
+1222,Customer_1222,M,36,Vancouver,BC,Canada,2023-07-27,Premium,High
+1223,Customer_1223,F,59,Austin,TX,USA,2023-05-29,Premium,Medium
+1224,Customer_1224,M,52,Sydney,NSW,Australia,2022-11-02,Corporate,Medium
+1225,Customer_1225,M,57,New York,NY,USA,2023-03-14,Regular,Medium
+1226,Customer_1226,M,26,Vancouver,BC,Canada,2023-05-04,Premium,Medium
+1227,Customer_1227,M,37,New York,NY,USA,2022-08-31,Premium,Medium
+1228,Customer_1228,M,18,Munich,Bavaria,Germany,2023-05-03,Regular,Medium
+1229,Customer_1229,F,62,Austin,TX,USA,2023-12-31,Regular,Medium
+1230,Customer_1230,M,45,Munich,Bavaria,Germany,2023-03-20,Corporate,Low
+1231,Customer_1231,F,36,Munich,Bavaria,Germany,2022-12-05,Regular,Medium
+1232,Customer_1232,F,48,Sydney,NSW,Australia,2022-01-13,Regular,High
+1233,Customer_1233,M,69,Manchester,England,UK,2023-10-27,Regular,Medium
+1234,Customer_1234,F,52,Sydney,NSW,Australia,2023-03-29,Corporate,Medium
+1235,Customer_1235,F,35,London,England,UK,2022-12-17,Premium,High
+1236,Customer_1236,F,63,Manchester,England,UK,2023-12-16,Corporate,High
+1237,Customer_1237,F,28,Sydney,NSW,Australia,2023-06-29,Corporate,Low
+1238,Customer_1238,F,59,Sydney,NSW,Australia,2023-10-12,Corporate,Medium
+1239,Customer_1239,M,27,Sydney,NSW,Australia,2024-01-26,Premium,Medium
+1240,Customer_1240,F,23,Munich,Bavaria,Germany,2022-03-24,Premium,Low
+1241,Customer_1241,M,62,Sydney,NSW,Australia,2023-02-25,Corporate,High
+1242,Customer_1242,F,18,Manchester,England,UK,2023-02-01,Corporate,Low
+1243,Customer_1243,F,60,Munich,Bavaria,Germany,2022-01-15,Premium,Medium
+1244,Customer_1244,M,56,Munich,Bavaria,Germany,2022-10-23,Corporate,High
+1245,Customer_1245,M,54,Toronto,ON,Canada,2022-12-01,Regular,Medium
+1246,Customer_1246,M,20,Dallas,TX,USA,2023-02-11,Corporate,Medium
+1247,Customer_1247,F,69,Vancouver,BC,Canada,2023-02-23,Premium,High
+1248,Customer_1248,M,19,Munich,Bavaria,Germany,2023-07-18,Premium,Low
+1249,Customer_1249,M,43,Vancouver,BC,Canada,2023-06-10,Corporate,Medium
+1250,Customer_1250,F,67,Austin,TX,USA,2022-11-22,Premium,High
+1251,Customer_1251,M,65,Munich,Bavaria,Germany,2023-02-17,Corporate,Medium
+1252,Customer_1252,F,51,Sydney,NSW,Australia,2023-07-21,Regular,Low
+1253,Customer_1253,F,63,Munich,Bavaria,Germany,2024-03-01,Regular,Medium
+1254,Customer_1254,M,37,Los Angeles,CA,USA,2023-02-08,Regular,Medium
+1255,Customer_1255,M,27,New York,NY,USA,2023-02-18,Regular,High
+1256,Customer_1256,M,21,London,England,UK,2022-05-07,Premium,Medium
+1257,Customer_1257,F,45,Manchester,England,UK,2023-04-09,Premium,Low
+1258,Customer_1258,M,45,Sydney,NSW,Australia,2024-04-26,Corporate,Low
+1259,Customer_1259,M,45,New York,NY,USA,2023-06-16,Regular,Medium
+1260,Customer_1260,M,46,Vancouver,BC,Canada,2023-03-12,Premium,Medium
+1261,Customer_1261,M,32,Manchester,England,UK,2023-06-25,Premium,High
+1262,Customer_1262,F,35,Los Angeles,CA,USA,2022-04-23,Regular,Low
+1263,Customer_1263,F,68,Vancouver,BC,Canada,2023-09-06,Regular,High
+1264,Customer_1264,M,58,Vancouver,BC,Canada,2024-03-03,Regular,Low
+1265,Customer_1265,M,61,Munich,Bavaria,Germany,2024-01-24,Corporate,High
+1266,Customer_1266,F,32,Munich,Bavaria,Germany,2022-09-26,Regular,Low
+1267,Customer_1267,F,27,Manchester,England,UK,2024-01-14,Corporate,High
+1268,Customer_1268,M,48,Vancouver,BC,Canada,2024-01-08,Corporate,Low
+1269,Customer_1269,M,67,Munich,Bavaria,Germany,2023-05-22,Premium,Medium
+1270,Customer_1270,F,43,London,England,UK,2022-12-28,Corporate,Low
+1271,Customer_1271,F,22,Toronto,ON,Canada,2022-05-05,Premium,High
+1272,Customer_1272,M,49,Vancouver,BC,Canada,2024-05-24,Premium,High
+1273,Customer_1273,F,43,Sydney,NSW,Australia,2023-08-29,Corporate,High
+1274,Customer_1274,F,54,San Diego,CA,USA,2023-02-07,Regular,Medium
+1275,Customer_1275,F,46,Toronto,ON,Canada,2023-10-08,Premium,Medium
+1276,Customer_1276,F,32,Munich,Bavaria,Germany,2023-01-08,Corporate,High
+1277,Customer_1277,M,30,Vancouver,BC,Canada,2023-05-10,Corporate,Low
+1278,Customer_1278,M,48,Sydney,NSW,Australia,2024-04-09,Corporate,High
+1279,Customer_1279,M,20,Toronto,ON,Canada,2023-07-17,Regular,Medium
+1280,Customer_1280,F,61,Vancouver,BC,Canada,2022-07-31,Regular,Medium
+1281,Customer_1281,F,20,Vancouver,BC,Canada,2024-02-05,Premium,Low
+1282,Customer_1282,M,25,Los Angeles,CA,USA,2024-04-19,Premium,Low
+1283,Customer_1283,M,25,Sydney,NSW,Australia,2022-05-04,Corporate,Medium
+1284,Customer_1284,M,53,Dallas,TX,USA,2024-05-22,Premium,High
+1285,Customer_1285,M,55,Sydney,NSW,Australia,2023-11-03,Regular,Low
+1286,Customer_1286,F,32,Munich,Bavaria,Germany,2022-09-05,Regular,Low
+1287,Customer_1287,M,68,Toronto,ON,Canada,2023-02-11,Corporate,Low
+1288,Customer_1288,M,50,Munich,Bavaria,Germany,2023-02-09,Premium,Low
+1289,Customer_1289,F,39,San Diego,CA,USA,2024-02-07,Regular,Low
+1290,Customer_1290,F,20,Munich,Bavaria,Germany,2022-10-15,Corporate,Medium
+1291,Customer_1291,F,65,San Diego,CA,USA,2022-01-21,Corporate,Low
+1292,Customer_1292,M,29,Los Angeles,CA,USA,2024-02-08,Corporate,High
+1293,Customer_1293,F,54,Toronto,ON,Canada,2024-04-13,Corporate,High
+1294,Customer_1294,F,18,Manchester,England,UK,2023-12-19,Premium,Medium
+1295,Customer_1295,M,54,Sydney,NSW,Australia,2022-06-08,Corporate,High
+1296,Customer_1296,M,70,Sydney,NSW,Australia,2024-04-02,Corporate,Low
+1297,Customer_1297,F,37,Sydney,NSW,Australia,2024-03-26,Corporate,Medium
+1298,Customer_1298,M,21,London,England,UK,2022-05-25,Premium,Low
+1299,Customer_1299,F,66,Sydney,NSW,Australia,2023-09-05,Regular,Medium
+1300,Customer_1300,M,25,Sydney,NSW,Australia,2022-11-28,Premium,Low
+1301,Customer_1301,F,35,London,England,UK,2024-04-11,Premium,Low
+1302,Customer_1302,F,46,Dallas,TX,USA,2024-01-25,Corporate,Medium
+1303,Customer_1303,M,45,Sydney,NSW,Australia,2022-01-26,Corporate,Low
+1304,Customer_1304,M,45,Vancouver,BC,Canada,2022-12-20,Premium,Medium
+1305,Customer_1305,F,41,Toronto,ON,Canada,2022-02-06,Regular,High
+1306,Customer_1306,M,37,Sydney,NSW,Australia,2023-09-21,Regular,Low
+1307,Customer_1307,M,51,Manchester,England,UK,2023-03-25,Premium,Low
+1308,Customer_1308,F,22,Dallas,TX,USA,2022-11-15,Corporate,High
+1309,Customer_1309,M,60,Toronto,ON,Canada,2022-03-08,Regular,Low
+1310,Customer_1310,F,54,Austin,TX,USA,2023-07-05,Regular,Low
+1311,Customer_1311,M,68,Vancouver,BC,Canada,2023-01-03,Regular,Low
+1312,Customer_1312,F,63,Toronto,ON,Canada,2023-04-03,Corporate,Medium
+1313,Customer_1313,F,40,Sydney,NSW,Australia,2022-05-23,Corporate,Low
+1314,Customer_1314,M,23,Sydney,NSW,Australia,2022-09-25,Corporate,Low
+1315,Customer_1315,F,29,Sydney,NSW,Australia,2022-01-30,Premium,Low
+1316,Customer_1316,F,28,Toronto,ON,Canada,2023-05-30,Premium,High
+1317,Customer_1317,F,36,Manchester,England,UK,2023-05-01,Regular,Low
+1318,Customer_1318,F,29,Sydney,NSW,Australia,2024-02-09,Corporate,Medium
+1319,Customer_1319,M,28,London,England,UK,2022-02-03,Regular,Medium
+1320,Customer_1320,F,57,Munich,Bavaria,Germany,2022-07-06,Corporate,Medium
+1321,Customer_1321,F,55,London,England,UK,2022-11-28,Premium,Low
+1322,Customer_1322,M,25,Manchester,England,UK,2024-04-29,Corporate,High
+1323,Customer_1323,F,34,New York,NY,USA,2022-05-06,Regular,Low
+1324,Customer_1324,M,54,Austin,TX,USA,2022-06-16,Corporate,Low
+1325,Customer_1325,F,46,London,England,UK,2023-03-30,Corporate,Low
+1326,Customer_1326,M,37,Vancouver,BC,Canada,2022-04-30,Corporate,Low
+1327,Customer_1327,F,29,Vancouver,BC,Canada,2024-02-12,Premium,Low
+1328,Customer_1328,F,23,New York,NY,USA,2024-02-11,Regular,High
+1329,Customer_1329,F,70,New York,NY,USA,2024-01-11,Corporate,Low
+1330,Customer_1330,F,51,Vancouver,BC,Canada,2024-04-30,Premium,Low
+1331,Customer_1331,M,36,New York,NY,USA,2022-08-29,Premium,Medium
+1332,Customer_1332,F,34,New York,NY,USA,2023-02-24,Premium,Low
+1333,Customer_1333,F,31,Munich,Bavaria,Germany,2023-12-12,Corporate,High
+1334,Customer_1334,F,20,Vancouver,BC,Canada,2024-02-02,Regular,Medium
+1335,Customer_1335,F,26,Los Angeles,CA,USA,2023-09-27,Premium,Medium
+1336,Customer_1336,M,32,Sydney,NSW,Australia,2024-04-19,Regular,Medium
+1337,Customer_1337,M,59,Sydney,NSW,Australia,2022-10-26,Regular,Medium
+1338,Customer_1338,M,49,San Diego,CA,USA,2023-06-11,Regular,High
+1339,Customer_1339,F,19,San Diego,CA,USA,2023-11-25,Corporate,Medium
+1340,Customer_1340,F,46,Munich,Bavaria,Germany,2024-05-03,Premium,Medium
+1341,Customer_1341,F,46,Sydney,NSW,Australia,2024-04-05,Regular,Medium
+1342,Customer_1342,M,26,Vancouver,BC,Canada,2023-10-20,Corporate,High
+1343,Customer_1343,M,33,Munich,Bavaria,Germany,2024-01-07,Premium,High
+1344,Customer_1344,M,65,London,England,UK,2023-11-22,Premium,Low
+1345,Customer_1345,M,61,San Diego,CA,USA,2022-04-04,Premium,Medium
+1346,Customer_1346,M,51,Munich,Bavaria,Germany,2024-05-31,Corporate,Medium
+1347,Customer_1347,F,39,New York,NY,USA,2024-01-18,Corporate,High
+1348,Customer_1348,M,62,Toronto,ON,Canada,2022-04-22,Regular,High
+1349,Customer_1349,F,19,Toronto,ON,Canada,2022-05-19,Regular,High
+1350,Customer_1350,M,63,Toronto,ON,Canada,2023-02-09,Regular,Medium
+1351,Customer_1351,M,53,Vancouver,BC,Canada,2022-01-14,Regular,Medium
+1352,Customer_1352,F,57,London,England,UK,2023-11-24,Regular,Medium
+1353,Customer_1353,F,54,Toronto,ON,Canada,2023-04-02,Premium,High
+1354,Customer_1354,M,29,New York,NY,USA,2023-01-31,Regular,Medium
+1355,Customer_1355,F,51,Manchester,England,UK,2024-06-03,Regular,High
+1356,Customer_1356,F,61,Toronto,ON,Canada,2022-04-21,Corporate,Medium
+1357,Customer_1357,F,50,Toronto,ON,Canada,2022-10-26,Corporate,High
+1358,Customer_1358,F,63,Austin,TX,USA,2022-09-26,Regular,Medium
+1359,Customer_1359,F,46,San Diego,CA,USA,2023-04-27,Corporate,High
+1360,Customer_1360,M,35,New York,NY,USA,2023-09-10,Corporate,Low
+1361,Customer_1361,F,20,Munich,Bavaria,Germany,2023-12-22,Premium,High
+1362,Customer_1362,F,55,London,England,UK,2023-09-05,Premium,Medium
+1363,Customer_1363,F,48,Munich,Bavaria,Germany,2022-03-27,Regular,Low
+1364,Customer_1364,F,27,New York,NY,USA,2024-04-25,Regular,High
+1365,Customer_1365,M,46,London,England,UK,2023-05-05,Premium,High
+1366,Customer_1366,M,33,San Diego,CA,USA,2023-07-11,Premium,Medium
+1367,Customer_1367,M,43,Toronto,ON,Canada,2023-01-02,Corporate,Medium
+1368,Customer_1368,M,33,Munich,Bavaria,Germany,2022-01-17,Regular,Low
+1369,Customer_1369,M,19,Manchester,England,UK,2024-04-11,Premium,Medium
+1370,Customer_1370,F,22,Manchester,England,UK,2024-04-09,Corporate,Low
+1371,Customer_1371,F,36,Dallas,TX,USA,2022-01-07,Regular,High
+1372,Customer_1372,F,23,Munich,Bavaria,Germany,2022-03-07,Corporate,Low
+1373,Customer_1373,M,23,Vancouver,BC,Canada,2022-01-19,Regular,Low
+1374,Customer_1374,M,55,Sydney,NSW,Australia,2022-08-17,Regular,Low
+1375,Customer_1375,M,28,Vancouver,BC,Canada,2024-03-15,Premium,Low
+1376,Customer_1376,M,66,Dallas,TX,USA,2022-01-29,Premium,High
+1377,Customer_1377,F,21,Vancouver,BC,Canada,2024-01-31,Premium,Low
+1378,Customer_1378,F,56,Austin,TX,USA,2022-08-12,Premium,Medium
+1379,Customer_1379,F,51,London,England,UK,2024-04-26,Premium,Low
+1380,Customer_1380,F,23,Munich,Bavaria,Germany,2022-02-14,Premium,Medium
+1381,Customer_1381,F,45,Sydney,NSW,Australia,2023-11-01,Premium,High
+1382,Customer_1382,F,57,Sydney,NSW,Australia,2023-04-01,Corporate,Medium
+1383,Customer_1383,M,30,Munich,Bavaria,Germany,2023-06-26,Regular,Medium
+1384,Customer_1384,F,22,Sydney,NSW,Australia,2023-12-22,Premium,Low
+1385,Customer_1385,F,45,Dallas,TX,USA,2024-02-21,Premium,Medium
+1386,Customer_1386,F,20,Manchester,England,UK,2023-11-24,Regular,Medium
+1387,Customer_1387,F,54,Sydney,NSW,Australia,2023-01-09,Regular,Medium
+1388,Customer_1388,F,46,San Diego,CA,USA,2023-08-10,Regular,High
+1389,Customer_1389,M,37,Sydney,NSW,Australia,2024-04-26,Regular,Low
+1390,Customer_1390,M,47,San Diego,CA,USA,2023-04-25,Regular,Low
+1391,Customer_1391,M,66,Los Angeles,CA,USA,2022-04-21,Premium,High
+1392,Customer_1392,M,27,Vancouver,BC,Canada,2024-03-26,Regular,High
+1393,Customer_1393,F,57,New York,NY,USA,2023-09-11,Corporate,Medium
+1394,Customer_1394,M,56,London,England,UK,2022-05-12,Regular,High
+1395,Customer_1395,M,59,Sydney,NSW,Australia,2024-01-25,Premium,Medium
+1396,Customer_1396,F,42,London,England,UK,2022-08-05,Premium,Medium
+1397,Customer_1397,F,50,Sydney,NSW,Australia,2024-04-09,Regular,Medium
+1398,Customer_1398,M,48,Munich,Bavaria,Germany,2022-06-08,Regular,Medium
+1399,Customer_1399,F,57,Vancouver,BC,Canada,2022-04-22,Regular,Medium
+1400,Customer_1400,M,39,Munich,Bavaria,Germany,2022-03-23,Premium,Medium
+1401,Customer_1401,F,41,Munich,Bavaria,Germany,2023-01-07,Corporate,Medium
+1402,Customer_1402,F,46,Sydney,NSW,Australia,2024-06-02,Premium,High
+1403,Customer_1403,M,57,London,England,UK,2024-05-14,Regular,High
+1404,Customer_1404,M,33,Vancouver,BC,Canada,2024-03-24,Regular,Medium
+1405,Customer_1405,M,18,Toronto,ON,Canada,2022-01-14,Regular,High
+1406,Customer_1406,F,58,New York,NY,USA,2022-06-13,Premium,High
+1407,Customer_1407,M,54,Munich,Bavaria,Germany,2023-11-30,Premium,High
+1408,Customer_1408,F,45,Vancouver,BC,Canada,2023-12-12,Regular,Low
+1409,Customer_1409,M,56,Vancouver,BC,Canada,2022-04-29,Regular,Low
+1410,Customer_1410,M,36,Sydney,NSW,Australia,2023-03-30,Corporate,Medium
+1411,Customer_1411,M,52,Munich,Bavaria,Germany,2022-08-14,Premium,High
+1412,Customer_1412,F,30,Vancouver,BC,Canada,2024-06-04,Regular,Medium
+1413,Customer_1413,F,38,Toronto,ON,Canada,2023-06-20,Premium,Low
+1414,Customer_1414,F,20,Vancouver,BC,Canada,2024-03-23,Regular,Low
+1415,Customer_1415,M,18,Sydney,NSW,Australia,2023-09-14,Regular,Low
+1416,Customer_1416,F,54,Austin,TX,USA,2022-12-09,Premium,Low
+1417,Customer_1417,M,33,Munich,Bavaria,Germany,2023-02-15,Corporate,High
+1418,Customer_1418,M,20,Dallas,TX,USA,2023-10-08,Corporate,Medium
+1419,Customer_1419,M,18,Vancouver,BC,Canada,2022-01-21,Premium,Low
+1420,Customer_1420,M,37,Manchester,England,UK,2022-08-15,Premium,Low
+1421,Customer_1421,M,42,Munich,Bavaria,Germany,2024-03-03,Premium,Medium
+1422,Customer_1422,F,40,Manchester,England,UK,2024-05-31,Regular,Low
+1423,Customer_1423,F,18,New York,NY,USA,2023-04-13,Premium,High
+1424,Customer_1424,M,61,Manchester,England,UK,2022-02-09,Premium,Low
+1425,Customer_1425,F,70,Sydney,NSW,Australia,2022-08-02,Premium,High
+1426,Customer_1426,M,47,New York,NY,USA,2023-06-16,Premium,Low
+1427,Customer_1427,F,22,Munich,Bavaria,Germany,2024-02-10,Corporate,Low
+1428,Customer_1428,F,46,Munich,Bavaria,Germany,2022-10-17,Corporate,High
+1429,Customer_1429,F,51,Munich,Bavaria,Germany,2024-04-05,Corporate,Low
+1430,Customer_1430,F,44,Vancouver,BC,Canada,2023-12-15,Premium,High
+1431,Customer_1431,F,52,Vancouver,BC,Canada,2022-08-27,Premium,Medium
+1432,Customer_1432,F,19,Munich,Bavaria,Germany,2023-08-25,Corporate,Medium
+1433,Customer_1433,M,32,Manchester,England,UK,2023-10-12,Corporate,Medium
+1434,Customer_1434,F,40,Vancouver,BC,Canada,2024-02-20,Premium,High
+1435,Customer_1435,F,24,Sydney,NSW,Australia,2024-06-11,Regular,High
+1436,Customer_1436,M,26,Munich,Bavaria,Germany,2023-12-04,Regular,High
+1437,Customer_1437,M,68,Austin,TX,USA,2022-07-04,Premium,High
+1438,Customer_1438,F,43,Munich,Bavaria,Germany,2022-12-06,Regular,Medium
+1439,Customer_1439,F,46,Sydney,NSW,Australia,2023-02-07,Premium,Low
+1440,Customer_1440,M,48,Manchester,England,UK,2023-08-16,Premium,Medium
+1441,Customer_1441,M,41,Munich,Bavaria,Germany,2023-04-10,Corporate,High
+1442,Customer_1442,M,63,San Diego,CA,USA,2022-04-10,Premium,Medium
+1443,Customer_1443,M,42,New York,NY,USA,2022-11-17,Premium,Low
+1444,Customer_1444,F,33,Sydney,NSW,Australia,2024-04-22,Regular,Medium
+1445,Customer_1445,F,40,Dallas,TX,USA,2022-05-09,Corporate,High
+1446,Customer_1446,F,59,Manchester,England,UK,2022-09-09,Corporate,Medium
+1447,Customer_1447,M,20,Sydney,NSW,Australia,2022-01-10,Regular,Medium
+1448,Customer_1448,M,39,Austin,TX,USA,2024-05-24,Premium,High
+1449,Customer_1449,F,31,Toronto,ON,Canada,2024-06-15,Regular,Medium
+1450,Customer_1450,F,50,Toronto,ON,Canada,2023-09-10,Regular,Medium
+1451,Customer_1451,F,48,Munich,Bavaria,Germany,2023-05-28,Regular,High
+1452,Customer_1452,F,70,Munich,Bavaria,Germany,2022-08-25,Corporate,Medium
+1453,Customer_1453,F,50,Sydney,NSW,Australia,2022-11-04,Regular,High
+1454,Customer_1454,F,18,New York,NY,USA,2022-08-08,Regular,Medium
+1455,Customer_1455,M,41,Munich,Bavaria,Germany,2023-01-29,Corporate,Medium
+1456,Customer_1456,F,39,London,England,UK,2022-11-10,Corporate,High
+1457,Customer_1457,M,46,Munich,Bavaria,Germany,2024-01-24,Regular,Medium
+1458,Customer_1458,M,70,Dallas,TX,USA,2023-10-14,Regular,High
+1459,Customer_1459,F,44,Munich,Bavaria,Germany,2023-03-24,Premium,Medium
+1460,Customer_1460,M,66,Vancouver,BC,Canada,2023-07-13,Premium,Medium
+1461,Customer_1461,M,21,London,England,UK,2024-03-02,Corporate,Low
+1462,Customer_1462,M,22,London,England,UK,2023-03-16,Regular,Low
+1463,Customer_1463,F,68,Toronto,ON,Canada,2022-08-01,Regular,High
+1464,Customer_1464,F,32,Manchester,England,UK,2022-06-07,Corporate,High
+1465,Customer_1465,M,21,Sydney,NSW,Australia,2022-03-13,Regular,Medium
+1466,Customer_1466,F,44,Sydney,NSW,Australia,2022-10-25,Corporate,Medium
+1467,Customer_1467,F,60,Toronto,ON,Canada,2022-07-13,Premium,Low
+1468,Customer_1468,M,50,Sydney,NSW,Australia,2022-04-10,Corporate,Low
+1469,Customer_1469,F,69,Toronto,ON,Canada,2022-02-04,Premium,Medium
+1470,Customer_1470,F,49,Sydney,NSW,Australia,2023-04-06,Premium,Medium
+1471,Customer_1471,F,48,Manchester,England,UK,2023-11-17,Corporate,High
+1472,Customer_1472,M,69,Vancouver,BC,Canada,2023-02-06,Premium,Low
+1473,Customer_1473,M,23,Munich,Bavaria,Germany,2022-05-06,Premium,Medium
+1474,Customer_1474,F,51,Munich,Bavaria,Germany,2022-06-23,Regular,Medium
+1475,Customer_1475,F,63,Munich,Bavaria,Germany,2023-06-11,Regular,High
+1476,Customer_1476,M,37,Manchester,England,UK,2024-06-10,Corporate,Low
+1477,Customer_1477,M,64,Dallas,TX,USA,2022-02-09,Premium,Low
+1478,Customer_1478,F,67,Manchester,England,UK,2022-04-27,Corporate,High
+1479,Customer_1479,M,19,Munich,Bavaria,Germany,2022-02-02,Premium,Medium
+1480,Customer_1480,F,34,New York,NY,USA,2024-01-21,Regular,Low
+1481,Customer_1481,F,28,Munich,Bavaria,Germany,2022-11-19,Corporate,Low
+1482,Customer_1482,M,46,Sydney,NSW,Australia,2023-03-22,Regular,High
+1483,Customer_1483,M,36,Austin,TX,USA,2023-12-28,Corporate,Low
+1484,Customer_1484,F,35,Munich,Bavaria,Germany,2024-06-15,Regular,Low
+1485,Customer_1485,M,62,London,England,UK,2022-01-04,Regular,Low
+1486,Customer_1486,M,35,Sydney,NSW,Australia,2024-02-28,Regular,Low
+1487,Customer_1487,F,51,Munich,Bavaria,Germany,2022-05-29,Corporate,High
+1488,Customer_1488,M,20,Sydney,NSW,Australia,2022-11-10,Premium,Medium
+1489,Customer_1489,F,64,Vancouver,BC,Canada,2024-04-15,Premium,High
+1490,Customer_1490,F,66,Manchester,England,UK,2024-04-13,Regular,Medium
+1491,Customer_1491,F,43,Sydney,NSW,Australia,2024-05-09,Corporate,Low
+1492,Customer_1492,M,68,London,England,UK,2023-05-13,Regular,Low
+1493,Customer_1493,F,46,Toronto,ON,Canada,2023-07-29,Premium,Low
+1494,Customer_1494,F,46,London,England,UK,2023-04-27,Regular,Low
+1495,Customer_1495,F,67,Vancouver,BC,Canada,2022-09-29,Regular,Low
+1496,Customer_1496,M,33,Munich,Bavaria,Germany,2024-02-14,Corporate,High
+1497,Customer_1497,M,43,Manchester,England,UK,2022-02-06,Corporate,Medium
+1498,Customer_1498,M,70,Sydney,NSW,Australia,2022-12-07,Regular,Low
+1499,Customer_1499,F,32,San Diego,CA,USA,2024-02-13,Regular,Medium
+1500,Customer_1500,M,40,Sydney,NSW,Australia,2022-12-22,Premium,High
+1501,Customer_1501,F,69,London,England,UK,2023-04-27,Premium,High
+1502,Customer_1502,M,24,Munich,Bavaria,Germany,2022-11-29,Regular,Medium
+1503,Customer_1503,F,66,Sydney,NSW,Australia,2023-06-28,Regular,Low
+1504,Customer_1504,M,42,Munich,Bavaria,Germany,2023-03-22,Corporate,Medium
+1505,Customer_1505,M,60,Toronto,ON,Canada,2024-05-30,Regular,Low
+1506,Customer_1506,M,21,Vancouver,BC,Canada,2023-03-20,Premium,Medium
+1507,Customer_1507,F,24,Los Angeles,CA,USA,2023-04-10,Corporate,Medium
+1508,Customer_1508,M,55,Vancouver,BC,Canada,2023-04-01,Regular,High
+1509,Customer_1509,M,24,Toronto,ON,Canada,2023-12-18,Corporate,Medium
+1510,Customer_1510,M,32,Toronto,ON,Canada,2023-03-17,Regular,Medium
+1511,Customer_1511,M,38,London,England,UK,2023-02-24,Corporate,Low
+1512,Customer_1512,M,29,Munich,Bavaria,Germany,2022-12-30,Premium,Medium
+1513,Customer_1513,M,54,Vancouver,BC,Canada,2023-10-06,Regular,High
+1514,Customer_1514,F,32,Los Angeles,CA,USA,2023-01-30,Regular,Low
+1515,Customer_1515,M,50,London,England,UK,2022-06-03,Regular,Medium
+1516,Customer_1516,F,69,New York,NY,USA,2024-05-12,Regular,High
+1517,Customer_1517,F,66,Vancouver,BC,Canada,2023-12-21,Premium,Low
+1518,Customer_1518,F,49,Dallas,TX,USA,2023-12-18,Corporate,Medium
+1519,Customer_1519,M,54,Vancouver,BC,Canada,2022-08-18,Premium,Medium
+1520,Customer_1520,M,34,Toronto,ON,Canada,2024-05-11,Premium,Medium
+1521,Customer_1521,F,35,New York,NY,USA,2023-02-08,Corporate,Medium
+1522,Customer_1522,F,44,Sydney,NSW,Australia,2023-11-03,Premium,Low
+1523,Customer_1523,F,45,Sydney,NSW,Australia,2023-10-20,Corporate,Medium
+1524,Customer_1524,M,27,Sydney,NSW,Australia,2024-01-20,Premium,Medium
+1525,Customer_1525,F,41,Vancouver,BC,Canada,2024-05-11,Regular,Low
+1526,Customer_1526,M,63,Vancouver,BC,Canada,2024-05-29,Regular,High
+1527,Customer_1527,F,51,Los Angeles,CA,USA,2024-04-22,Corporate,High
+1528,Customer_1528,M,52,Munich,Bavaria,Germany,2022-07-17,Corporate,Low
+1529,Customer_1529,F,70,Munich,Bavaria,Germany,2022-04-09,Premium,Medium
+1530,Customer_1530,F,36,Munich,Bavaria,Germany,2022-12-27,Regular,Medium
+1531,Customer_1531,F,27,New York,NY,USA,2023-08-08,Premium,Medium
+1532,Customer_1532,M,37,Dallas,TX,USA,2023-01-18,Corporate,Low
+1533,Customer_1533,M,35,Toronto,ON,Canada,2022-01-04,Premium,Medium
+1534,Customer_1534,M,70,Sydney,NSW,Australia,2022-12-19,Premium,High
+1535,Customer_1535,F,40,Munich,Bavaria,Germany,2022-01-28,Corporate,Low
+1536,Customer_1536,F,35,New York,NY,USA,2024-04-17,Regular,Low
+1537,Customer_1537,F,18,Toronto,ON,Canada,2023-10-12,Regular,High
+1538,Customer_1538,M,41,Dallas,TX,USA,2022-11-07,Corporate,Medium
+1539,Customer_1539,M,67,Toronto,ON,Canada,2022-07-05,Premium,Medium
+1540,Customer_1540,F,69,London,England,UK,2024-01-13,Corporate,High
+1541,Customer_1541,F,34,Toronto,ON,Canada,2022-01-28,Premium,Low
+1542,Customer_1542,F,64,Munich,Bavaria,Germany,2022-04-17,Regular,Low
+1543,Customer_1543,M,35,Sydney,NSW,Australia,2024-01-23,Premium,High
+1544,Customer_1544,F,19,Sydney,NSW,Australia,2024-02-22,Regular,High
+1545,Customer_1545,F,56,London,England,UK,2022-09-04,Corporate,Medium
+1546,Customer_1546,M,43,Vancouver,BC,Canada,2022-12-02,Premium,Low
+1547,Customer_1547,F,31,San Diego,CA,USA,2022-08-22,Regular,High
+1548,Customer_1548,F,67,Munich,Bavaria,Germany,2023-01-05,Corporate,Medium
+1549,Customer_1549,F,53,Toronto,ON,Canada,2022-10-23,Premium,Low
+1550,Customer_1550,F,34,London,England,UK,2023-04-10,Corporate,Low
+1551,Customer_1551,M,39,New York,NY,USA,2022-12-15,Regular,Low
+1552,Customer_1552,F,30,Vancouver,BC,Canada,2022-05-04,Premium,Medium
+1553,Customer_1553,F,51,London,England,UK,2024-06-14,Regular,High
+1554,Customer_1554,M,27,San Diego,CA,USA,2022-01-13,Regular,Medium
+1555,Customer_1555,M,47,Munich,Bavaria,Germany,2022-06-10,Corporate,High
+1556,Customer_1556,M,24,Dallas,TX,USA,2023-10-24,Corporate,High
+1557,Customer_1557,F,25,London,England,UK,2024-02-25,Premium,Medium
+1558,Customer_1558,M,43,Vancouver,BC,Canada,2022-07-05,Premium,Medium
+1559,Customer_1559,F,60,Munich,Bavaria,Germany,2023-05-02,Corporate,High
+1560,Customer_1560,M,20,Vancouver,BC,Canada,2022-10-25,Regular,Medium
+1561,Customer_1561,M,37,Sydney,NSW,Australia,2022-05-19,Premium,Medium
+1562,Customer_1562,F,42,Sydney,NSW,Australia,2022-03-01,Premium,Low
+1563,Customer_1563,M,26,Manchester,England,UK,2022-03-15,Premium,Medium
+1564,Customer_1564,F,64,Munich,Bavaria,Germany,2023-08-09,Regular,Low
+1565,Customer_1565,F,38,Toronto,ON,Canada,2022-01-19,Corporate,High
+1566,Customer_1566,M,62,Sydney,NSW,Australia,2023-04-07,Premium,Low
+1567,Customer_1567,F,21,Munich,Bavaria,Germany,2023-09-29,Premium,High
+1568,Customer_1568,F,43,Sydney,NSW,Australia,2023-04-04,Regular,Low
+1569,Customer_1569,F,22,Los Angeles,CA,USA,2023-03-25,Corporate,Medium
+1570,Customer_1570,F,65,Sydney,NSW,Australia,2023-06-09,Regular,High
+1571,Customer_1571,M,59,Munich,Bavaria,Germany,2023-07-02,Regular,High
+1572,Customer_1572,F,24,Manchester,England,UK,2023-12-13,Corporate,Low
+1573,Customer_1573,M,49,London,England,UK,2022-05-17,Premium,High
+1574,Customer_1574,M,18,Austin,TX,USA,2022-10-31,Corporate,Medium
+1575,Customer_1575,M,68,Austin,TX,USA,2023-05-01,Regular,Low
+1576,Customer_1576,M,33,Sydney,NSW,Australia,2023-12-04,Premium,High
+1577,Customer_1577,M,46,Vancouver,BC,Canada,2023-01-11,Premium,Medium
+1578,Customer_1578,M,55,Vancouver,BC,Canada,2022-01-15,Premium,High
+1579,Customer_1579,M,23,Austin,TX,USA,2023-06-09,Corporate,High
+1580,Customer_1580,M,34,Toronto,ON,Canada,2023-01-22,Regular,High
+1581,Customer_1581,F,66,Vancouver,BC,Canada,2024-05-16,Premium,Low
+1582,Customer_1582,M,56,London,England,UK,2023-06-24,Regular,Low
+1583,Customer_1583,M,49,Toronto,ON,Canada,2022-04-15,Regular,Low
+1584,Customer_1584,F,66,Munich,Bavaria,Germany,2023-10-26,Premium,High
+1585,Customer_1585,F,38,Toronto,ON,Canada,2024-04-21,Corporate,Medium
+1586,Customer_1586,M,28,Sydney,NSW,Australia,2023-04-23,Premium,Low
+1587,Customer_1587,F,69,Munich,Bavaria,Germany,2022-04-11,Corporate,High
+1588,Customer_1588,M,50,Sydney,NSW,Australia,2024-01-24,Regular,Low
+1589,Customer_1589,M,63,Sydney,NSW,Australia,2022-04-12,Corporate,High
+1590,Customer_1590,M,70,Los Angeles,CA,USA,2023-09-07,Corporate,Low
+1591,Customer_1591,M,61,Toronto,ON,Canada,2022-09-11,Premium,Low
+1592,Customer_1592,M,66,Munich,Bavaria,Germany,2023-08-02,Regular,Medium
+1593,Customer_1593,M,21,Sydney,NSW,Australia,2023-05-16,Premium,High
+1594,Customer_1594,M,38,Los Angeles,CA,USA,2022-09-02,Corporate,Medium
+1595,Customer_1595,F,26,Los Angeles,CA,USA,2023-06-21,Premium,Medium
+1596,Customer_1596,F,36,San Diego,CA,USA,2022-06-08,Corporate,Medium
+1597,Customer_1597,M,41,New York,NY,USA,2022-04-27,Corporate,High
+1598,Customer_1598,F,68,London,England,UK,2023-02-01,Premium,Low
+1599,Customer_1599,F,62,Vancouver,BC,Canada,2022-03-13,Regular,Low
+1600,Customer_1600,F,45,Munich,Bavaria,Germany,2023-07-03,Corporate,High
+1601,Customer_1601,M,55,New York,NY,USA,2023-04-09,Premium,Low
+1602,Customer_1602,M,35,San Diego,CA,USA,2024-03-30,Regular,High
+1603,Customer_1603,M,58,San Diego,CA,USA,2023-07-27,Corporate,Low
+1604,Customer_1604,M,42,New York,NY,USA,2023-08-27,Premium,Medium
+1605,Customer_1605,F,52,Manchester,England,UK,2023-06-30,Regular,Low
+1606,Customer_1606,F,56,Vancouver,BC,Canada,2024-03-18,Corporate,Low
+1607,Customer_1607,F,33,Toronto,ON,Canada,2023-06-06,Premium,High
+1608,Customer_1608,M,39,Munich,Bavaria,Germany,2023-11-21,Regular,High
+1609,Customer_1609,M,18,Toronto,ON,Canada,2022-05-16,Premium,High
+1610,Customer_1610,F,56,New York,NY,USA,2023-11-01,Premium,Low
+1611,Customer_1611,F,43,Los Angeles,CA,USA,2023-07-10,Premium,Medium
+1612,Customer_1612,F,66,Sydney,NSW,Australia,2024-05-28,Regular,High
+1613,Customer_1613,F,49,Manchester,England,UK,2023-03-24,Regular,Low
+1614,Customer_1614,M,41,Sydney,NSW,Australia,2023-12-11,Premium,High
+1615,Customer_1615,F,37,Munich,Bavaria,Germany,2022-03-20,Corporate,High
+1616,Customer_1616,F,64,Toronto,ON,Canada,2022-02-14,Corporate,Low
+1617,Customer_1617,M,69,London,England,UK,2023-01-25,Regular,High
+1618,Customer_1618,F,46,Sydney,NSW,Australia,2024-02-19,Regular,High
+1619,Customer_1619,F,63,Sydney,NSW,Australia,2022-01-18,Corporate,High
+1620,Customer_1620,F,39,Sydney,NSW,Australia,2023-06-02,Corporate,Low
+1621,Customer_1621,F,43,Vancouver,BC,Canada,2023-08-25,Regular,High
+1622,Customer_1622,F,68,Sydney,NSW,Australia,2022-07-01,Regular,Medium
+1623,Customer_1623,F,28,Manchester,England,UK,2023-10-06,Premium,Low
+1624,Customer_1624,F,53,Toronto,ON,Canada,2022-08-22,Regular,High
+1625,Customer_1625,F,47,Vancouver,BC,Canada,2023-08-04,Regular,Medium
+1626,Customer_1626,M,22,Sydney,NSW,Australia,2024-04-28,Corporate,Low
+1627,Customer_1627,M,58,Sydney,NSW,Australia,2022-01-10,Corporate,Low
+1628,Customer_1628,F,22,Sydney,NSW,Australia,2024-04-06,Premium,Medium
+1629,Customer_1629,M,58,Munich,Bavaria,Germany,2023-11-12,Premium,Medium
+1630,Customer_1630,F,19,Munich,Bavaria,Germany,2024-05-10,Premium,Medium
+1631,Customer_1631,F,50,Manchester,England,UK,2022-10-18,Premium,Medium
+1632,Customer_1632,F,67,Austin,TX,USA,2023-11-26,Corporate,Medium
+1633,Customer_1633,M,53,Toronto,ON,Canada,2023-03-15,Premium,High
+1634,Customer_1634,F,37,Toronto,ON,Canada,2024-01-22,Regular,Low
+1635,Customer_1635,F,21,Manchester,England,UK,2022-07-23,Premium,Medium
+1636,Customer_1636,F,55,London,England,UK,2022-10-31,Corporate,Low
+1637,Customer_1637,F,35,Sydney,NSW,Australia,2023-12-29,Corporate,Low
+1638,Customer_1638,M,67,Munich,Bavaria,Germany,2023-05-23,Corporate,Medium
+1639,Customer_1639,F,46,Sydney,NSW,Australia,2023-01-07,Regular,Medium
+1640,Customer_1640,F,44,Sydney,NSW,Australia,2022-01-14,Premium,Medium
+1641,Customer_1641,F,63,Vancouver,BC,Canada,2023-02-05,Regular,Medium
+1642,Customer_1642,M,60,Sydney,NSW,Australia,2022-11-10,Corporate,High
+1643,Customer_1643,F,30,Munich,Bavaria,Germany,2024-04-13,Regular,High
+1644,Customer_1644,F,21,Toronto,ON,Canada,2022-08-01,Premium,High
+1645,Customer_1645,F,26,Toronto,ON,Canada,2024-03-19,Corporate,Low
+1646,Customer_1646,M,29,Sydney,NSW,Australia,2024-03-23,Corporate,Low
+1647,Customer_1647,M,29,San Diego,CA,USA,2023-11-06,Regular,Medium
+1648,Customer_1648,F,45,Dallas,TX,USA,2022-01-02,Corporate,Low
+1649,Customer_1649,M,42,Munich,Bavaria,Germany,2024-05-14,Corporate,High
+1650,Customer_1650,F,27,Munich,Bavaria,Germany,2023-03-25,Regular,High
+1651,Customer_1651,F,28,New York,NY,USA,2023-04-20,Regular,High
+1652,Customer_1652,F,63,London,England,UK,2024-01-08,Regular,Medium
+1653,Customer_1653,M,46,Munich,Bavaria,Germany,2024-04-18,Premium,Medium
+1654,Customer_1654,F,32,Munich,Bavaria,Germany,2022-05-18,Corporate,Low
+1655,Customer_1655,M,65,Sydney,NSW,Australia,2022-06-30,Corporate,Low
+1656,Customer_1656,F,26,Munich,Bavaria,Germany,2024-04-20,Premium,Medium
+1657,Customer_1657,F,26,Manchester,England,UK,2022-11-30,Premium,Low
+1658,Customer_1658,F,20,Munich,Bavaria,Germany,2023-06-28,Premium,Medium
+1659,Customer_1659,M,63,Munich,Bavaria,Germany,2022-01-11,Corporate,Medium
+1660,Customer_1660,F,69,New York,NY,USA,2022-02-25,Regular,Low
+1661,Customer_1661,M,42,San Diego,CA,USA,2023-08-29,Premium,High
+1662,Customer_1662,M,66,Austin,TX,USA,2022-06-24,Corporate,High
+1663,Customer_1663,F,23,Austin,TX,USA,2022-11-10,Regular,Medium
+1664,Customer_1664,F,47,Sydney,NSW,Australia,2022-05-28,Regular,High
+1665,Customer_1665,F,39,London,England,UK,2022-03-25,Premium,Medium
+1666,Customer_1666,F,34,Manchester,England,UK,2022-05-14,Premium,High
+1667,Customer_1667,F,47,New York,NY,USA,2024-06-06,Premium,High
+1668,Customer_1668,F,50,Manchester,England,UK,2022-07-18,Regular,High
+1669,Customer_1669,M,48,Sydney,NSW,Australia,2023-04-26,Premium,High
+1670,Customer_1670,F,44,Toronto,ON,Canada,2022-01-01,Corporate,Low
+1671,Customer_1671,M,21,London,England,UK,2024-06-16,Regular,Medium
+1672,Customer_1672,F,38,Vancouver,BC,Canada,2022-06-25,Regular,Low
+1673,Customer_1673,F,27,Sydney,NSW,Australia,2022-07-30,Premium,Low
+1674,Customer_1674,M,57,Sydney,NSW,Australia,2023-07-27,Regular,High
+1675,Customer_1675,M,33,London,England,UK,2023-10-06,Premium,Medium
+1676,Customer_1676,F,37,Sydney,NSW,Australia,2023-11-09,Premium,High
+1677,Customer_1677,M,35,Sydney,NSW,Australia,2024-01-21,Regular,Medium
+1678,Customer_1678,M,40,San Diego,CA,USA,2024-04-19,Regular,Low
+1679,Customer_1679,F,24,Dallas,TX,USA,2024-05-25,Corporate,High
+1680,Customer_1680,F,49,London,England,UK,2022-05-21,Corporate,Low
+1681,Customer_1681,F,33,Vancouver,BC,Canada,2022-08-25,Corporate,High
+1682,Customer_1682,M,61,Sydney,NSW,Australia,2023-07-03,Regular,Medium
+1683,Customer_1683,F,37,Munich,Bavaria,Germany,2023-10-23,Premium,Low
+1684,Customer_1684,F,61,Sydney,NSW,Australia,2023-04-22,Premium,Low
+1685,Customer_1685,M,39,Toronto,ON,Canada,2024-01-29,Corporate,Medium
+1686,Customer_1686,F,37,Sydney,NSW,Australia,2023-03-02,Premium,Low
+1687,Customer_1687,M,62,Sydney,NSW,Australia,2024-01-22,Regular,Medium
+1688,Customer_1688,M,53,Manchester,England,UK,2023-01-11,Premium,Low
+1689,Customer_1689,F,23,Vancouver,BC,Canada,2022-07-25,Corporate,High
+1690,Customer_1690,F,56,Sydney,NSW,Australia,2022-12-06,Corporate,Medium
+1691,Customer_1691,M,39,Manchester,England,UK,2024-04-18,Regular,High
+1692,Customer_1692,M,44,Sydney,NSW,Australia,2024-05-31,Corporate,High
+1693,Customer_1693,M,51,Sydney,NSW,Australia,2022-07-07,Corporate,Low
+1694,Customer_1694,F,45,Sydney,NSW,Australia,2023-05-04,Corporate,Medium
+1695,Customer_1695,M,58,Munich,Bavaria,Germany,2022-10-04,Regular,Medium
+1696,Customer_1696,M,35,Munich,Bavaria,Germany,2024-05-11,Corporate,High
+1697,Customer_1697,M,59,San Diego,CA,USA,2022-03-30,Corporate,Medium
+1698,Customer_1698,M,47,Sydney,NSW,Australia,2024-06-13,Corporate,Low
+1699,Customer_1699,F,61,Sydney,NSW,Australia,2023-08-25,Corporate,Medium
+1700,Customer_1700,F,62,London,England,UK,2022-11-21,Premium,Low
+1701,Customer_1701,M,62,Munich,Bavaria,Germany,2022-10-02,Corporate,High
+1702,Customer_1702,F,45,Austin,TX,USA,2023-06-30,Corporate,High
+1703,Customer_1703,M,39,London,England,UK,2022-05-04,Corporate,Medium
+1704,Customer_1704,M,67,San Diego,CA,USA,2024-02-27,Regular,Low
+1705,Customer_1705,M,56,Sydney,NSW,Australia,2023-02-19,Premium,High
+1706,Customer_1706,F,29,Munich,Bavaria,Germany,2022-11-20,Corporate,Low
+1707,Customer_1707,M,34,Vancouver,BC,Canada,2024-03-30,Premium,High
+1708,Customer_1708,F,49,Munich,Bavaria,Germany,2024-03-13,Corporate,Low
+1709,Customer_1709,F,36,Vancouver,BC,Canada,2022-08-25,Premium,Medium
+1710,Customer_1710,F,65,Toronto,ON,Canada,2022-01-28,Premium,High
+1711,Customer_1711,M,34,Sydney,NSW,Australia,2024-03-12,Regular,High
+1712,Customer_1712,F,31,Austin,TX,USA,2024-02-15,Corporate,High
+1713,Customer_1713,M,26,Toronto,ON,Canada,2023-12-11,Corporate,Medium
+1714,Customer_1714,F,25,Manchester,England,UK,2023-02-09,Premium,High
+1715,Customer_1715,M,30,San Diego,CA,USA,2023-01-12,Premium,High
+1716,Customer_1716,M,28,Toronto,ON,Canada,2022-07-07,Premium,High
+1717,Customer_1717,M,60,Toronto,ON,Canada,2023-10-19,Premium,Low
+1718,Customer_1718,F,41,Vancouver,BC,Canada,2023-10-24,Corporate,Medium
+1719,Customer_1719,M,29,Manchester,England,UK,2024-05-17,Corporate,High
+1720,Customer_1720,F,30,Sydney,NSW,Australia,2022-11-19,Corporate,Medium
+1721,Customer_1721,M,34,Austin,TX,USA,2022-03-30,Premium,High
+1722,Customer_1722,M,19,Austin,TX,USA,2022-01-18,Premium,Medium
+1723,Customer_1723,F,53,Munich,Bavaria,Germany,2023-08-31,Premium,Low
+1724,Customer_1724,F,18,Munich,Bavaria,Germany,2023-02-06,Regular,High
+1725,Customer_1725,F,65,Vancouver,BC,Canada,2022-10-09,Corporate,High
+1726,Customer_1726,M,30,New York,NY,USA,2023-02-07,Premium,Low
+1727,Customer_1727,F,47,London,England,UK,2022-06-13,Premium,High
+1728,Customer_1728,M,70,Munich,Bavaria,Germany,2024-04-08,Regular,Medium
+1729,Customer_1729,F,51,Dallas,TX,USA,2023-01-04,Corporate,Medium
+1730,Customer_1730,F,18,London,England,UK,2024-06-14,Corporate,Medium
+1731,Customer_1731,M,46,Sydney,NSW,Australia,2023-02-01,Regular,Medium
+1732,Customer_1732,F,56,Manchester,England,UK,2022-12-19,Premium,Low
+1733,Customer_1733,M,50,Sydney,NSW,Australia,2023-07-28,Regular,Low
+1734,Customer_1734,M,23,London,England,UK,2023-08-18,Premium,Low
+1735,Customer_1735,F,68,Austin,TX,USA,2022-02-28,Premium,High
+1736,Customer_1736,M,20,Los Angeles,CA,USA,2022-09-26,Premium,High
+1737,Customer_1737,F,48,Sydney,NSW,Australia,2022-06-10,Corporate,Medium
+1738,Customer_1738,M,42,Sydney,NSW,Australia,2024-01-29,Premium,High
+1739,Customer_1739,F,33,London,England,UK,2024-01-07,Corporate,Medium
+1740,Customer_1740,M,68,Sydney,NSW,Australia,2024-01-02,Corporate,High
+1741,Customer_1741,F,35,Sydney,NSW,Australia,2024-01-11,Corporate,High
+1742,Customer_1742,M,41,London,England,UK,2022-11-27,Regular,Medium
+1743,Customer_1743,F,34,London,England,UK,2024-01-13,Corporate,Medium
+1744,Customer_1744,F,68,Munich,Bavaria,Germany,2023-10-12,Premium,Medium
+1745,Customer_1745,F,26,New York,NY,USA,2022-07-09,Corporate,Low
+1746,Customer_1746,F,42,Munich,Bavaria,Germany,2023-10-08,Regular,High
+1747,Customer_1747,M,70,Munich,Bavaria,Germany,2023-03-22,Regular,High
+1748,Customer_1748,F,55,Toronto,ON,Canada,2022-03-06,Premium,High
+1749,Customer_1749,M,44,London,England,UK,2023-01-29,Corporate,Medium
+1750,Customer_1750,M,18,New York,NY,USA,2024-05-06,Regular,Medium
+1751,Customer_1751,F,57,Toronto,ON,Canada,2023-10-29,Corporate,Low
+1752,Customer_1752,M,56,London,England,UK,2022-10-14,Premium,Medium
+1753,Customer_1753,F,63,Sydney,NSW,Australia,2023-12-11,Regular,Medium
+1754,Customer_1754,M,22,Los Angeles,CA,USA,2023-01-07,Corporate,Medium
+1755,Customer_1755,F,43,Toronto,ON,Canada,2024-01-22,Corporate,Medium
+1756,Customer_1756,F,54,Vancouver,BC,Canada,2023-02-11,Regular,Medium
+1757,Customer_1757,M,67,New York,NY,USA,2022-07-19,Premium,Low
+1758,Customer_1758,M,21,Vancouver,BC,Canada,2022-01-11,Corporate,Low
+1759,Customer_1759,F,42,Manchester,England,UK,2024-02-24,Premium,Medium
+1760,Customer_1760,M,29,New York,NY,USA,2022-04-06,Corporate,High
+1761,Customer_1761,F,38,Austin,TX,USA,2024-04-24,Premium,Medium
+1762,Customer_1762,F,41,Sydney,NSW,Australia,2022-11-28,Corporate,High
+1763,Customer_1763,M,61,Sydney,NSW,Australia,2023-08-28,Corporate,High
+1764,Customer_1764,F,70,Manchester,England,UK,2022-03-23,Premium,High
+1765,Customer_1765,F,25,Toronto,ON,Canada,2022-02-14,Regular,High
+1766,Customer_1766,F,53,Munich,Bavaria,Germany,2024-01-31,Corporate,High
+1767,Customer_1767,M,62,New York,NY,USA,2022-01-08,Corporate,Low
+1768,Customer_1768,M,64,Sydney,NSW,Australia,2023-06-21,Regular,Low
+1769,Customer_1769,M,60,Manchester,England,UK,2022-06-15,Regular,Low
+1770,Customer_1770,F,19,Manchester,England,UK,2022-06-23,Premium,High
+1771,Customer_1771,M,62,Sydney,NSW,Australia,2024-05-23,Regular,High
+1772,Customer_1772,M,51,Munich,Bavaria,Germany,2024-04-06,Regular,Low
+1773,Customer_1773,M,47,Vancouver,BC,Canada,2023-08-30,Premium,Medium
+1774,Customer_1774,F,64,Munich,Bavaria,Germany,2023-08-22,Premium,Medium
+1775,Customer_1775,M,54,Vancouver,BC,Canada,2022-05-31,Corporate,Low
+1776,Customer_1776,M,21,Toronto,ON,Canada,2023-05-05,Regular,Low
+1777,Customer_1777,M,64,Manchester,England,UK,2022-12-10,Regular,Medium
+1778,Customer_1778,M,53,Toronto,ON,Canada,2023-11-03,Regular,Medium
+1779,Customer_1779,F,30,New York,NY,USA,2022-11-10,Premium,Medium
+1780,Customer_1780,F,54,Vancouver,BC,Canada,2022-08-11,Corporate,Low
+1781,Customer_1781,M,70,Toronto,ON,Canada,2022-08-23,Premium,High
+1782,Customer_1782,F,54,Toronto,ON,Canada,2023-01-26,Corporate,Medium
+1783,Customer_1783,F,60,London,England,UK,2022-07-29,Premium,Low
+1784,Customer_1784,F,42,Munich,Bavaria,Germany,2023-05-01,Corporate,Low
+1785,Customer_1785,M,21,New York,NY,USA,2023-09-10,Corporate,Low
+1786,Customer_1786,F,18,New York,NY,USA,2023-05-05,Corporate,Low
+1787,Customer_1787,F,25,London,England,UK,2023-07-07,Regular,High
+1788,Customer_1788,M,21,Munich,Bavaria,Germany,2023-08-27,Corporate,Medium
+1789,Customer_1789,F,31,Vancouver,BC,Canada,2023-09-19,Regular,Medium
+1790,Customer_1790,F,23,Vancouver,BC,Canada,2024-06-07,Premium,High
+1791,Customer_1791,F,24,New York,NY,USA,2022-12-06,Premium,High
+1792,Customer_1792,F,66,Sydney,NSW,Australia,2023-04-12,Corporate,Low
+1793,Customer_1793,F,55,Toronto,ON,Canada,2023-09-01,Corporate,High
+1794,Customer_1794,F,22,London,England,UK,2023-10-04,Regular,Low
+1795,Customer_1795,F,18,Austin,TX,USA,2023-02-25,Corporate,Medium
+1796,Customer_1796,F,45,Sydney,NSW,Australia,2023-03-12,Regular,Medium
+1797,Customer_1797,M,60,New York,NY,USA,2023-01-12,Premium,Low
+1798,Customer_1798,M,50,Sydney,NSW,Australia,2022-10-09,Corporate,High
+1799,Customer_1799,F,47,Sydney,NSW,Australia,2022-02-12,Premium,High
+1800,Customer_1800,M,51,London,England,UK,2023-07-12,Regular,Low
+1801,Customer_1801,M,52,Vancouver,BC,Canada,2022-09-24,Premium,Medium
+1802,Customer_1802,M,45,Manchester,England,UK,2024-01-06,Regular,Medium
+1803,Customer_1803,F,38,Austin,TX,USA,2024-04-03,Regular,High
+1804,Customer_1804,M,39,Munich,Bavaria,Germany,2023-08-07,Premium,High
+1805,Customer_1805,M,24,Toronto,ON,Canada,2024-02-13,Regular,Low
+1806,Customer_1806,M,64,Vancouver,BC,Canada,2022-03-03,Regular,Low
+1807,Customer_1807,M,37,Toronto,ON,Canada,2022-03-24,Regular,High
+1808,Customer_1808,M,27,Sydney,NSW,Australia,2024-03-24,Corporate,High
+1809,Customer_1809,M,20,Toronto,ON,Canada,2022-01-09,Regular,High
+1810,Customer_1810,F,45,Austin,TX,USA,2022-02-19,Regular,Low
+1811,Customer_1811,F,53,Sydney,NSW,Australia,2022-08-21,Premium,Low
+1812,Customer_1812,F,70,New York,NY,USA,2023-12-20,Corporate,High
+1813,Customer_1813,M,56,Austin,TX,USA,2022-10-07,Regular,High
+1814,Customer_1814,M,18,London,England,UK,2022-10-06,Premium,Low
+1815,Customer_1815,F,67,Sydney,NSW,Australia,2023-02-28,Regular,Medium
+1816,Customer_1816,M,34,Sydney,NSW,Australia,2022-01-24,Corporate,Low
+1817,Customer_1817,F,43,Dallas,TX,USA,2022-04-09,Regular,High
+1818,Customer_1818,M,29,Munich,Bavaria,Germany,2024-01-07,Corporate,Low
+1819,Customer_1819,M,51,San Diego,CA,USA,2023-04-18,Regular,Low
+1820,Customer_1820,F,29,Toronto,ON,Canada,2022-08-28,Regular,Medium
+1821,Customer_1821,F,70,Toronto,ON,Canada,2023-05-03,Premium,Medium
+1822,Customer_1822,M,39,New York,NY,USA,2023-04-14,Regular,High
+1823,Customer_1823,M,62,Munich,Bavaria,Germany,2022-12-05,Premium,High
+1824,Customer_1824,M,63,Toronto,ON,Canada,2023-03-09,Regular,Medium
+1825,Customer_1825,F,68,Sydney,NSW,Australia,2022-11-27,Regular,Low
+1826,Customer_1826,M,30,Munich,Bavaria,Germany,2023-02-14,Premium,High
+1827,Customer_1827,F,64,Sydney,NSW,Australia,2023-06-15,Premium,Medium
+1828,Customer_1828,F,70,Sydney,NSW,Australia,2023-09-30,Corporate,Low
+1829,Customer_1829,M,55,New York,NY,USA,2024-03-14,Corporate,High
+1830,Customer_1830,M,53,Toronto,ON,Canada,2024-03-12,Premium,Medium
+1831,Customer_1831,M,30,Austin,TX,USA,2024-04-03,Regular,High
+1832,Customer_1832,F,30,Sydney,NSW,Australia,2022-10-10,Corporate,High
+1833,Customer_1833,M,67,Sydney,NSW,Australia,2024-06-18,Regular,High
+1834,Customer_1834,F,69,Vancouver,BC,Canada,2023-10-19,Premium,Medium
+1835,Customer_1835,F,67,Munich,Bavaria,Germany,2024-02-13,Corporate,High
+1836,Customer_1836,F,55,Manchester,England,UK,2022-09-23,Corporate,High
+1837,Customer_1837,F,65,London,England,UK,2022-04-05,Corporate,High
+1838,Customer_1838,F,38,Sydney,NSW,Australia,2022-10-05,Corporate,Low
+1839,Customer_1839,M,51,Sydney,NSW,Australia,2023-03-28,Regular,Medium
+1840,Customer_1840,M,19,Los Angeles,CA,USA,2022-08-30,Corporate,Low
+1841,Customer_1841,F,30,Sydney,NSW,Australia,2023-09-05,Regular,Medium
+1842,Customer_1842,F,26,New York,NY,USA,2022-09-21,Premium,Low
+1843,Customer_1843,M,57,London,England,UK,2022-02-28,Corporate,Medium
+1844,Customer_1844,F,40,Vancouver,BC,Canada,2024-05-14,Premium,Low
+1845,Customer_1845,M,21,Sydney,NSW,Australia,2022-05-22,Regular,Medium
+1846,Customer_1846,F,23,Dallas,TX,USA,2024-04-20,Regular,High
+1847,Customer_1847,M,59,Vancouver,BC,Canada,2022-04-01,Premium,Low
+1848,Customer_1848,M,24,Austin,TX,USA,2023-05-17,Corporate,Low
+1849,Customer_1849,M,24,Sydney,NSW,Australia,2022-01-05,Corporate,High
+1850,Customer_1850,F,51,Toronto,ON,Canada,2022-06-21,Regular,Medium
+1851,Customer_1851,M,60,Dallas,TX,USA,2022-04-27,Regular,Medium
+1852,Customer_1852,F,56,Dallas,TX,USA,2022-02-04,Regular,Medium
+1853,Customer_1853,F,32,Sydney,NSW,Australia,2022-03-15,Corporate,Low
+1854,Customer_1854,M,41,San Diego,CA,USA,2023-10-22,Premium,High
+1855,Customer_1855,M,67,Vancouver,BC,Canada,2023-10-02,Corporate,Low
+1856,Customer_1856,M,54,London,England,UK,2022-06-26,Regular,Medium
+1857,Customer_1857,M,33,Austin,TX,USA,2022-06-20,Premium,Medium
+1858,Customer_1858,F,22,Toronto,ON,Canada,2023-08-08,Premium,Medium
+1859,Customer_1859,M,19,Vancouver,BC,Canada,2024-02-01,Corporate,Medium
+1860,Customer_1860,F,46,Manchester,England,UK,2022-07-31,Regular,High
+1861,Customer_1861,M,32,Dallas,TX,USA,2024-02-24,Regular,High
+1862,Customer_1862,F,21,Munich,Bavaria,Germany,2022-08-30,Corporate,Medium
+1863,Customer_1863,M,30,Los Angeles,CA,USA,2023-05-07,Regular,High
+1864,Customer_1864,M,21,Vancouver,BC,Canada,2023-11-21,Corporate,High
+1865,Customer_1865,M,43,Sydney,NSW,Australia,2022-09-07,Corporate,High
+1866,Customer_1866,M,45,Toronto,ON,Canada,2023-04-11,Regular,High
+1867,Customer_1867,M,51,Los Angeles,CA,USA,2023-10-17,Regular,High
+1868,Customer_1868,F,49,Munich,Bavaria,Germany,2024-02-22,Corporate,Medium
+1869,Customer_1869,F,52,Los Angeles,CA,USA,2023-11-19,Premium,High
+1870,Customer_1870,M,37,Sydney,NSW,Australia,2022-01-09,Premium,High
+1871,Customer_1871,M,41,Sydney,NSW,Australia,2024-05-13,Regular,Low
+1872,Customer_1872,M,26,Los Angeles,CA,USA,2024-02-03,Premium,Low
+1873,Customer_1873,M,40,Sydney,NSW,Australia,2022-10-06,Corporate,Medium
+1874,Customer_1874,M,22,New York,NY,USA,2024-01-20,Premium,Medium
+1875,Customer_1875,F,50,Sydney,NSW,Australia,2023-03-04,Corporate,Low
+1876,Customer_1876,M,34,Vancouver,BC,Canada,2022-11-04,Corporate,Medium
+1877,Customer_1877,M,51,Vancouver,BC,Canada,2023-03-22,Regular,Medium
+1878,Customer_1878,F,19,London,England,UK,2023-08-29,Premium,Medium
+1879,Customer_1879,F,38,London,England,UK,2022-11-13,Corporate,Low
+1880,Customer_1880,F,64,Vancouver,BC,Canada,2022-12-10,Corporate,Low
+1881,Customer_1881,M,68,Munich,Bavaria,Germany,2024-01-23,Regular,Low
+1882,Customer_1882,M,35,Manchester,England,UK,2022-12-06,Premium,Low
+1883,Customer_1883,F,44,Sydney,NSW,Australia,2023-10-23,Premium,High
+1884,Customer_1884,M,28,New York,NY,USA,2022-06-03,Regular,High
+1885,Customer_1885,M,70,London,England,UK,2024-02-21,Corporate,Medium
+1886,Customer_1886,F,58,Toronto,ON,Canada,2022-05-12,Premium,High
+1887,Customer_1887,M,49,Manchester,England,UK,2022-11-12,Corporate,Medium
+1888,Customer_1888,M,46,Munich,Bavaria,Germany,2024-05-24,Premium,Low
+1889,Customer_1889,M,33,Manchester,England,UK,2024-04-18,Premium,Low
+1890,Customer_1890,M,58,London,England,UK,2022-03-10,Regular,Low
+1891,Customer_1891,M,44,New York,NY,USA,2023-09-18,Premium,High
+1892,Customer_1892,F,38,Toronto,ON,Canada,2024-01-17,Corporate,High
+1893,Customer_1893,F,48,Toronto,ON,Canada,2023-06-28,Premium,Medium
+1894,Customer_1894,F,48,Munich,Bavaria,Germany,2024-05-30,Corporate,Medium
+1895,Customer_1895,M,18,Sydney,NSW,Australia,2022-04-08,Premium,Low
+1896,Customer_1896,F,58,Toronto,ON,Canada,2023-11-18,Corporate,Low
+1897,Customer_1897,M,40,Manchester,England,UK,2023-01-06,Regular,High
+1898,Customer_1898,M,41,Munich,Bavaria,Germany,2023-10-22,Corporate,Medium
+1899,Customer_1899,F,60,Sydney,NSW,Australia,2022-12-09,Premium,Medium
+1900,Customer_1900,M,33,Munich,Bavaria,Germany,2022-12-23,Premium,Medium
+1901,Customer_1901,F,49,New York,NY,USA,2022-12-20,Regular,Low
+1902,Customer_1902,M,32,Manchester,England,UK,2023-07-26,Premium,High
+1903,Customer_1903,M,23,London,England,UK,2023-07-16,Corporate,Low
+1904,Customer_1904,M,56,New York,NY,USA,2023-09-24,Corporate,Medium
+1905,Customer_1905,M,62,Munich,Bavaria,Germany,2024-02-02,Premium,Medium
+1906,Customer_1906,F,59,Toronto,ON,Canada,2024-04-04,Regular,High
+1907,Customer_1907,M,42,London,England,UK,2024-06-11,Premium,Medium
+1908,Customer_1908,M,26,Sydney,NSW,Australia,2023-09-29,Regular,Medium
+1909,Customer_1909,F,55,Munich,Bavaria,Germany,2023-03-01,Regular,Low
+1910,Customer_1910,M,41,New York,NY,USA,2022-05-15,Premium,Low
+1911,Customer_1911,M,54,Los Angeles,CA,USA,2024-04-27,Premium,Medium
+1912,Customer_1912,M,56,Austin,TX,USA,2022-06-10,Premium,Medium
+1913,Customer_1913,F,67,London,England,UK,2023-03-29,Regular,High
+1914,Customer_1914,F,63,Munich,Bavaria,Germany,2024-01-20,Corporate,Low
+1915,Customer_1915,M,53,Munich,Bavaria,Germany,2023-02-18,Corporate,Medium
+1916,Customer_1916,M,46,Sydney,NSW,Australia,2024-04-30,Premium,Low
+1917,Customer_1917,M,61,Munich,Bavaria,Germany,2023-08-04,Premium,Low
+1918,Customer_1918,M,57,Manchester,England,UK,2023-08-20,Corporate,Medium
+1919,Customer_1919,F,54,Munich,Bavaria,Germany,2022-11-17,Premium,Medium
+1920,Customer_1920,F,38,Dallas,TX,USA,2022-01-03,Corporate,Medium
+1921,Customer_1921,M,34,Sydney,NSW,Australia,2023-01-14,Regular,High
+1922,Customer_1922,F,38,Munich,Bavaria,Germany,2023-02-12,Regular,High
+1923,Customer_1923,M,67,London,England,UK,2023-07-13,Corporate,Medium
+1924,Customer_1924,F,52,Manchester,England,UK,2023-05-21,Premium,Medium
+1925,Customer_1925,M,31,San Diego,CA,USA,2022-05-12,Corporate,Medium
+1926,Customer_1926,M,24,Vancouver,BC,Canada,2023-03-28,Regular,High
+1927,Customer_1927,M,61,Toronto,ON,Canada,2023-10-01,Corporate,Low
+1928,Customer_1928,F,35,Manchester,England,UK,2022-05-08,Premium,Low
+1929,Customer_1929,M,43,Munich,Bavaria,Germany,2023-05-31,Corporate,High
+1930,Customer_1930,M,43,New York,NY,USA,2024-03-19,Premium,Medium
+1931,Customer_1931,F,59,Munich,Bavaria,Germany,2022-10-12,Regular,Medium
+1932,Customer_1932,M,69,London,England,UK,2022-02-27,Premium,Medium
+1933,Customer_1933,M,53,Toronto,ON,Canada,2022-01-08,Regular,Medium
+1934,Customer_1934,F,30,London,England,UK,2023-10-03,Regular,Medium
+1935,Customer_1935,M,26,Vancouver,BC,Canada,2023-07-18,Premium,High
+1936,Customer_1936,M,33,Toronto,ON,Canada,2024-04-16,Premium,High
+1937,Customer_1937,M,24,Sydney,NSW,Australia,2024-06-14,Premium,Medium
+1938,Customer_1938,F,36,Sydney,NSW,Australia,2022-05-21,Regular,Low
+1939,Customer_1939,M,43,Austin,TX,USA,2022-10-12,Regular,High
+1940,Customer_1940,F,67,Sydney,NSW,Australia,2023-05-11,Premium,Low
+1941,Customer_1941,M,63,Manchester,England,UK,2023-08-30,Regular,High
+1942,Customer_1942,M,36,London,England,UK,2023-03-04,Corporate,High
+1943,Customer_1943,F,54,Sydney,NSW,Australia,2024-05-14,Corporate,Medium
+1944,Customer_1944,M,23,Austin,TX,USA,2022-07-05,Premium,High
+1945,Customer_1945,M,20,London,England,UK,2022-12-23,Regular,Low
+1946,Customer_1946,M,67,Sydney,NSW,Australia,2023-10-13,Regular,Medium
+1947,Customer_1947,F,28,Manchester,England,UK,2023-05-10,Corporate,Low
+1948,Customer_1948,M,49,New York,NY,USA,2022-06-04,Corporate,Low
+1949,Customer_1949,M,42,Munich,Bavaria,Germany,2023-11-20,Corporate,Medium
+1950,Customer_1950,M,34,Vancouver,BC,Canada,2024-03-20,Corporate,High
+1951,Customer_1951,F,43,Dallas,TX,USA,2022-08-28,Corporate,High
+1952,Customer_1952,M,62,Munich,Bavaria,Germany,2024-04-02,Regular,Medium
+1953,Customer_1953,M,70,Toronto,ON,Canada,2023-03-15,Corporate,Medium
+1954,Customer_1954,M,47,Sydney,NSW,Australia,2022-02-05,Corporate,Medium
+1955,Customer_1955,F,68,Munich,Bavaria,Germany,2022-02-23,Corporate,Low
+1956,Customer_1956,F,28,New York,NY,USA,2024-03-04,Corporate,Low
+1957,Customer_1957,M,66,London,England,UK,2023-06-25,Premium,High
+1958,Customer_1958,F,63,Austin,TX,USA,2024-05-13,Corporate,Medium
+1959,Customer_1959,F,67,Munich,Bavaria,Germany,2023-03-13,Premium,High
+1960,Customer_1960,M,37,Sydney,NSW,Australia,2022-08-07,Premium,Low
+1961,Customer_1961,M,22,Munich,Bavaria,Germany,2024-06-10,Regular,Medium
+1962,Customer_1962,F,19,Vancouver,BC,Canada,2022-10-22,Corporate,High
+1963,Customer_1963,M,21,Sydney,NSW,Australia,2023-12-11,Corporate,High
+1964,Customer_1964,F,30,Vancouver,BC,Canada,2023-08-18,Regular,Medium
+1965,Customer_1965,F,66,Austin,TX,USA,2022-10-07,Corporate,Medium
+1966,Customer_1966,F,51,Sydney,NSW,Australia,2024-04-25,Premium,Medium
+1967,Customer_1967,F,47,Sydney,NSW,Australia,2022-12-26,Corporate,Medium
+1968,Customer_1968,M,54,New York,NY,USA,2023-06-18,Regular,High
+1969,Customer_1969,M,23,Dallas,TX,USA,2023-08-15,Regular,High
+1970,Customer_1970,M,54,Munich,Bavaria,Germany,2023-11-10,Corporate,Low
+1971,Customer_1971,F,27,Munich,Bavaria,Germany,2023-12-23,Corporate,High
+1972,Customer_1972,F,37,Vancouver,BC,Canada,2023-05-22,Premium,Medium
+1973,Customer_1973,F,56,San Diego,CA,USA,2022-05-31,Corporate,High
+1974,Customer_1974,M,42,Dallas,TX,USA,2023-07-02,Premium,Low
+1975,Customer_1975,F,19,Munich,Bavaria,Germany,2023-06-01,Premium,High
+1976,Customer_1976,F,67,Sydney,NSW,Australia,2022-05-26,Premium,Medium
+1977,Customer_1977,M,70,Sydney,NSW,Australia,2023-02-23,Regular,Medium
+1978,Customer_1978,M,33,Toronto,ON,Canada,2023-07-30,Corporate,Medium
+1979,Customer_1979,M,70,Vancouver,BC,Canada,2023-05-30,Regular,Medium
+1980,Customer_1980,M,39,Sydney,NSW,Australia,2023-08-18,Corporate,High
+1981,Customer_1981,M,40,Munich,Bavaria,Germany,2022-08-17,Corporate,High
+1982,Customer_1982,M,70,Munich,Bavaria,Germany,2023-07-21,Premium,High
+1983,Customer_1983,F,31,Sydney,NSW,Australia,2023-03-09,Regular,Low
+1984,Customer_1984,M,22,Toronto,ON,Canada,2022-10-15,Premium,Low
+1985,Customer_1985,F,69,Manchester,England,UK,2023-12-23,Regular,Medium
+1986,Customer_1986,F,61,Austin,TX,USA,2022-07-08,Premium,High
+1987,Customer_1987,F,33,Sydney,NSW,Australia,2023-01-19,Premium,High
+1988,Customer_1988,M,55,Vancouver,BC,Canada,2022-09-23,Corporate,Medium
+1989,Customer_1989,M,49,Toronto,ON,Canada,2022-01-04,Premium,High
+1990,Customer_1990,M,32,New York,NY,USA,2023-02-09,Regular,Medium
+1991,Customer_1991,F,60,Toronto,ON,Canada,2023-06-24,Premium,High
+1992,Customer_1992,F,23,San Diego,CA,USA,2022-12-08,Regular,Medium
+1993,Customer_1993,F,55,Los Angeles,CA,USA,2023-07-29,Premium,Medium
+1994,Customer_1994,F,55,Sydney,NSW,Australia,2024-05-02,Premium,Low
+1995,Customer_1995,M,38,Sydney,NSW,Australia,2022-09-16,Premium,Medium
+1996,Customer_1996,M,63,Munich,Bavaria,Germany,2022-06-19,Regular,Medium
+1997,Customer_1997,F,18,San Diego,CA,USA,2023-01-17,Premium,Low
+1998,Customer_1998,F,38,Sydney,NSW,Australia,2023-02-13,Regular,High
+1999,Customer_1999,F,18,Austin,TX,USA,2024-04-13,Corporate,Medium
+2000,Customer_2000,M,26,Toronto,ON,Canada,2024-06-13,Premium,Medium
