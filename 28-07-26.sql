@@ -169,3 +169,140 @@ FROM daily_sales
 ORDER BY
     store_name,
     order_date;
+
+
+/*Question 6 — Hard
+Business Requirement
+
+Find the top 3 products by revenue within each product category.*/
+
+WITH product_revenue AS
+(
+SELECT 
+    p.category,
+    p.product_name,
+    SUM(f.sales_amount) AS total_revenue,
+    ROW_NUMBER() OVER (PARTITION BY p.category ORDER BY SUM(f.sales_amount) DESC) AS rn
+FROM fact_sales f    
+JOIN dim_products p ON f.product_id = p.product_id
+GROUP BY p.category,
+         p.product_name
+
+)
+
+SELECT *
+FROM product_revenue
+WHERE rn <= 3;
+
+
+/*Question 7 — Hard
+Business Requirement
+
+Find customers who have placed orders in three or more consecutive months.*/
+
+
+WITH monthly_orders AS
+(
+    SELECT DISTINCT
+        f.customer_id,
+        DATE_TRUNC('month', f.order_date) AS order_month
+    FROM fact_sales f
+),
+
+ordered_months AS
+(
+    SELECT
+        customer_id,
+        order_month,
+        LAG(order_month) OVER(
+            PARTITION BY customer_id
+            ORDER BY order_month
+        ) AS prev_month
+    FROM monthly_orders
+)
+
+SELECT *
+FROM ordered_months;
+
+
+/*Question 8 — Hard
+Business Requirement
+
+Find the average order value for every customer and compare it with the overall company average.*/
+
+
+WITH customer_orders AS 
+(
+    SELECT 
+        customer_id,
+        AVG(sales_amount) AS avg_order_value
+    FROM fact_sales
+    GROUP BY customer_id
+)
+
+SELECT 
+    customer_id,
+    avg_order_value,
+    AVG(avg_order_value) OVER() AS company_avg,
+    avg_order_value - AVG(avg_order_value) OVER() AS difference_from_company_avg
+FROM customer_orders;
+
+
+/*Question 9 — Hard
+Business Requirement
+
+Find the highest revenue month for every store.*/
+
+
+WITH monthly_sales AS 
+(SELECT
+    store_id,
+    DATE_TRUNC('month', order_date) AS sales_month,
+    SUM(total_amount) AS total_revenue
+FROM fact_sales
+GROUP BY store_id,
+         DATE_TRUNC('month', order_date)
+),
+
+ ranked_sales AS
+ (SELECT
+    store_id,
+    sales_month,
+    total_revenue,
+    ROW_NUMBER() OVER (PARTITION BY store_id ORDER BY total_revenue DESC) AS rn
+FROM monthly_sales
+ )
+
+ SELECT *
+    FROM ranked_sales
+    WHERE rn = 1;
+
+
+/*Question 10 — Hard
+Business Requirement
+
+Find the top customer contributing to revenue in each state.*/
+
+WITH customer_revenue AS
+(
+    SELECT
+        c.state,
+        c.customer_id,
+        c.customer_name,
+        SUM(f.sales_amount) AS revenue,
+        ROW_NUMBER() OVER(
+            PARTITION BY c.state
+            ORDER BY SUM(f.sales_amount) DESC
+        ) AS rn
+    FROM fact_sales f
+    JOIN dim_customers c
+        ON f.customer_id = c.customer_id
+    GROUP BY
+        c.state,
+        c.customer_id,
+        c.customer_name
+)
+
+SELECT *
+FROM customer_revenue
+WHERE rn = 1;
