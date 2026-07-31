@@ -204,3 +204,282 @@ FROM ranked_customer
 ORDER BY
     country,
     rn;
+
+
+
+/* Question 4 Business Scenario
+
+The Finance team wants to analyze yearly product performance.
+
+Task
+
+Write a SQL query to:
+
+Calculate yearly revenue for every product category.
+Calculate the previous year's revenue for each category.
+Calculate the YoY growth percentage.
+Calculate the company's average yearly revenue for the same year.
+Compare every category's revenue with the company average.
+Rank categories by YoY growth for each year.
+Return only the top 5 categories for every year.*/
+
+-- Step 1: Calculate yearly revenue for each product category
+
+WITH yearly_category_sales AS
+(
+    SELECT
+        p.category,
+        EXTRACT(YEAR FROM f.order_date) AS sales_year,
+
+        SUM(f.sales_revenue) AS yearly_revenue
+
+    FROM fact_sales f
+    JOIN dim_products p
+        ON f.product_id = p.product_id
+
+    GROUP BY
+        p.category,
+        EXTRACT(YEAR FROM f.order_date)
+),
+
+-- Step 2: Get previous year's revenue
+
+previous_year_sales AS
+(
+    SELECT
+        *,
+
+        LAG(yearly_revenue) OVER
+        (
+            PARTITION BY category
+            ORDER BY sales_year
+        ) AS previous_year_revenue
+
+    FROM yearly_category_sales
+),
+
+-- Step 3: Calculate YoY Growth and Company Average
+
+category_metrics AS
+(
+    SELECT
+        *,
+
+        ROUND
+        (
+            (
+                yearly_revenue
+                -
+                previous_year_revenue
+            )
+            *100.0
+            /
+            NULLIF(previous_year_revenue,0),
+            2
+        ) AS yoy_growth,
+
+        AVG(yearly_revenue) OVER
+        (
+            PARTITION BY sales_year
+        ) AS company_average_revenue
+
+    FROM previous_year_sales
+),
+
+-- Step 4: Rank categories for each year
+
+ranked_categories AS
+(
+    SELECT
+        *,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY sales_year
+            ORDER BY yoy_growth DESC
+        ) AS rn
+
+    FROM category_metrics
+)
+
+SELECT
+    category,
+    sales_year,
+    yearly_revenue,
+    previous_year_revenue,
+    yoy_growth,
+    company_average_revenue,
+    rn
+
+FROM ranked_categories
+
+WHERE rn <= 5
+
+ORDER BY
+    sales_year,
+    rn;
+
+
+/*Business Scenario
+
+The Operations team wants to evaluate seller performance across all countries.
+
+Task
+
+Write a SQL query to:
+
+Calculate each seller's yearly revenue.
+Calculate each seller's average order value.
+Calculate the previous year's revenue using LAG().
+Calculate YoY growth percentage.
+Calculate the company's average seller revenue for the same year.
+Compare each seller's revenue against the company average.
+Find each seller's highest-selling product category.
+Rank sellers within each country based on current year's revenue.
+Return only the top 3 sellers from each country.
+Concepts Tested*/
+
+
+-- Step 1: Calculate yearly seller metrics
+
+WITH seller_metrics AS
+(
+    SELECT
+        s.seller_id,
+        s.seller_name,
+        st.country,
+
+        EXTRACT(YEAR FROM f.order_date) AS sales_year,
+
+        SUM(f.sales_revenue) AS yearly_revenue,
+
+        COUNT(DISTINCT f.order_id) AS total_orders,
+
+        ROUND(
+            SUM(f.sales_revenue) * 1.0 /
+            COUNT(DISTINCT f.order_id),
+            2
+        ) AS average_order_value
+
+    FROM fact_sales f
+    JOIN dim_seller s
+        ON f.seller_id = s.seller_id
+    JOIN dim_store st
+        ON f.store_id = st.store_id
+
+    GROUP BY
+        s.seller_id,
+        s.seller_name,
+        st.country,
+        EXTRACT(YEAR FROM f.order_date)
+),
+
+-- Step 2: Previous year revenue, YoY Growth and Company Average
+
+seller_growth AS
+(
+    SELECT
+        *,
+
+        LAG(yearly_revenue) OVER
+        (
+            PARTITION BY seller_id
+            ORDER BY sales_year
+        ) AS previous_year_revenue,
+
+        AVG(yearly_revenue) OVER
+        (
+            PARTITION BY sales_year
+        ) AS company_average_revenue
+
+    FROM seller_metrics
+),
+
+-- Step 3: Revenue by Seller and Category
+
+seller_category AS
+(
+    SELECT
+        f.seller_id,
+        p.category,
+
+        SUM(f.sales_revenue) AS category_revenue
+
+    FROM fact_sales f
+    JOIN dim_products p
+        ON f.product_id = p.product_id
+
+    GROUP BY
+        f.seller_id,
+        p.category
+),
+
+-- Step 4: Highest-selling category for each seller
+
+top_category AS
+(
+    SELECT
+        *,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY seller_id
+            ORDER BY category_revenue DESC
+        ) AS category_rank
+
+    FROM seller_category
+),
+
+-- Step 5: Final Seller Ranking
+
+ranked_seller AS
+(
+    SELECT
+        sg.*,
+
+        ROUND(
+            (
+                yearly_revenue
+                -
+                previous_year_revenue
+            ) * 100.0 /
+            NULLIF(previous_year_revenue,0),
+            2
+        ) AS yoy_growth,
+
+        tc.category,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY country
+            ORDER BY yearly_revenue DESC
+        ) AS rn
+
+    FROM seller_growth sg
+    LEFT JOIN top_category tc
+        ON sg.seller_id = tc.seller_id
+       AND tc.category_rank = 1
+)
+
+SELECT
+    seller_id,
+    seller_name,
+    country,
+    sales_year,
+    yearly_revenue,
+    total_orders,
+    average_order_value,
+    company_average_revenue,
+    previous_year_revenue,
+    yoy_growth,
+    category AS highest_selling_category,
+    rn
+
+FROM ranked_seller
+
+WHERE rn <= 3
+
+ORDER BY
+    country,
+    rn;
+
