@@ -67,3 +67,140 @@ WHERE rn <= 3
 ORDER BY country, 
          sales_amount,
          rn;
+
+
+
+/*Query 2 Business Scenario
+
+The Sales Director wants to identify the best-performing product categories in each country.
+
+Task
+
+Write a SQL query to:
+
+Calculate the total sales revenue for every product category in each country.
+Calculate the average sales amount for each category.
+Rank product categories within each country based on total revenue.
+Return only the top 2 categories from each country.*/
+
+
+WITH top_category AS
+(
+    SELECT
+        f.country,
+        p.category,
+        SUM(f.sales_revenue) AS total_revenue,
+        AVG(f.sales_revenue) AS average_revenue
+    FROM fact_sales f
+    JOIN dim_products p
+        ON f.product_id = p.product_id
+    GROUP BY
+        f.country,
+        p.category
+),
+
+ranked_category AS
+(
+    SELECT
+        *,
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY country
+            ORDER BY total_revenue DESC
+        ) AS rn
+    FROM top_category
+)
+
+SELECT *
+FROM ranked_category
+WHERE rn <= 2;
+
+
+/*Query 3 Business Scenario
+
+Management wants to identify valuable customers across different countries.
+
+Task
+
+Write a SQL query to:
+
+Calculate each customer's total revenue.
+Calculate the customer's total number of orders.
+Calculate the average order value for each customer.
+Calculate the company-wide average customer revenue.
+Show only customers whose revenue is above the company average.
+Rank customers within each country by total revenue.*/
+
+
+-- Step 1: Calculate customer-level metrics
+
+WITH customer_metrics AS
+(
+    SELECT
+        c.customer_id,
+        c.customer_name,
+        c.country,
+
+        SUM(f.sales_revenue) AS total_revenue,
+
+        COUNT(DISTINCT f.order_id) AS total_orders,
+
+        ROUND(
+            SUM(f.sales_revenue) * 1.0
+            /
+            COUNT(DISTINCT f.order_id),
+            2
+        ) AS average_order_value
+
+    FROM fact_sales f
+    JOIN dim_customer c
+        ON f.customer_id = c.customer_id
+
+    GROUP BY
+        c.customer_id,
+        c.customer_name,
+        c.country
+),
+
+-- Step 2: Calculate company average revenue and
+-- keep only customers above company average
+
+above_average_customer AS
+(
+    SELECT
+        *,
+        AVG(total_revenue) OVER() AS company_average_revenue
+
+    FROM customer_metrics
+),
+
+-- Step 3: Rank customers within each country
+
+ranked_customer AS
+(
+    SELECT
+        *,
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY country
+            ORDER BY total_revenue DESC
+        ) AS rn
+
+    FROM above_average_customer
+    WHERE total_revenue > company_average_revenue
+)
+
+SELECT
+    customer_id,
+    customer_name,
+    country,
+    total_orders,
+    total_revenue,
+    average_order_value,
+    company_average_revenue,
+    rn
+
+FROM ranked_customer
+ORDER BY
+    country,
+    rn;
