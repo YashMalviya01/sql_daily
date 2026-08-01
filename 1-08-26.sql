@@ -247,3 +247,267 @@ SELECT *
 FROM ranked_country
 
 WHERE rn <= 3;
+
+
+/* Query 4. Business Scenario
+
+The Finance team wants to analyze customer purchasing trends over time.
+
+Business Requirement
+
+Write a SQL query to:
+
+Calculate each customer's monthly revenue.
+Calculate the previous month's revenue for each customer.
+Calculate the month-over-month (MoM) growth percentage.
+Calculate the company's average monthly customer revenue for the same month.
+Compare each customer's monthly revenue against the company average.
+Rank customers within each month based on monthly revenue.
+Return the top 5 customers for every month.*/
+
+-- Step 1 : Calculate Monthly Revenue for every Customer
+
+WITH monthly_revenue AS
+(
+    SELECT
+        c.customer_id,
+        c.customer_name,
+
+        DATE_TRUNC('month',f.order_date) AS order_month,
+
+        SUM(f.sales_revenue) AS monthly_revenue
+
+    FROM fact_sales f
+
+    JOIN dim_customers c
+        ON f.customer_id = c.customer_id
+
+    GROUP BY
+        c.customer_id,
+        c.customer_name,
+        DATE_TRUNC('month',f.order_date)
+),
+
+-- Step 2 : Previous Month Revenue,
+-- Company Average Revenue and MoM Growth
+
+customer_metrics AS
+(
+    SELECT
+        *,
+
+        LAG(monthly_revenue) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY order_month
+        ) AS previous_month_revenue,
+
+        AVG(monthly_revenue) OVER
+        (
+            PARTITION BY order_month
+        ) AS company_monthly_average
+
+    FROM monthly_revenue
+),
+
+-- Step 3 : Calculate Growth and Rank Customers
+
+ranked_customers AS
+(
+    SELECT
+        *,
+
+        ROUND
+        (
+            (
+                monthly_revenue
+                -
+                previous_month_revenue
+            )
+            *100.0
+            /
+            NULLIF(previous_month_revenue,0),
+            2
+        ) AS mom_growth_percent,
+
+        ROUND
+        (
+            (
+                monthly_revenue
+                -
+                company_monthly_average
+            )
+            *100.0
+            /
+            NULLIF(company_monthly_average,0),
+            2
+        ) AS revenue_vs_company_percent,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY order_month
+            ORDER BY monthly_revenue DESC
+        ) AS rn
+
+    FROM customer_metrics
+)
+
+SELECT
+    customer_id,
+    customer_name,
+    order_month,
+    monthly_revenue,
+    previous_month_revenue,
+    mom_growth_percent,
+    company_monthly_average,
+    revenue_vs_company_percent,
+    rn
+
+FROM ranked_customers
+
+WHERE rn <= 5
+
+ORDER BY
+    order_month,
+    rn;
+
+
+/*Business Scenario
+
+The Sales Director wants to identify the best-performing sales employees across different countries.
+
+Business Requirement
+
+Write a SQL query to:
+
+Calculate each employee's total yearly revenue.
+Calculate the total number of orders handled by each employee.
+Calculate the average order value for each employee.
+Calculate the previous year's revenue using a window function.
+Calculate the Year-over-Year (YoY) Growth %.
+Calculate the company average employee revenue for the same year.
+Calculate each employee's percentage difference compared to the company average.
+Rank employees within each country based on yearly revenue.
+Return only the top 3 employees from each country.*/
+
+-- Step 1 : Calculate Employee Yearly Metrics
+
+WITH employee_metrics AS
+(
+    SELECT
+        e.employee_id,
+        e.employee_name,
+        e.country,
+
+        EXTRACT(YEAR FROM f.order_date) AS sales_year,
+
+        SUM(f.sales_revenue) AS yearly_revenue,
+
+        COUNT(DISTINCT f.order_id) AS total_orders,
+
+        ROUND
+        (
+            SUM(f.sales_revenue) * 1.0
+            /
+            COUNT(DISTINCT f.order_id),
+            2
+        ) AS average_order_value
+
+    FROM fact_sales f
+
+    JOIN dim_employees e
+        ON f.employee_id = e.employee_id
+
+    GROUP BY
+        e.employee_id,
+        e.employee_name,
+        e.country,
+        EXTRACT(YEAR FROM f.order_date)
+),
+
+-- Step 2 : Calculate Previous Year Revenue,
+-- Company Average Revenue,
+-- YoY Growth and Company Comparison
+
+employee_growth AS
+(
+    SELECT
+        *,
+
+        LAG(yearly_revenue) OVER
+        (
+            PARTITION BY employee_id
+            ORDER BY sales_year
+        ) AS previous_year_revenue,
+
+        AVG(yearly_revenue) OVER
+        (
+            PARTITION BY sales_year
+        ) AS company_yearly_average
+
+    FROM employee_metrics
+),
+
+-- Step 3 : Rank Employees
+
+ranked_employees AS
+(
+    SELECT
+        *,
+
+        ROUND
+        (
+            (
+                yearly_revenue
+                -
+                previous_year_revenue
+            )
+            *100.0
+            /
+            NULLIF(previous_year_revenue,0),
+            2
+        ) AS yoy_growth_percent,
+
+        ROUND
+        (
+            (
+                yearly_revenue
+                -
+                company_yearly_average
+            )
+            *100.0
+            /
+            NULLIF(company_yearly_average,0),
+            2
+        ) AS revenue_vs_company_percent,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY country
+            ORDER BY yearly_revenue DESC
+        ) AS rn
+
+    FROM employee_growth
+)
+
+SELECT
+    employee_id,
+    employee_name,
+    country,
+    sales_year,
+    yearly_revenue,
+    total_orders,
+    average_order_value,
+    previous_year_revenue,
+    yoy_growth_percent,
+    company_yearly_average,
+    revenue_vs_company_percent,
+    rn
+
+FROM ranked_employees
+
+WHERE rn <= 3
+
+ORDER BY
+    country,
+    rn;
