@@ -1,7 +1,7 @@
 # 🚀 SQL Daily Practice
 
 Welcome to my **SQL Daily Practice** repository.
-
+ 
 This repository documents my daily SQL learning journey, where I solve interview-oriented SQL problems ranging from beginner to advanced. The primary objective is to strengthen my SQL problem-solving skills, develop analytical thinking, and prepare for Data Analyst and Business Intelligence interviews.
 
 Rather than simply memorizing SQL syntax, I focus on understanding the business problem, designing the solution, and then implementing it efficiently.
