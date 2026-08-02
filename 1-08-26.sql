@@ -511,3 +511,720 @@ WHERE rn <= 3
 ORDER BY
     country,
     rn;
+
+/*Question 6 (Medium)
+Business Scenario
+
+The Product Manager wants to identify products with consistent growth.
+
+Business Requirement
+
+Write a SQL query to:
+
+Calculate the monthly revenue for every product.
+Calculate the previous month's revenue for every product.
+Calculate the Month-over-Month (MoM) Growth %.
+Identify products that have shown positive revenue growth for 3 consecutive months.
+Rank those products by their latest month's revenue.
+Return the top 10 products.*/
+
+-- Step 1: Calculate Monthly Revenue for Every Product
+
+WITH monthly_revenue AS
+(
+    SELECT
+        p.product_id,
+        p.product_name,
+        p.product_category,
+
+        DATE_TRUNC('month', f.order_date) AS sales_month,
+
+        SUM(f.sales_revenue) AS monthly_revenue
+
+    FROM fact_sales f
+
+    JOIN dim_products p
+        ON f.product_id = p.product_id
+
+    GROUP BY
+        p.product_id,
+        p.product_name,
+        p.product_category,
+        DATE_TRUNC('month', f.order_date)
+),
+
+-- Step 2: Calculate Previous Month Revenue and MoM Growth
+
+mom_growth AS
+(
+    SELECT
+        *,
+
+        LAG(monthly_revenue) OVER
+        (
+            PARTITION BY product_id
+            ORDER BY sales_month
+        ) AS previous_month_revenue,
+
+        ROUND
+        (
+            (
+                monthly_revenue
+                -
+                LAG(monthly_revenue) OVER
+                (
+                    PARTITION BY product_id
+                    ORDER BY sales_month
+                )
+            )
+            *100.0
+            /
+            NULLIF
+            (
+                LAG(monthly_revenue) OVER
+                (
+                    PARTITION BY product_id
+                    ORDER BY sales_month
+                ),
+                0
+            ),
+            2
+        ) AS mom_growth_percent
+
+    FROM monthly_revenue
+),
+
+-- Step 3: Flag Positive Growth Months
+
+growth_flag AS
+(
+    SELECT
+        *,
+
+        CASE
+            WHEN mom_growth_percent > 0
+            THEN 1
+            ELSE 0
+        END AS growth_flag
+
+    FROM mom_growth
+),
+
+-- Step 4: Rank Products by Latest Monthly Revenue
+
+ranked_products AS
+(
+    SELECT
+        *,
+
+        ROW_NUMBER() OVER
+        (
+            ORDER BY monthly_revenue DESC
+        ) AS rn
+
+    FROM growth_flag
+    WHERE growth_flag = 1
+)
+
+SELECT
+    product_id,
+    product_name,
+    product_category,
+    sales_month,
+    monthly_revenue,
+    previous_month_revenue,
+    mom_growth_percent,
+    rn
+
+FROM ranked_products
+
+WHERE rn <= 10
+
+ORDER BY rn;
+
+
+/*Business Scenario
+
+The CEO wants to identify the company's most valuable customers.
+
+But simply looking at revenue isn't enough.
+
+Business Requirement
+
+Write a SQL query to:
+
+Calculate each customer's yearly revenue.
+Calculate each customer's previous year's revenue.
+Calculate YoY Growth %.
+Calculate the company average revenue for the same year.
+Calculate the customer's contribution % to the company's revenue for that year.
+Calculate the customer's lifetime revenue (across all years).
+Rank customers within each year based on yearly revenue.
+Return the top 5 customers for every year.*/
+
+-- Step 1 : Customer Yearly Revenue
+
+WITH customer_yearly_revenue AS
+(
+    SELECT
+        c.customer_id,
+        c.customer_name,
+
+        EXTRACT(YEAR FROM f.order_date) AS sales_year,
+
+        SUM(f.sales_revenue) AS yearly_revenue
+
+    FROM fact_sales f
+
+    JOIN dim_customers c
+        ON f.customer_id = c.customer_id
+
+    GROUP BY
+        c.customer_id,
+        c.customer_name,
+        EXTRACT(YEAR FROM f.order_date)
+),
+
+customer_metrics AS
+(
+    SELECT
+        *,
+
+        LAG(yearly_revenue) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY sales_year
+        ) AS previous_year_revenue,
+
+        AVG(yearly_revenue) OVER
+        (
+            PARTITION BY sales_year
+        ) AS company_average_revenue,
+
+        SUM(yearly_revenue) OVER
+        (
+            PARTITION BY sales_year
+        ) AS company_total_revenue,
+
+        SUM(yearly_revenue) OVER
+        (
+            PARTITION BY customer_id
+        ) AS lifetime_revenue
+
+    FROM customer_yearly_revenue
+),
+
+customer_performance AS
+(
+    SELECT
+        *,
+
+        ROUND
+        (
+            (
+                yearly_revenue
+                -
+                previous_year_revenue
+            )
+            *100.0
+            /
+            NULLIF(previous_year_revenue,0),
+            2
+        ) AS yoy_growth_percent,
+
+        ROUND
+        (
+            yearly_revenue
+            *100.0
+            /
+            NULLIF(company_total_revenue,0),
+            2
+        ) AS revenue_contribution_percent,
+
+        ROUND
+        (
+            (
+                yearly_revenue
+                -
+                company_average_revenue
+            )
+            *100.0
+            /
+            NULLIF(company_average_revenue,0),
+            2
+        ) AS revenue_vs_company_average
+
+    FROM customer_metrics
+),
+ranked_customers AS
+(
+    SELECT
+        *,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY sales_year
+            ORDER BY yearly_revenue DESC
+        ) AS rn
+
+    FROM customer_performance
+)
+
+SELECT
+
+    customer_id,
+    customer_name,
+
+    sales_year,
+
+    yearly_revenue,
+
+    previous_year_revenue,
+
+    yoy_growth_percent,
+
+    company_average_revenue,
+
+    company_total_revenue,
+
+    revenue_contribution_percent,
+
+    revenue_vs_company_average,
+
+    lifetime_revenue,
+
+    rn
+
+FROM ranked_customers
+
+WHERE rn <= 5
+
+ORDER BY
+    sales_year,
+    rn;
+
+
+
+/*Business Scenario
+
+The Marketing team wants to identify high-value customers who are becoming inactive.
+
+Simply looking at revenue isn't enough—they want to find customers whose spending is declining.
+
+Business Requirement
+
+Write a SQL query to:
+
+Calculate each customer's monthly revenue.
+Calculate the previous month's revenue.
+Calculate the Month-over-Month (MoM) Growth %.
+Identify customers whose revenue has decreased for 3 consecutive months.
+Calculate each customer's lifetime revenue.
+Calculate the company's average monthly customer revenue for the same month.
+Calculate each customer's revenue difference from the company average.
+Rank the declining customers by lifetime revenue.
+Return the top 10 high-value customers who are declining.*/
+
+-- Step 1 : Monthly Revenue
+
+WITH monthly_revenue AS
+(
+    SELECT
+        c.customer_id,
+        c.customer_name,
+
+        DATE_TRUNC('month',f.order_date) AS order_month,
+
+        SUM(f.sales_revenue) AS monthly_revenue
+
+    FROM fact_sales f
+
+    JOIN dim_customers c
+        ON f.customer_id = c.customer_id
+
+    GROUP BY
+        c.customer_id,
+        c.customer_name,
+        DATE_TRUNC('month',f.order_date)
+),
+
+customer_metrics AS
+(
+    SELECT
+        *,
+
+        LAG(monthly_revenue) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY order_month
+        ) AS previous_month_revenue,
+
+        AVG(monthly_revenue) OVER
+        (
+            PARTITION BY order_month
+        ) AS company_monthly_average,
+
+        SUM(monthly_revenue) OVER
+        (
+            PARTITION BY customer_id
+        ) AS lifetime_revenue
+
+    FROM monthly_revenue
+),
+
+growth_metrics AS
+(
+    SELECT
+        *,
+
+        ROUND
+        (
+            (
+                monthly_revenue
+                -
+                previous_month_revenue
+            )
+            *100.0
+            /
+            NULLIF(previous_month_revenue,0),
+            2
+        ) AS mom_growth_percent,
+
+        ROUND
+        (
+            (
+                monthly_revenue
+                -
+                company_monthly_average
+            )
+            *100.0
+            /
+            NULLIF(company_monthly_average,0),
+            2
+        ) AS revenue_vs_company_percent,
+
+        CASE
+            WHEN monthly_revenue < previous_month_revenue
+            THEN 1
+            ELSE 0
+        END AS decline_flag
+
+    FROM customer_metrics
+),
+
+declining_customers AS
+(
+    SELECT
+        *,
+
+        LAG(decline_flag,1) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY order_month
+        ) AS prev_decline_1,
+
+        LAG(decline_flag,2) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY order_month
+        ) AS prev_decline_2
+
+    FROM growth_metrics
+),
+ranked_customers AS
+(
+    SELECT
+        *,
+
+        ROW_NUMBER() OVER
+        (
+            ORDER BY lifetime_revenue DESC
+        ) AS rn
+
+    FROM declining_customers
+
+    WHERE
+        decline_flag = 1
+        AND prev_decline_1 = 1
+        AND prev_decline_2 = 1
+)
+
+SELECT
+
+    customer_id,
+    customer_name,
+
+    order_month,
+
+    monthly_revenue,
+
+    previous_month_revenue,
+
+    mom_growth_percent,
+
+    company_monthly_average,
+
+    revenue_vs_company_percent,
+
+    lifetime_revenue,
+
+    rn
+
+FROM ranked_customers
+
+WHERE rn <= 10
+
+ORDER BY rn;
+
+
+/*Business Requirement
+
+The Operations team wants to identify the best-performing sellers.
+
+Write a SQL query to:
+
+Calculate each seller's yearly revenue.
+Calculate the previous year's revenue.
+Calculate YoY Growth %.
+Calculate the company average seller revenue for the same year.
+Calculate the seller's contribution % to company revenue.
+Calculate the seller's lifetime revenue.
+Rank sellers within each country.
+Return the Top 5 sellers in every country.*/
+
+WITH seller_yearly_revenue AS
+(
+    SELECT
+        s.seller_id,
+        s.seller_name,
+        s.country,
+
+        EXTRACT(YEAR FROM f.order_date) AS sales_year,
+
+        SUM(f.sales_revenue) AS yearly_revenue,
+
+        COUNT(DISTINCT f.order_id) AS total_orders,
+
+        ROUND
+        (
+            SUM(f.sales_revenue) * 1.0
+            /
+            COUNT(DISTINCT f.order_id),
+            2
+        ) AS average_order_value
+
+    FROM fact_sales f
+
+    JOIN dim_sellers s
+        ON f.seller_id = s.seller_id
+
+    GROUP BY
+        s.seller_id,
+        s.seller_name,
+        s.country,
+        EXTRACT(YEAR FROM f.order_date)
+),
+
+seller_metrics AS
+(
+    SELECT
+        *,
+
+        LAG(yearly_revenue) OVER
+        (
+            PARTITION BY seller_id
+            ORDER BY sales_year
+        ) AS previous_year_revenue,
+
+        AVG(yearly_revenue) OVER
+        (
+            PARTITION BY sales_year
+        ) AS company_average_revenue,
+
+        SUM(yearly_revenue) OVER
+        (
+            PARTITION BY sales_year
+        ) AS company_total_revenue,
+
+        SUM(yearly_revenue) OVER
+        (
+            PARTITION BY seller_id
+        ) AS lifetime_revenue
+
+    FROM seller_yearly_revenue
+),
+
+seller_performance AS
+(
+    SELECT
+        *,
+
+        ROUND
+        (
+            (
+                yearly_revenue
+                -
+                previous_year_revenue
+            )
+            *100.0
+            /
+            NULLIF(previous_year_revenue,0),
+            2
+        ) AS yoy_growth_percent,
+
+        ROUND
+        (
+            yearly_revenue
+            *100.0
+            /
+            NULLIF(company_total_revenue,0),
+            2
+        ) AS contribution_percent
+
+    FROM seller_metrics
+),
+
+ranked_sellers AS
+(
+    SELECT
+        *,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY country
+            ORDER BY yearly_revenue DESC
+        ) AS rn
+
+    FROM seller_performance
+)
+
+SELECT *
+
+FROM ranked_sellers
+
+WHERE rn <= 5
+
+ORDER BY
+    country,
+    rn;
+
+
+/*Business Requirement
+
+The Executive team wants to identify the best product categories.
+
+For every Country and Year:
+
+Total Revenue
+Previous Year Revenue
+YoY Growth %
+Company Average Category Revenue
+Contribution %
+Lifetime Revenue
+Rank Categories
+Return Top 3*/
+
+
+WITH category_yearly_revenue AS
+(
+    SELECT
+        p.category,
+        f.country,
+
+        EXTRACT(YEAR FROM f.order_date) AS sales_year,
+
+        SUM(f.sales_revenue) AS yearly_revenue
+
+    FROM fact_sales f
+
+    JOIN dim_products p
+        ON f.product_id = p.product_id
+
+    GROUP BY
+        p.category,
+        f.country,
+        EXTRACT(YEAR FROM f.order_date)
+),
+
+category_metrics AS
+(
+    SELECT
+        *,
+
+        LAG(yearly_revenue) OVER
+        (
+            PARTITION BY category
+            ORDER BY sales_year
+        ) AS previous_year_revenue,
+
+        AVG(yearly_revenue) OVER
+        (
+            PARTITION BY sales_year
+        ) AS company_average_revenue,
+
+        SUM(yearly_revenue) OVER
+        (
+            PARTITION BY sales_year
+        ) AS company_total_revenue,
+
+        SUM(yearly_revenue) OVER
+        (
+            PARTITION BY category
+        ) AS lifetime_revenue
+
+    FROM category_yearly_revenue
+),
+
+category_performance AS
+(
+    SELECT
+        *,
+
+        ROUND
+        (
+            (
+                yearly_revenue
+                -
+                previous_year_revenue
+            )
+            *100.0
+            /
+            NULLIF(previous_year_revenue,0),
+            2
+        ) AS yoy_growth_percent,
+
+        ROUND
+        (
+            yearly_revenue
+            *100.0
+            /
+            NULLIF(company_total_revenue,0),
+            2
+        ) AS contribution_percent
+
+    FROM category_metrics
+),
+
+ranked_categories AS
+(
+    SELECT
+        *,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY country
+            ORDER BY yearly_revenue DESC
+        ) AS rn
+
+    FROM category_performance
+)
+
+SELECT *
+
+FROM ranked_categories
+
+WHERE rn <= 3
+
+ORDER BY
+    country,
+    rn;
