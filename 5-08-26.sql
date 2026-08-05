@@ -3,7 +3,7 @@
 The Growth team wants to answer:
 
 "When customers join us, how many of them come back over time?"
-
+ 
 This is called Cohort Analysis.
 Business Requirement
 
