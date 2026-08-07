@@ -80,6 +80,129 @@ SELECT
 FROM monthly_sales
 ORDER BY sales_month;
 
+/*4. An HR company wants to know
+
+every employee's
+
+longest consecutive working streak.
+
+Business Requirement
+
+Find the longest streak.*/
+
+
+WITH employee_attendance AS
+(
+    SELECT
+        employee_id,
+
+        attendance_date,
+
+        LAG(attendance_date)
+        OVER
+        (
+            PARTITION BY employee_id
+            ORDER BY attendance_date
+        ) AS previous_attendance_date
+
+    FROM attendance
+),
+
+attendance_flags AS
+(
+    SELECT
+        *,
+
+        CASE
+            WHEN previous_attendance_date IS NULL
+                 OR attendance_date - previous_attendance_date > 1
+            THEN 1
+            ELSE 0
+        END AS flag
+
+    FROM employee_attendance
+),
+
+attendance_islands AS
+(
+    SELECT
+        *,
+
+        SUM(flag)
+        OVER
+        (
+            PARTITION BY employee_id
+            ORDER BY attendance_date
+        ) AS island_id
+
+    FROM attendance_flags
+),
+
+attendance_streaks AS
+(
+    SELECT
+        employee_id,
+
+        island_id,
+
+        COUNT(*) AS streak_length
+
+    FROM attendance_islands
+
+    GROUP BY
+        employee_id,
+        island_id
+)
+
+SELECT
+    employee_id,
+
+    MAX(streak_length) AS longest_streak
+
+FROM attendance_streaks
+
+GROUP BY employee_id
+
+ORDER BY longest_streak DESC;
+
+/*Uber wants to know how many days every driver waits until their next trip.
+*/
+
+WITH driver_trips AS
+(
+    SELECT
+        driver_id,
+
+        trip_date,
+
+        LEAD(trip_date)
+        OVER
+        (
+            PARTITION BY driver_id
+            ORDER BY trip_date
+        ) AS next_trip_date
+
+    FROM fact_trips
+)
+
+SELECT
+
+    driver_id,
+
+    trip_date,
+
+    next_trip_date,
+
+    next_trip_date - trip_date
+        AS days_until_next_trip
+
+FROM driver_trips
+
+ORDER BY
+    driver_id,
+    trip_date;
+
+
 
 
 
