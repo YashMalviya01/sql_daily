@@ -418,3 +418,136 @@ ORDER BY
     customer_id,
     return_month;
          
+/*Business requirement
+
+An e-commerce company wants to identify customers whose purchase frequency is increasing over time.
+
+A customer is considered to have improving purchase frequency if their number of orders in a month is higher than the previous month's order count for at least 3 consecutive months.
+
+For each qualifying customer, return:
+
+customer_id
+Month when the longest increasing streak ended
+Longest increasing streak
+Order count in that month*/
+
+
+WITH monthly_orders AS
+(
+    SELECT
+        customer_id,
+        DATE_TRUNC('month', order_date) AS order_month,
+        COUNT(DISTINCT order_id) AS order_count
+
+    FROM fact_sales
+
+    GROUP BY
+        customer_id,
+        DATE_TRUNC('month', order_date)
+),
+
+previous_orders AS
+(
+    SELECT
+        customer_id,
+        order_month,
+        order_count,
+
+        LAG(order_count) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY order_month
+        ) AS previous_order_count
+
+    FROM monthly_orders
+),
+
+growth_flags AS
+(
+    SELECT
+        customer_id,
+        order_month,
+        order_count,
+        previous_order_count,
+
+        CASE
+            WHEN previous_order_count IS NOT NULL
+                 AND order_count > previous_order_count
+            THEN 1
+            ELSE 0
+        END AS growth_flag
+
+    FROM previous_orders
+),
+
+growth_islands AS
+(
+    SELECT
+        customer_id,
+        order_month,
+        order_count,
+        growth_flag,
+
+        SUM(
+            CASE
+                WHEN growth_flag = 0 THEN 1
+                ELSE 0
+            END
+        ) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY order_month
+        ) AS island_id
+
+    FROM growth_flags
+),
+
+growth_streaks AS
+(
+    SELECT
+        customer_id,
+        island_id,
+
+        COUNT(*) AS streak_length,
+
+        MAX(order_month) AS streak_end_month
+
+    FROM growth_islands
+
+    WHERE growth_flag = 1
+
+    GROUP BY
+        customer_id,
+        island_id
+),
+
+customer_longest_streak AS
+(
+    SELECT
+        customer_id,
+        streak_end_month,
+        streak_length,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY streak_length DESC,
+                     streak_end_month DESC
+        ) AS rn
+
+    FROM growth_streaks
+)
+
+SELECT
+    customer_id,
+    streak_end_month,
+    streak_length AS longest_increasing_streak
+
+FROM customer_longest_streak
+
+WHERE rn = 1
+  AND streak_length >= 3
+
+ORDER BY
+    longest_increasing_streak DESC,
+    customer_id;
