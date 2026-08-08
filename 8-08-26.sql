@@ -280,4 +280,141 @@ FROM ranked_products
 WHERE rank <= 10
 ORDER BY product_id,
          max_growth_streak DESC;
+
+
+/*A subscription company wants to identify customers who were active for at least 3 consecutive months, then became inactive, and later returned.
+Requirement
+
+For every customer who qualifies, return:
+
+customer_id
+The month their active streak ended
+The month they returned
+Number of inactive months between the two*/
+
+
+WITH active_months AS
+(
+    SELECT DISTINCT
+        customer_id,
+        DATE_TRUNC('month', activity_date) AS activity_month
+
+    FROM fact_activity
+),
+
+previous_month AS
+(
+    SELECT
+        customer_id,
+        activity_month,
+
+        LAG(activity_month) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY activity_month
+        ) AS previous_activity_month
+
+    FROM active_months
+),
+
+streak_flags AS
+(
+    SELECT
+        customer_id,
+        activity_month,
+        previous_activity_month,
+
+        CASE
+            WHEN previous_activity_month IS NULL
+                 OR activity_month <> previous_activity_month + INTERVAL '1 month'
+            THEN 1
+            ELSE 0
+        END AS streak_flag
+
+    FROM previous_month
+),
+
+activity_islands AS
+(
+    SELECT
+        customer_id,
+        activity_month,
+
+        SUM(streak_flag) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY activity_month
+        ) AS island_id
+
+    FROM streak_flags
+),
+
+streaks AS
+(
+    SELECT
+        customer_id,
+        island_id,
+
+        MIN(activity_month) AS streak_start_month,
+        MAX(activity_month) AS streak_end_month,
+        COUNT(*) AS active_months
+
+    FROM activity_islands
+
+    GROUP BY
+        customer_id,
+        island_id
+),
+
+next_streak AS
+(
+    SELECT
+        customer_id,
+        island_id,
+        streak_start_month,
+        streak_end_month,
+        active_months,
+
+        LEAD(streak_start_month) OVER
+        (
+            PARTITION BY customer_id
+            ORDER BY island_id
+        ) AS return_month
+
+    FROM streaks
+),
+
+reactivated_customers AS
+(
+    SELECT
+        customer_id,
+        streak_end_month,
+        return_month,
+
+        EXTRACT(
+            MONTH FROM AGE(return_month, streak_end_month)
+        ) - 1 AS inactive_months,
+
+        active_months
+
+    FROM next_streak
+
+    WHERE active_months >= 3
+      AND return_month IS NOT NULL
+)
+
+SELECT
+    customer_id,
+    streak_end_month,
+    return_month,
+    inactive_months,
+    active_months AS previous_active_streak
+
+FROM reactivated_customers
+
+WHERE inactive_months > 0
+
+ORDER BY
+    customer_id,
+    return_month;
          
