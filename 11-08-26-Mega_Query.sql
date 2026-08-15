@@ -1,4 +1,4 @@
-/*You are a Senior Customer Analytics Analyst at a global e-commerce company.
+ /*You are a Senior Customer Analytics Analyst at a global e-commerce company.
 
 The Chief Revenue Officer wants a Customer Value & Retention Intelligence Report identifying the company's 50 most strategically valuable customers.Business Requirements
 
