@@ -544,3 +544,139 @@ WHERE rn <= 10
 ORDER BY
     latest_month_revenue DESC;
 
+/*An e-commerce company wants to identify customers who returned after being inactive for at least 60 days.
+Requirement
+
+For each customer:
+
+Find every purchase date.
+Find the previous purchase date.
+Calculate the number of days between purchases.
+Identify purchases where the customer had been inactive for 60+ days.
+Calculate the customer's longest inactivity period.
+Find their most recent reactivation date.
+Count how many times they reactivated.
+
+Return only customers who:
+
+longest inactivity >= 60 days
+AND
+reactivation_count >= 2
+
+Then rank them within their region by longest inactivity and return the top 5 per region.*/
+
+WITH customer_purchases AS
+(
+    SELECT
+        c.customer_id,
+        c.customer_name,
+        c.segment,
+        c.region,
+        f.order_date,
+
+        LAG(f.order_date) OVER
+        (
+            PARTITION BY f.customer_id
+            ORDER BY f.order_date
+        ) AS previous_order_date
+
+    FROM fact_sales f
+
+    JOIN dim_customers c
+        ON f.customer_id = c.customer_id
+),
+
+purchase_gaps AS
+(
+    SELECT
+        customer_id,
+        customer_name,
+        segment,
+        region,
+        order_date,
+        previous_order_date,
+
+        order_date - previous_order_date AS inactive_days,
+
+        CASE
+            WHEN previous_order_date IS NOT NULL
+                 AND order_date - previous_order_date >= 60
+            THEN 1
+            ELSE 0
+        END AS reactivation_flag
+
+    FROM customer_purchases
+),
+
+customer_metrics AS
+(
+    SELECT
+        customer_id,
+        customer_name,
+        segment,
+        region,
+
+        MAX(inactive_days) AS longest_inactive_days,
+
+        SUM(reactivation_flag) AS reactivation_count,
+
+        MAX(
+            CASE
+                WHEN reactivation_flag = 1
+                THEN order_date
+            END
+        ) AS latest_reactivation_date
+
+    FROM purchase_gaps
+
+    GROUP BY
+        customer_id,
+        customer_name,
+        segment,
+        region
+),
+
+qualifying_customers AS
+(
+    SELECT
+        *
+    FROM customer_metrics
+
+    WHERE longest_inactive_days >= 60
+      AND reactivation_count >= 2
+),
+
+regional_ranking AS
+(
+    SELECT
+        *,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY region
+            ORDER BY
+                longest_inactive_days DESC,
+                reactivation_count DESC
+        ) AS regional_rank
+
+    FROM qualifying_customers
+)
+
+SELECT
+    customer_id,
+    customer_name,
+    segment,
+    region,
+    longest_inactive_days,
+    reactivation_count,
+    latest_reactivation_date,
+    regional_rank
+
+FROM regional_ranking
+
+WHERE regional_rank <= 5
+
+ORDER BY
+    region,
+    regional_rank;
+
