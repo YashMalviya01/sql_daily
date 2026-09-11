@@ -110,3 +110,183 @@ WHERE total_revenue > regional_avg_customer_revenue
 ORDER BY
     region,
     region_revenue_rank;
+
+
+/*Mega Query 2 — Monthly Revenue + MoM + Cohort Retention*/
+
+WITH order_level AS (
+    SELECT
+        order_id,
+        customer_id,
+        order_date,
+
+        DATE_TRUNC('month', order_date) AS order_month,
+
+        quantity * unit_price * (1 - discount) AS net_revenue
+
+    FROM orders
+),
+
+customer_first_order AS (
+    SELECT
+        customer_id,
+        MIN(order_month) AS cohort_month
+    FROM order_level
+    GROUP BY customer_id
+),
+
+customer_orders AS (
+    SELECT
+        o.*,
+        c.cohort_month,
+
+        CASE
+            WHEN o.order_month = c.cohort_month
+                THEN 'New'
+            ELSE 'Returning'
+        END AS customer_type
+
+    FROM order_level o
+    JOIN customer_first_order c
+        ON o.customer_id = c.customer_id
+),
+
+monthly_summary AS (
+    SELECT
+        order_month AS month,
+
+        SUM(net_revenue) AS revenue,
+
+        COUNT(DISTINCT customer_id) AS unique_customers,
+
+        COUNT(DISTINCT order_id) AS orders,
+
+        SUM(net_revenue)
+        / NULLIF(COUNT(DISTINCT order_id), 0) AS aov,
+
+        COUNT(
+            DISTINCT CASE
+                WHEN customer_type = 'New'
+                THEN customer_id
+            END
+        ) AS new_customers,
+
+        COUNT(
+            DISTINCT CASE
+                WHEN customer_type = 'Returning'
+                THEN customer_id
+            END
+        ) AS returning_customers,
+
+        SUM(
+            CASE
+                WHEN customer_type = 'New'
+                THEN net_revenue
+                ELSE 0
+            END
+        ) AS new_customer_revenue,
+
+        SUM(
+            CASE
+                WHEN customer_type = 'Returning'
+                THEN net_revenue
+                ELSE 0
+            END
+        ) AS returning_customer_revenue
+
+    FROM customer_orders
+    GROUP BY order_month
+),
+
+monthly_with_lag AS (
+    SELECT
+        *,
+        
+        LAG(revenue) OVER (
+            ORDER BY month
+        ) AS previous_month_revenue
+
+    FROM monthly_summary
+),
+
+cohort_activity AS (
+    SELECT
+        cohort_month,
+        order_month AS activity_month,
+        COUNT(DISTINCT customer_id) AS retained_customers
+
+    FROM customer_orders
+
+    GROUP BY
+        cohort_month,
+        order_month
+),
+
+cohort_size AS (
+    SELECT
+        cohort_month,
+        COUNT(DISTINCT customer_id) AS cohort_size
+
+    FROM customer_orders
+
+    WHERE order_month = cohort_month
+
+    GROUP BY cohort_month
+)
+
+SELECT
+    m.month,
+
+    ROUND(m.revenue, 2) AS revenue,
+
+    m.unique_customers,
+
+    m.orders,
+
+    ROUND(m.aov, 2) AS aov,
+
+    ROUND(m.previous_month_revenue, 2)
+        AS previous_month_revenue,
+
+    ROUND(
+        100.0 *
+        (m.revenue - m.previous_month_revenue)
+        / NULLIF(m.previous_month_revenue, 0),
+        2
+    ) AS mom_growth_pct,
+
+    m.new_customers,
+
+    m.returning_customers,
+
+    ROUND(m.new_customer_revenue, 2)
+        AS new_customer_revenue,
+
+    ROUND(m.returning_customer_revenue, 2)
+        AS returning_customer_revenue,
+
+    ca.cohort_month,
+
+    cs.cohort_size,
+
+    ca.retained_customers,
+
+    ROUND(
+        100.0 *
+        ca.retained_customers
+        / NULLIF(cs.cohort_size, 0),
+        2
+    ) AS retention_pct
+
+FROM monthly_with_lag m
+
+LEFT JOIN cohort_activity ca
+    ON m.month = ca.activity_month
+
+LEFT JOIN cohort_size cs
+    ON ca.cohort_month = cs.cohort_month
+
+ORDER BY
+    m.month,
+    ca.cohort_month;
+
