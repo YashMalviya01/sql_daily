@@ -290,3 +290,126 @@ ORDER BY
     m.month,
     ca.cohort_month;
 
+
+/*Mega Query 3 — Gaps & Islands + Longest Streak*/
+
+WITH distinct_activity AS (
+    SELECT DISTINCT
+        customer_id,
+        activity_date
+    FROM customer_activity
+),
+
+numbered_activity AS (
+    SELECT
+        customer_id,
+        activity_date,
+
+        ROW_NUMBER() OVER (
+            PARTITION BY customer_id
+            ORDER BY activity_date
+        ) AS rn
+
+    FROM distinct_activity
+),
+
+islands AS (
+    SELECT
+        customer_id,
+        activity_date,
+
+        activity_date
+        - rn * INTERVAL '1 day' AS island_key
+
+    FROM numbered_activity
+),
+
+streaks AS (
+    SELECT
+        customer_id,
+
+        MIN(activity_date) AS streak_start,
+
+        MAX(activity_date) AS streak_end,
+
+        COUNT(*) AS streak_length
+
+    FROM islands
+
+    GROUP BY
+        customer_id,
+        island_key
+),
+
+customer_activity_summary AS (
+    SELECT
+        customer_id,
+
+        MAX(streak_length) AS longest_streak,
+
+        SUM(streak_length) AS total_active_days,
+
+        MIN(streak_start) AS first_activity,
+
+        MAX(streak_end) AS last_activity
+
+    FROM streaks
+
+    GROUP BY customer_id
+),
+
+classified_customers AS (
+    SELECT
+        *,
+
+        CURRENT_DATE - last_activity
+            AS days_since_last_activity,
+
+        CASE
+            WHEN CURRENT_DATE - last_activity <= 7
+                THEN 'Active'
+
+            WHEN CURRENT_DATE - last_activity <= 30
+                THEN 'At Risk'
+
+            ELSE 'Churned'
+        END AS activity_status
+
+    FROM customer_activity_summary
+),
+
+ranked_customers AS (
+    SELECT
+        *,
+
+        RANK() OVER (
+            PARTITION BY activity_status
+            ORDER BY longest_streak DESC
+        ) AS status_rank,
+
+        AVG(longest_streak) OVER ()
+            AS overall_avg_longest_streak
+
+    FROM classified_customers
+)
+
+SELECT
+    customer_id,
+    first_activity,
+    last_activity,
+    total_active_days,
+    longest_streak,
+    days_since_last_activity,
+    activity_status,
+    status_rank
+
+FROM ranked_customers
+
+WHERE longest_streak > overall_avg_longest_streak
+
+ORDER BY
+    activity_status,
+    status_rank;
+
+
+/**/
